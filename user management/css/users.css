@@ -17,11 +17,15 @@
     border: solid darkorange;
 }
 
-#username {
+#profileUsername {
     position: relative;
     display: compact;
     width: 250px;
     height: 40px;
     top: -110px;
     left: 120px;
+}
+
+#profileDescription {
+
 }
