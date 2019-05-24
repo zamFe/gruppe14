@@ -1,15 +1,16 @@
 #user_box {
     display: block;
-    height: 10em;
+    height: 11em;
     width: 30em;
     border: solid darkgrey;
     border-radius: 1%;
+    background-color: lightgray;
 
 }
 
 #user_img {
     position: relative;
-    display: compact;
+    display: block;
     width: 100px;
     height: 100px;
     left: 5px;
@@ -20,12 +21,44 @@
 #profileUsername {
     position: relative;
     display: compact;
-    width: 250px;
+    overflow: hidden;
+    width: 350px;
     height: 40px;
     top: -110px;
     left: 120px;
 }
 
 #profileDescription {
+    position: relative;
+    display: block;
+    top: -130px;
+    left: 120px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
 
+#profileProgressBG {
+    position: relative;
+    display: block;
+    width: 28em;
+    height: 20px;
+    top: -100px;
+    left: 5px;
+    background-color: black;
+    color: white;
+
+}
+
+#profileProgressBar {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    color: white;
+    width: 0;
+    transition: width 1s ease-out;
 }

@@ -25,15 +25,16 @@ function createNewUser(userName, password, email, age, firstName, lastName) {
 
 //returns user object from id
 function getUserData(id) {
-    return users['user_' + id];
+    return users[id];
 }
 
 //finds corresponding user and set as logged in
 function login(username, password) {
-    console.log(users.length);
     for (let i = 1; i < users.length; i++) {
-        if (users[i].userName.localeCompare(username) === 0 && users[i].password.localeCompare(password) === 0) {
-            currentUser = 1;
+        if (users[i].userName.localeCompare(username) === 0
+            && users[i].password.localeCompare(password) === 0) {
+            currentUser = i;
+            updateUserDiv(getUserData(currentUser));
             return 1;
         }
     }
@@ -41,10 +42,18 @@ function login(username, password) {
 }
 
 //DOM-methods
+
+//updates user div in HTML (as well as progress bar i users.css))
 function updateUserDiv(user) {
-
+    var profileUsername = document.getElementById("profileUsername");
+    var profileDescription = document.getElementById("profileDescription");
+    var profileProgressBar = document.getElementById("profileProgressBar");
+    profileUsername.innerHTML = user.firstName + " " + user.lastName;
+    profileDescription.innerHTML = "username: " + user.userName + " | age: " + user.age
+        + "yrs. <br> email: " + user.email;
+    profileProgressBar.innerHTML = user.exp + "/" + 1000 + " - level " + 1;
+    profileProgressBar.style.width = (user.exp * 100) / 1000 + "%";
 }
-
 
 //TESTING
 
@@ -55,5 +64,4 @@ createNewUser("Arne420", "bengt123",
     "arne420@gmail.com", 17, "Arne",
     "420");
 
-console.log(getUserData(2));
-console.log(login("Ola123", "passord123"));
+users[1].exp = 300;
