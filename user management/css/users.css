@@ -1,0 +1,27 @@
+#user_box {
+    display: block;
+    height: 10em;
+    width: 30em;
+    border: solid darkgrey;
+    border-radius: 1%;
+
+}
+
+#user_img {
+    position: relative;
+    display: compact;
+    width: 100px;
+    height: 100px;
+    left: 5px;
+    top: 5px;
+    border: solid darkorange;
+}
+
+#username {
+    position: relative;
+    display: compact;
+    width: 250px;
+    height: 40px;
+    top: -110px;
+    left: 120px;
+}
