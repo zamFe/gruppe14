@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/frontPage.css">
     <meta charset="UTF-8">
     <title>Task Binder</title>
 </head>
 <body>
-    <div id="logoFrontPage">
-        <h1>Task Binder</h1>
+<div id="folderLogoBackground" onclick="refreshPage()">
+    <img id="folderLogo" src="../images/FolderLogo.png">
+</div>
+<div id="logoFrontPage">
+    <div id="logoContainer">
+        <img id="logoPicture" src="../images/Logo.png">
+        <h1></h1>
     </div>
+
+    <div id="logInButton">
+        <button class="frontPageButton" type="button">Logg inn</button>
+    </div>
+
+    <div id="newUserButton">
+        <button class="frontPageButton" type="button">Ny bruker</button>
+    </div>
+</div>
 </body>
+<footer>
+    <div id="versionText">
+        <small>Version 0.1</small>
+    </div>
+</footer>
 </html>
+
+<script>
+    function refreshPage(){
+        window.location.reload();
+    }
+</script>

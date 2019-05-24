@@ -1,0 +1,87 @@
+/*id's*/
+
+#logoContainer{
+    position: relative;
+    width: 50%;
+    left: 100px;
+    margin: 30px;
+    background-color: #F9FAF5;
+    text-align: center;
+}
+
+#logoFrontPage{
+    position: relative;
+    width: 50%;
+    height: 20rem;
+    margin: auto;
+    background-color: #F9FAF5;
+    padding:  10px;
+}
+
+#logoPicture{
+    width: 500px;
+}
+
+#folderLogo{
+    position: relative;
+    width: 100px;
+    left:5px;
+    top: 30px;
+}
+
+#folderLogoBackground{
+    width: 110px;
+    height: 110px;
+    background-color: #0B245B;
+    border-radius: 50%;
+}
+
+#logInButton{
+    position: relative;
+}
+
+#newUserButton{
+}
+
+#versionText{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    bottom: 10px;
+    margin-left: 25%;
+    color: #0B245B;
+}
+
+/*classes*/
+
+.frontPageButton{
+    position: relative;
+    left: 35%;
+    width: 200px;
+    margin: 1rem;
+    padding: 20px 32px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    background-color: #0B245B;
+    border-radius: 4px;
+    color: #F9FAF5;
+    transition-duration: .4s;
+}
+
+.frontPageButton:hover{
+    color: #0B245B;
+    background-color: #F9FAF5;;
+    border: 2px solid #0B245B;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*tags*/
+
+h1{
+    color: yellow;
+}
+
+body{
+    background-color: #F9FAF5;;
+}
