@@ -47,29 +47,33 @@ left: 0;
 
 #tab-button1 {
     margin: 0;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     position: fixed;
     background-image: url(images/TabBurgunder.png);
+    background-size: 100%;
 }
 #tab-button2 {
     margin: auto;
     left: 150px;
-    top: 0px;
+    top: 0;
     position: fixed;
     background-image: url(images/TabWhite.png);
+    background-size: 100%;
 }
 #tab-button3 {
     margin: auto;
     left: 300px;
-    top: 0px;
+    top: 0;
     position: fixed;
     background-image: url(images/TabBlue.png);
+    background-size: 100%;
 }
 #tab-button4 {
     margin: auto;
     left: 450px;
-    top: 0px;
+    top: 0;
     position: fixed;
     background-image: url(images/TabBurgunder.png);
+    background-size: 100%;
 }
