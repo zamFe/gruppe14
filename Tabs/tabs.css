@@ -6,6 +6,9 @@
     margin: auto;
     z-index: 10;
 }
+#body{
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+}
 
 #tabline{
 background-color: black;
@@ -35,7 +38,9 @@ left: 0;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 70px;
-	padding-right: 40px;
+    padding-right: 40px;
+    height: 100%;
+    width: 100%;
 }
 
 .button a {
@@ -47,7 +52,7 @@ left: 0;
 
 #tab-button1 {
     margin: 0;
-    left: 0;
+    left: -20px;
     top: 0;
     position: fixed;
     background-image: url(images/TabBurgunder.png);
@@ -55,7 +60,7 @@ left: 0;
 }
 #tab-button2 {
     margin: auto;
-    left: 150px;
+    left: 130px;
     top: 0;
     position: fixed;
     background-image: url(images/TabWhite.png);
@@ -63,7 +68,7 @@ left: 0;
 }
 #tab-button3 {
     margin: auto;
-    left: 300px;
+    left: 280px;
     top: 0;
     position: fixed;
     background-image: url(images/TabBlue.png);
@@ -71,7 +76,7 @@ left: 0;
 }
 #tab-button4 {
     margin: auto;
-    left: 450px;
+    left: 430px;
     top: 0;
     position: fixed;
     background-image: url(images/TabBurgunder.png);
