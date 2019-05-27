@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="postIt.css">
     <title>Post-it</title>
 </head>
 <body>
     <div id="mainContainer">
-        <h3>Post-it!</h3>
+
+
+        <div id="myDIV" class="header">
+            <h2>Post-it</h2>
+            <input type="text" id="myInput" placeholder="Note..">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+
+        </ul>
 
     </div>
 </body>
+
+<script src="../Post-it/postIt.js"></script>
+
 </html>
