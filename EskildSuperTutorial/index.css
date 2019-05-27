@@ -1,0 +1,142 @@
+.square{
+    margin: 1px;
+    height: 30px;
+    width: 300px;
+   
+
+    
+    
+}
+#square1{
+
+    background-color: rgb(11,36,91);
+    color: rgb(11,36,91);
+    position: relative;
+    left:550px;
+    top: 200px;
+    border-radius: 8px;
+}
+
+#square2{
+    background-color: rgb(11,36,91);
+    color: rgb(11,36,91);
+    position: relative;
+    left:550px;
+    top: 250px;
+    border-radius: 8px;
+
+}
+#square3{
+    background-color: rgb(11,36,91);
+    color: rgb(11,36,91);
+    position: relative;
+    left:550px;
+    top: 300px;
+    border-radius: 8px;
+
+}
+#square4{
+    background-color: rgb(11,36,91);
+    color: rgb(11,36,91);
+    position: relative;
+    left:550px;
+    top: 350px;
+    border-radius: 8px;
+
+}
+#square5{
+    background-color: rgb(11,36,91);
+    color: rgb(11,36,91);
+    position: relative;
+    left:550px;
+    top: 400px;
+    border-radius: 8px;
+
+}
+
+.dot{
+    height:25px;
+    width: 25px;
+    border-radius: 50%
+    
+
+     
+}
+#dot1{
+    margin:0px;
+    background-color: rgb(11,36,91);
+    position: relative;
+    left: 500px;
+    top:45px;
+
+
+}
+#dot2{
+    margin:0px;
+    background-color: rgb(11,36,91);
+    position: relative;
+    left: 500px;
+    top:102px;
+
+
+}
+#dot3{
+    margin:0px;
+    background-color: rgb(11,36,91);
+    position: relative;
+    left: 500px;
+    top:158px;
+
+
+}
+#dot4{
+    margin:0px;
+    background-color: rgb(11,36,91);
+    position: relative;
+    left: 500px;
+    top:215px;
+
+
+}
+#dot5{
+    margin:0px;
+    background-color: rgb(11,36,91);
+    position: relative;
+    left: 500px;
+    top:274px;
+
+
+}
+
+    .button {
+        position: relative;
+        height: 50px;
+        width: 500px;
+      }
+      #button{
+        top:290px;
+        left:446px;
+        
+
+      }
+
+
+
+body{
+    background-color: rgb(225, 224, 224);
+}
+
+h1{
+    color: #0B245B;
+    position: relative;
+    top: -290px;
+    left: 514px;
+    z-index: 10;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h4{
+
+}
