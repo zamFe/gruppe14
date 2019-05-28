@@ -199,7 +199,7 @@ resize: none;
 
 #sideBar {
 	z-index: 1;
-	top; 0px;
+	top: 0px;
 	position: fixed;
 	width: 200px;
 	height: 100%;

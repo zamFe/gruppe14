@@ -1,6 +1,8 @@
 
 //variables
 
+var activeTab = 0; //0 = main tab
+
 var colorArr = ["White" + "Blue" + "Burgunder"];
 
 //methods
@@ -29,9 +31,13 @@ function createNewTab(image) {
     var add = document.getElementById("add");
     tab.style.order = add.style.order;
     add.style.order++;
+}
 
-
+function setActiveTab(event) {
+    console.log(event.target);
+    event.target.style.zIndex = 1;
 }
 
 //script
+
 
