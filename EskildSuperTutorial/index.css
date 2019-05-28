@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 .square{
     margin: 1px;
     height: 30px;
     width: 300px;
-   
-
-    
-    
 }
 #square1{
 
     background-color: #d3d3d3;
     color: rgb(11,36,91);
     position: relative;
-    left:550px;
-    top: 200px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 50px;
     border-radius: 8px;
     border-color: #0b245b;
     border-style: solid;
@@ -23,8 +23,10 @@
     background-color: #d3d3d3;
     color: #0b245b;
     position: relative;
-    left:550px;
-    top: 250px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 100px;
     border-radius: 8px;
     border-color: #0b245b;
     border-style: solid;
@@ -35,8 +37,10 @@
     background-color: #d3d3d3;
     color: rgb(11,36,91);
     position: relative;
-    left:550px;
-    top: 300px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 150px;
     border-radius: 8px;
     border-color: #0b245b;
     border-style: solid;
@@ -48,8 +52,10 @@
     background-color: #d3d3d3;
     color: rgb(11,36,91);
     position: relative;
-    left:550px;
-    top: 350px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 200px;
     border-radius: 8px;
     border-color: #0b245b;
     border-style: solid;
@@ -59,8 +65,24 @@
     background-color: #d3d3d3;
     color: rgb(11,36,91);
     position: relative;
-    left:550px;
-    top: 400px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 250px;
+    border-radius: 8px;
+    border-color: #0b245b;
+    border-style: solid;
+
+}
+
+#square6{
+    background-color: #d3d3d3;
+    color: rgb(11,36,91);
+    position: relative;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 300px;
     border-radius: 8px;
     border-color: #0b245b;
     border-style: solid;
@@ -70,17 +92,14 @@
 .dot{
     height:25px;
     width: 25px;
-    border-radius: 50%
-    
-
-     
+    border-radius: 50%;     
 }
 #dot1{
     margin:0px;
     background-color: rgb(11,36,91);
     position: relative;
-    left: 500px;
-    top:45px;
+    left:-40px;
+    top: -31px;
 
 
 }
@@ -88,8 +107,8 @@
     margin:0px;
     background-color: rgb(11,36,91);
     position: relative;
-    left: 500px;
-    top:102px;
+    left:-42px;
+    top: -25px;
 
 
 }
@@ -97,8 +116,8 @@
     margin:0px;
     background-color: rgb(11,36,91);
     position: relative;
-    left: 500px;
-    top:158px;
+    left:-44px;
+    top: -28px;
 
 
 }
@@ -106,8 +125,8 @@
     margin:0px;
     background-color: rgb(11,36,91);
     position: relative;
-    left: 500px;
-    top:215px;
+    left:-40px;
+    top: -28px;
 
 
 }
@@ -115,42 +134,112 @@
     margin:0px;
     background-color: rgb(11,36,91);
     position: relative;
-    left: 500px;
-    top:274px;
-
-
+    left:-40px;
+    top: -28px;
 }
+#dot6{
+    margin:0px;
+    background-color: rgb(11,36,91);
+    position: relative;
+    left:-40px;
+    top: -28px;
+}
+   
 
-    .button {
+      #button1{
         position: relative;
-        height: 50px;
-        width: 500px;
-      }
-      #button{
-        top:290px;
-        left:446px;
-        
+        top: 340px;
+    }
 
+    #button2{
+        top: 340px;
+        position: relative;
       }
 
+    .button{
+        position: relative;
+        left: 37%;
+        width: 200px;
+        margin: 1rem;
+        padding: 20px 32px;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        border-radius: 4px;
+        background-color: #0B245B;
+        color: #F9FAF5;
+        transition-duration: .4s;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .button:hover{
+        color: #0B245B;
+        background-color: #F9FAF5;;
+        border: solid #0B245B;
+        box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    .button:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -30px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
 
+
+
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 
 body{
-    background-color: rgb(225, 224, 224);
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
+
 h1{
-    color: #0B245B;
-    position: relative;
-    top: -290px;
-    left: 514px;
+    color: rgb(99, 123, 175);
     z-index: 10;
     font-size: 70px;
     font-family: 'Times New Roman', Times, serif;
-
+}
+#velkommen1{
+position: relative;
+top: 0px;
+left:0px;
+right: 0px;
+margin: 0 auto;
+text-align: center;
 }
 
 .reginf{
     color:#0b245b;
     font-family:'roboto slab';
+    margin: 1px;
+    height: 30px;
+    width: 300px;
 }
+
+#name{
+    top:200px;
+    left:300px;
+}
+
