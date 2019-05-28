@@ -29,29 +29,29 @@ html, body{
 .tab {
     //top: 30px;
     height: 40px;
-    flex: 0;
+    Flex: 0;
     flex-basis: 120px;
 }
 
 .tabImg{
     height: inherit;
     width: 120%;
-
-
+    filter: drop-shadow(-10px -3px 15px black);
 }
 
 #add {
     padding-left: 30px;
     height: 40px;
+    order: 1;
 }
 
 #addImg {
     height: inherit;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
-#add :hover{
-
+#add:hover #addImg {
+    filter: drop-shadow(0px 0px 8px white);
 }
 
 #mainTab {
