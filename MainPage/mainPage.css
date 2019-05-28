@@ -246,6 +246,7 @@ color: rgb(0, 0, 0);
 background-color: rgb(77, 158, 179);
 outline: none;
 resize: none;
+overflow: hidden;
 }
 
 #personalFeed {
@@ -261,6 +262,7 @@ color: rgb(0, 0, 0);
 background-color: rgb(77, 158, 179);
 outline: none;
 resize: none;
+overflow: hidden;
 }
 
 
