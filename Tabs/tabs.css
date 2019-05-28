@@ -1,3 +1,5 @@
+/*general*/
+
 #header{
     height:50px;
     width:100%;
@@ -6,19 +8,57 @@
     margin: auto;
     z-index: 10;
 }
-#body{
+html, body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
 
-#tabline{
-background-color: black;
-position: fixed;
-height: 2px;
-top: 40px;
-width: 100%;
-margin: 0;
-left: 0;
+/*tab container*/
+
+#tabContainer{
+    position: fixed;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    top: 10px;
+    border-bottom: solid slategray 5px;
 }
+
+.tab {
+    //top: 30px;
+    height: 40px;
+    flex: 0;
+    flex-basis: 120px;
+}
+
+.tabImg{
+    height: inherit;
+    width: 120%;
+
+
+}
+
+#add {
+    padding-left: 30px;
+    height: 40px;
+}
+
+#addImg {
+    height: inherit;
+    transition: all 0.5s ease-in-out;
+}
+
+#add :hover{
+
+}
+
+#mainTab {
+    order: 0;
+}
+
+/*button*/
 
 .button {
     line-height: 50px;
@@ -31,7 +71,7 @@ left: 0;
 .button:hover {
     background-color: #0b245b;
 }
-*/
+
 
 .button-link {
 	font-family: 'Roboto Slab', serif;
@@ -82,3 +122,4 @@ left: 0;
     background-image: url(images/TabBurgunder.png);
     background-size: 100%;
 }
+*/
