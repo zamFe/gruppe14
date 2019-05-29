@@ -1,0 +1,657 @@
+/*id's*/
+
+html {
+height: 100%;
+margin: 0;
+}
+
+#logoContainer{
+    position: absolute;
+    width: 50%;
+    left: 70px;
+    top: -150px;
+    margin: 30px;
+    /*background-color: #F9FAF5;*/
+    text-align: center;
+}
+
+#logoFrontPage{
+    position: absolute;
+    width: 50%;
+    height: 20rem;
+    margin: auto;
+    /*background-color: #F9FAF5;*/
+    padding: 10px;
+    left: 25%;
+}
+
+#logoPicture{
+    width: 500px;
+}
+
+#folderLogo{
+    position: absolute;
+    width: 100px;
+    left:35px;
+    top: 60px;
+}
+
+#folderLogoBackground{
+    width: 110px;
+    height: 110px;
+    background-color: #0B245B;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #f9faf5;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#logInButton{
+    position: absolute;
+    top: 70%;
+    left: 43%;
+}
+
+#newUserButton{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+}
+
+#versionText{
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    text-align: center;
+    bottom: 10px;
+    margin-left: 25%;
+    color: #F9FAF5;
+}
+
+/*classes*/
+
+.frontPageButton{
+    position: absolute;
+    left: 42%;
+    top: -100px;
+    width: 200px;
+    margin: 1rem;
+    padding: 20px 32px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: #0B245B;
+    color: #F9FAF5;
+    transition-duration: .4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.frontPageButton:hover{
+    color: #0B245B;
+    background-color: #F9FAF5;;
+    border: solid #0B245B;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.frontPageButton:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -30px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.frontPageButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+/*tags*/
+
+h1{
+    color: yellow;
+}
+
+body{
+    /*background-color: #F9FAF5;*/
+    margin-bottom: 335px;
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+}
+
+footer{
+}
+
+
+#people {
+position: absolute;
+height: 100px;
+width: 380px;
+top: 220px;
+left: 480px;
+z-index: 50;
+}
+
+
+.bubble {
+z-index: 50;
+top: 180px;
+}
+
+
+#bubble1 {
+position: absolute;
+left: 535px;
+height: 50px;
+width: 50px;
+
+animation-name: bubblemove1;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes bubblemove1 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#bubble2 {
+position: absolute;
+left: 630px;
+height: 50px;
+width: 50px;
+
+animation-name: bubblemove2;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-delay: 1s;
+opacity: 0;
+}
+
+@keyframes bubblemove2 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#bubble3 {
+position: absolute;
+left: 725px;
+height: 50px;
+width: 50px;
+animation-delay: 2s;
+opacity: 0;
+
+animation-name: bubblemove3;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes bubblemove3 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#bubble4 {
+position: absolute;
+left: 820px;
+height: 50px;
+width: 50px;
+animation-delay: 3s;
+opacity: 0;
+
+animation-name: bubblemove4;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes bubblemove4 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#book {
+position: absolute;
+top:250px;
+left: 490px;
+height: 50px;
+width: 50px;
+z-index: 10;
+
+animation-name: bookmove;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+
+@keyframes bookmove {
+    0% {
+        top: 250px;
+        left: 490px;
+        opacity: 0;
+    }
+
+    25% {
+    transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        }
+
+     75% {
+        transform: rotate(270deg);
+        opacity: 1;
+        }
+
+     90% {
+     opacity: 0.10;
+     }
+
+     91% {
+     opacity: 0.09;
+     }
+
+     92% {
+     opacity: 0.08;
+     }
+
+     93% {
+     opacity: 0.07;
+     }
+
+     94% {
+     opacity: 0.06;
+     }
+
+     95% {
+     opacity: 0.05;
+     }
+
+     96% {
+     opacity: 0.04;
+     }
+
+     97% {
+     opacity: 0.03;
+     }
+
+     98% {
+     opacity: 0.02;
+     }
+
+     99% {
+     opacity: 0.01;
+     }
+
+    100% {
+        top: 160px;
+        left: 390px;
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+#brain {
+position: absolute;
+top:250px;
+left: 600px;
+height: 50px;
+width: 50px;
+z-index: 10;
+
+animation-name: brainmove;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-delay: 1s;
+opacity: 0;
+
+}
+
+
+@keyframes brainmove {
+    0% {
+        top: 250px;
+        left: 600px;
+        opacity: 0;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        }
+
+    50% {
+        transform: rotate(180deg);
+            }
+
+    75% {
+        transform: rotate(270deg);
+        opacity: 1;
+            }
+
+    90% {
+         opacity: 0.10;
+         }
+
+         91% {
+         opacity: 0.09;
+         }
+
+         92% {
+         opacity: 0.08;
+         }
+
+         93% {
+         opacity: 0.07;
+         }
+
+         94% {
+         opacity: 0.06;
+         }
+
+         95% {
+         opacity: 0.05;
+         }
+
+         96% {
+         opacity: 0.04;
+         }
+
+         97% {
+         opacity: 0.03;
+         }
+
+         98% {
+         opacity: 0.02;
+         }
+
+         99% {
+         opacity: 0.01;
+         }
+
+    100% {
+        top: 160px;
+        left: 700px;
+        opacity: 1;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+#work {
+position: absolute;
+top:250px;
+left: 680px;
+height: 50px;
+width: 50px;
+z-index: 10;
+opacity: 0;
+
+animation-name: workmove;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-delay: 2s;
+
+}
+
+
+@keyframes workmove {
+    0% {
+        top: 250px;
+        left: 680px;
+        opacity: 0;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        }
+
+    50% {
+        transform: rotate(180deg);
+        }
+
+    75% {
+        transform: rotate(270deg);
+        opacity: 1;
+        }
+
+     90% {
+          opacity: 0.10;
+          }
+
+          91% {
+          opacity: 0.09;
+          }
+
+          92% {
+          opacity: 0.08;
+          }
+
+          93% {
+          opacity: 0.07;
+          }
+
+          94% {
+          opacity: 0.06;
+          }
+
+          95% {
+          opacity: 0.05;
+          }
+
+          96% {
+          opacity: 0.04;
+          }
+
+          97% {
+          opacity: 0.03;
+          }
+
+          98% {
+          opacity: 0.02;
+          }
+
+          99% {
+          opacity: 0.01;
+          }
+
+    100% {
+        top: 160px;
+        left: 580px;
+        opacity: 1;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#money {
+position: absolute;
+top:250px;
+left: 780px;
+height: 50px;
+width: 50px;
+z-index: 10;
+opacity: 0;
+
+animation-name: moneymove;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-delay: 3s;
+
+}
+
+
+@keyframes moneymove {
+    0% {
+        top: 250px;
+        left: 750px;
+        opacity: 0;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        }
+
+    50% {
+        transform: rotate(180deg);
+            }
+
+    75% {
+        transform: rotate(270deg);
+        opacity: 1;
+            }
+
+    90% {
+         opacity: 0.10;
+         }
+
+         91% {
+         opacity: 0.09;
+         }
+
+         92% {
+         opacity: 0.08;
+         }
+
+         93% {
+         opacity: 0.07;
+         }
+
+         94% {
+         opacity: 0.06;
+         }
+
+         95% {
+         opacity: 0.05;
+         }
+
+         96% {
+         opacity: 0.04;
+         }
+
+         97% {
+         opacity: 0.03;
+         }
+
+         98% {
+         opacity: 0.02;
+         }
+
+         99% {
+         opacity: 0.01;
+         }
+
+    100% {
+        top: 160px;
+        left: 880px;
+        opacity: 0;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.mac {
+position: absolute;
+height: 30px;
+width: 45px;
+top: 270px;
+background-color: rgb(144, 144, 144);
+border-radius: 25%;
+border-style: solid;
+border-width: 1px;
+z-index: 60;
+}
+
+#mac1 {
+left: 503px;
+position: absolute;
+}
+
+#mac2 {
+left: 598px;
+position: absolute;
+}
+
+#mac3 {
+left: 692px;
+position: absolute;
+}
+
+#mac4 {
+left: 786px;
+position: absolute;
+}
+
+
+.logo {
+position: absolute;
+height: 10px;
+width: 40px;
+top: 275px;
+z-index: 70;
+}
+
+#logo1 {
+left: 506px;
+}
+
+#logo2 {
+left: 601px;
+}
+
+#logo3 {
+left: 696px;
+}
+
+#logo4 {
+left: 789px;
+}
+
+

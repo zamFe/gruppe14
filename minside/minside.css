@@ -1,0 +1,147 @@
+html{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: #F9FAF5;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+h3{
+    position: relative;
+    text-align: center;
+    color: #F9FAF5;
+    top: 40%;
+}
+
+h2{
+    position: relative;
+    text-align: left;
+    text-wrap: normal;
+    color: #F9FAF5;
+    margin: 0;
+    border: 0;
+    font-size: 50px;
+}
+
+label{
+    color: #F9FAF5;
+}
+
+.profile{
+    position: relative;
+    width: 400px;
+    margin: 0;
+    text-align: right;
+    color: #F9FAF5;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#profilePictureContainer{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    right: 30%;
+    margin: auto;
+    border: black 1px solid;
+    padding: 3px;
+}
+
+#profilePicture{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+#folderLogo{
+    position: relative;
+    width: 100px;
+    left:5px;
+    top: 30px;
+}
+
+#folderLogoBackground{
+    width: 110px;
+    height: 110px;
+    top:-10%;
+    background-color: #0B245B;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #f9faf5;
+    margin: 20px;
+}
+
+#levelContainer{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 66%;
+    top: 60%;
+    margin: 0;
+    border: black 2px solid;
+    padding: 4px;
+}
+
+#sloganContainer{
+    position: relative;
+    width: 900px;
+    left: 30%;
+    top: -200px;
+}
+
+#myNameContainer{
+
+}
+
+#myAgeContainer{
+
+}
+
+#mygenderContainer{
+
+}
+
+#myPhoneContainer{
+
+}
+
+#myMailContainer{
+
+}
+
+#myNicknameContainer{
+
+}
+
+
+
+label {
+    display: block;
+    left: 200px;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.note {
+    font-size: .8em;
+}
