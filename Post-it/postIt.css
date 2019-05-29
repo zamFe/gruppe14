@@ -1,14 +1,7 @@
-#mainContainer{
+html{
+    height: 100%;
+    width: 100%;
     position: fixed;
-    z-index: 9;
-    left: 70%;
-    top: 100px;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    background-color: #FFFF00;
-    box-shadow: 2px 4px 4px black;
-    transition: all 0.3s ease-in-out;
 }
 
 h2{
@@ -18,10 +11,11 @@ h2{
 }
 
 body{
-    height: 2000px;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
 }
-
 
 /* Include the padding and border in an element's total width and height */
 * {
@@ -52,7 +46,6 @@ ul li {
     user-select: none;
 }
 
-
 /* Darker background-color on hover */
 ul li:hover {
     background: #CCCC00;
@@ -79,6 +72,17 @@ ul li.checked::before {
     width: 7px;
 }
 
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 90%;
+    padding: 5px;
+    float: left;
+    font-size: 16px;
+}
+
 /* Style the close button */
 .close {
     position: absolute;
@@ -89,7 +93,7 @@ ul li.checked::before {
 
 .close:hover {
     background-color: #f44336;
-    color: white;
+    color: #F9FAF5;
 }
 
 /* Style the header */
@@ -105,17 +109,6 @@ ul li.checked::before {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Style the input */
-input {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    width: 90%;
-    padding: 5px;
-    float: left;
-    font-size: 16px;
 }
 
 .addBtn {
@@ -135,3 +128,20 @@ input {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+#mainContainer{
+    position: fixed;
+    z-index: 9;
+    left: 70%;
+    top: 30%;
+    width: 200px;
+    margin: 0;
+    background-color: #FFFF00;
+    box-shadow: 2px 4px 4px black;
+}
+
+#headerMover {
+    padding: 10px;
+    cursor: move;
+}
+
