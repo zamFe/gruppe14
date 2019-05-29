@@ -1,13 +1,14 @@
 #mainContainer{
-    position: sticky;
+    position: fixed;
     z-index: 9;
-    left: 100%;
-    top: 200px;
+    left: 70%;
+    top: 100px;
     width: 200px;
     height: 200px;
     margin: auto;
     background-color: #FFFF00;
     box-shadow: 2px 4px 4px black;
+    transition: all 0.3s ease-in-out;
 }
 
 h2{
