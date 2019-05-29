@@ -35,7 +35,7 @@ function createNewTab(image) {
 
 function setActiveTab(event) {
     console.log(event.target);
-    event.target.style.zIndex = 1;
+    event.target.style.zIndex = "1";
 }
 
 //script

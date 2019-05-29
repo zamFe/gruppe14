@@ -1,13 +1,5 @@
 /*general*/
 
-#header{
-    height:50px;
-    width:100%;
-    background-color: purple;
-    position: fixed;
-    margin: auto;
-    z-index: 10;
-}
 html, body{
     margin: 0;
     width: 100vw;
@@ -15,22 +7,57 @@ html, body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
 
+main {
+    position: relative;
+    height: calc(100% - 55px);
+    margin: 0 2em;
+    top: 55px;
+}
+
+/* active flows */
+
+#welcomeMessage {
+    font-size: 5em;
+    color: white;
+    white-space: nowrap;
+}
+
+#activeFlowsContainer {
+    color: white;
+}
+
+.activeListObject {
+    /*list-style: none;*/
+    padding-left: 1.5em;
+    list-style: none;
+    background-color: green;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    border-bottom: solid white;
+}
+
 /*tab container*/
 
 #tabContainer{
     position: fixed;
     display: flex;
-    height: 40px;
+    align-items: flex-end;
+    height: 50px;
     width: 100%;
-    top: 10px;
+    top: 0px;
     border-bottom: solid slategray 5px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .tab {
-    //top: 30px;
+    /*top: 30px;*/
     height: 40px;
     Flex: 0;
     flex-basis: 120px;
+    z-index: 0;
 }
 
 .tabImg{
@@ -56,6 +83,7 @@ html, body{
 
 #mainTab {
     order: 0;
+    z-index: 0;
 }
 
 /*button*/
