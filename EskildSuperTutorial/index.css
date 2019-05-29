@@ -1,158 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-.square{
-    margin: 1px;
-    height: 30px;
-    width: 300px;
-}
-#square1{
 
-    background-color: #d3d3d3;
-    color: rgb(11,36,91);
-    position: relative;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    top: 50px;
-    border-radius: 8px;
-    border-color: #0b245b;
-    border-style: solid;
-}
-
-#square2{
-    background-color: #d3d3d3;
-    color: #0b245b;
-    position: relative;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    top: 100px;
-    border-radius: 8px;
-    border-color: #0b245b;
-    border-style: solid;
-
-
-}
-#square3{
-    background-color: #d3d3d3;
-    color: rgb(11,36,91);
-    position: relative;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    top: 150px;
-    border-radius: 8px;
-    border-color: #0b245b;
-    border-style: solid;
-    
-    
-
-}
-#square4{
-    background-color: #d3d3d3;
-    color: rgb(11,36,91);
-    position: relative;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    top: 200px;
-    border-radius: 8px;
-    border-color: #0b245b;
-    border-style: solid;
-
-}
-#square5{
-    background-color: #d3d3d3;
-    color: rgb(11,36,91);
-    position: relative;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    top: 250px;
-    border-radius: 8px;
-    border-color: #0b245b;
-    border-style: solid;
-
-}
-
-#square6{
-    background-color: #d3d3d3;
-    color: rgb(11,36,91);
-    position: relative;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    top: 300px;
-    border-radius: 8px;
-    border-color: #0b245b;
-    border-style: solid;
-
-}
-
-.dot{
-    height:25px;
-    width: 25px;
-    border-radius: 50%;     
-}
-#dot1{
-    margin:0px;
-    background-color: rgb(11,36,91);
-    position: relative;
-    left:-40px;
-    top: -31px;
-
-
-}
-#dot2{
-    margin:0px;
-    background-color: rgb(11,36,91);
-    position: relative;
-    left:-42px;
-    top: -25px;
-
-
-}
-#dot3{
-    margin:0px;
-    background-color: rgb(11,36,91);
-    position: relative;
-    left:-44px;
-    top: -28px;
-
-
-}
-#dot4{
-    margin:0px;
-    background-color: rgb(11,36,91);
-    position: relative;
-    left:-40px;
-    top: -28px;
-
-
-}
-#dot5{
-    margin:0px;
-    background-color: rgb(11,36,91);
-    position: relative;
-    left:-40px;
-    top: -28px;
-}
-#dot6{
-    margin:0px;
-    background-color: rgb(11,36,91);
-    position: relative;
-    left:-40px;
-    top: -28px;
-}
-   
 
       #button1{
         position: relative;
-        top: 340px;
+        top: 500px;
+
     }
 
     #button2{
-        top: 340px;
+        top: 500px;
         position: relative;
       }
 
@@ -221,25 +78,169 @@ h1{
     font-size: 70px;
     font-family: 'Times New Roman', Times, serif;
 }
-#velkommen1{
-position: relative;
-top: 0px;
-left:0px;
-right: 0px;
-margin: 0 auto;
-text-align: center;
-}
 
-.reginf{
-    color:#0b245b;
-    font-family:'roboto slab';
-    margin: 1px;
-    height: 30px;
-    width: 300px;
+#velkommen1{
+    position: relative;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+
+h6{
+    color: rgb(166, 189, 240);
+    z-index: 10;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+
+}
+#Policy{
+    position: relative;
+    top: 740px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+h5{
+    color: rgb(99, 123, 175);
+    z-index: 10;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#Policy2{
+    position: relative;
+    top: 740px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+
 }
 
 #name{
     top:200px;
     left:300px;
 }
+
+.information{
+    margin: 1px;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#registrering{
+    width: 500px;
+    height: 70px;
+    position: relative;
+    top: 30%;
+    margin:0 auto;
+    width: 200px;
+
+}
+
+#firstName{
+position: relative;
+top: 30px;
+left:0px;
+right: 0px;
+margin: 0 auto;
+text-align: center;
+border: 2px rgb(11,36,91);
+border-radius: 6px;
+width: 200px;
+height:20px;
+
+
+}
+
+#lastName{
+position: relative;
+top: 70px;
+left:0px;
+right: 0px;
+margin: 0 auto;
+text-align: center;
+border: 2px rgb(11,36,91);
+border-radius: 6px;
+width: 200px;
+height:20px;
+
+}
+#email{
+    position: relative;
+    top: 120px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#dateOfBirth{
+    position: relative;
+    top: 160px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+    
+}
+#password{
+    position: relative;
+    top: 200px;
+    left:0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+#repeatPassword{
+    position: relative;
+    top: 240px;
+    left:0px;
+    right:0px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#Gender{
+    position: relative;
+    top: 300px;
+    left:50px;
+    right:50px;
+    width: 100px;
+    height: 200px;
+}
+
+
+
+
+
+
 
