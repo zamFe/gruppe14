@@ -1,14 +1,20 @@
 html{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    margin: 0;
 }
 
 h1{
     position: relative;
     text-align: center;
-    top: 70px;
+    top: 30px;
     color: #F9FAF5;
     font-weight: bold;
     font-family: sans-serif;
@@ -22,15 +28,6 @@ h3{
     top: 40%;
 }
 
-p{
-    position: relative;
-    text-align: right;
-    color: #F9FAF5;
-    font-weight: bold;
-    font-family: sans-serif;
-    right: 73%;
-}
-
 h2{
     position: relative;
     text-align: left;
@@ -41,12 +38,18 @@ h2{
     font-size: 50px;
 }
 
+label{
+    color: #F9FAF5;
+}
+
 .profile{
     position: relative;
     width: 400px;
-    top: -20%;
-    left: 18%;
     margin: 0;
+    text-align: right;
+    color: #F9FAF5;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 #profilePictureContainer{
