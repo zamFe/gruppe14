@@ -59,3 +59,53 @@ function newElement() {
         }
     }
 }
+
+//Drag-&-drop functionality
+(function() {
+    var mousePos;
+    var objectClicked = 0;
+
+    document.onmousemove = handleMouseMove;
+    document.onclick = handleMouseClick;
+    setInterval(getMousePosition, 100); // setInterval repeats every X ms
+
+    function handleMouseMove(event) {
+        var dot, eventDoc, doc, body, pageX, pageY;
+
+        event = event;
+
+        mousePos = {
+            x: event.pageX,
+            y: event.pageY
+        };
+    }
+
+    //happens when mouse is clicked
+    function handleMouseClick(event) {
+        //checks if target id corresponds to what we want to drag
+        if (event.target.id == "mainContainer" && objectClicked == 0) {
+            objectClicked = 1;
+        }
+        else {
+            objectClicked = 0;
+        }
+    }
+
+    function getMousePosition() {
+        //element that will be dragged
+        note = document.getElementById("mainContainer");
+        var pos = mousePos;
+        console.log(mousePos);
+        if (!pos) {
+            // We haven't seen any movement yet
+        }
+        else {
+            // Use pos.x and pos.y
+            //drags object when objectClicked is true;
+            if (objectClicked == 1) {
+                note.style.left = (mousePos.x) + 'px';
+                note.style.top = (mousePos.y) + 'px';
+            }
+        }
+    }
+})();
