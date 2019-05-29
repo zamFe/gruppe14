@@ -1,7 +1,12 @@
 /*id's*/
 
+html {
+height: 100%;
+margin: 0;
+}
+
 #logoContainer{
-    position: relative;
+    position: absolute;
     width: 50%;
     left: 70px;
     top: -150px;
@@ -11,12 +16,13 @@
 }
 
 #logoFrontPage{
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 20rem;
     margin: auto;
     /*background-color: #F9FAF5;*/
     padding: 10px;
+    left: 25%;
 }
 
 #logoPicture{
@@ -24,10 +30,10 @@
 }
 
 #folderLogo{
-    position: relative;
+    position: absolute;
     width: 100px;
-    left:5px;
-    top: 30px;
+    left:35px;
+    top: 60px;
 }
 
 #folderLogoBackground{
@@ -41,11 +47,15 @@
 }
 
 #logInButton{
-    position: relative;
+    position: absolute;
+    top: 70%;
+    left: 43%;
 }
 
 #newUserButton{
-    position: relative;
+    position: absolute;
+    top: 80%;
+    left: 43%;
 }
 
 #versionText{
@@ -61,7 +71,7 @@
 /*classes*/
 
 .frontPageButton{
-    position: relative;
+    position: absolute;
     left: 42%;
     top: -100px;
     width: 200px;
@@ -120,22 +130,12 @@ body{
 footer{
 }
 
-#animationcontainer {
-position: absolute;
-height: 400px;
-width: 400px;
-top: -80px;
-left: -10px;
-z-index: 100;
-
-}
-
 
 #people {
 position: absolute;
 height: 100px;
 width: 380px;
-top: 330px;
+top: 220px;
 left: 480px;
 z-index: 50;
 }
@@ -143,12 +143,12 @@ z-index: 50;
 
 .bubble {
 z-index: 50;
+top: 180px;
 }
 
 
 #bubble1 {
 position: absolute;
-top: 290px;
 left: 535px;
 height: 50px;
 width: 50px;
@@ -174,7 +174,6 @@ animation-timing-function: linear;
 
 #bubble2 {
 position: absolute;
-top:290px;
 left: 630px;
 height: 50px;
 width: 50px;
@@ -201,7 +200,6 @@ opacity: 0;
 
 #bubble3 {
 position: absolute;
-top:290px;
 left: 725px;
 height: 50px;
 width: 50px;
@@ -228,7 +226,6 @@ animation-timing-function: linear;
 
 #bubble4 {
 position: absolute;
-top:290px;
 left: 820px;
 height: 50px;
 width: 50px;
@@ -256,7 +253,7 @@ animation-timing-function: linear;
 
 #book {
 position: absolute;
-top:350px;
+top:250px;
 left: 490px;
 height: 50px;
 width: 50px;
@@ -271,7 +268,7 @@ animation-timing-function: linear;
 
 @keyframes bookmove {
     0% {
-        top: 350px;
+        top: 250px;
         left: 490px;
         opacity: 0;
     }
@@ -330,7 +327,7 @@ animation-timing-function: linear;
      }
 
     100% {
-        top: 250px;
+        top: 160px;
         left: 390px;
         opacity: 0;
         transform: rotate(360deg);
@@ -339,7 +336,7 @@ animation-timing-function: linear;
 
 #brain {
 position: absolute;
-top:350px;
+top:250px;
 left: 600px;
 height: 50px;
 width: 50px;
@@ -357,7 +354,7 @@ opacity: 0;
 
 @keyframes brainmove {
     0% {
-        top: 350px;
+        top: 250px;
         left: 600px;
         opacity: 0;
     }
@@ -416,7 +413,7 @@ opacity: 0;
          }
 
     100% {
-        top: 250px;
+        top: 160px;
         left: 700px;
         opacity: 1;
         transform: rotate(360deg);
@@ -427,7 +424,7 @@ opacity: 0;
 
 #work {
 position: absolute;
-top:350px;
+top:250px;
 left: 680px;
 height: 50px;
 width: 50px;
@@ -445,7 +442,7 @@ animation-delay: 2s;
 
 @keyframes workmove {
     0% {
-        top: 350px;
+        top: 250px;
         left: 680px;
         opacity: 0;
     }
@@ -504,7 +501,7 @@ animation-delay: 2s;
           }
 
     100% {
-        top: 250px;
+        top: 160px;
         left: 580px;
         opacity: 1;
         transform: rotate(360deg);
@@ -514,7 +511,7 @@ animation-delay: 2s;
 
 #money {
 position: absolute;
-top:350px;
+top:250px;
 left: 780px;
 height: 50px;
 width: 50px;
@@ -532,7 +529,7 @@ animation-delay: 3s;
 
 @keyframes moneymove {
     0% {
-        top: 350px;
+        top: 250px;
         left: 750px;
         opacity: 0;
     }
@@ -591,7 +588,7 @@ animation-delay: 3s;
          }
 
     100% {
-        top: 250px;
+        top: 160px;
         left: 880px;
         opacity: 0;
         transform: rotate(360deg);
@@ -604,6 +601,7 @@ animation-delay: 3s;
 position: absolute;
 height: 30px;
 width: 45px;
+top: 270px;
 background-color: rgb(144, 144, 144);
 border-radius: 25%;
 border-style: solid;
@@ -612,55 +610,48 @@ z-index: 60;
 }
 
 #mac1 {
-top: 380px;
 left: 503px;
 position: absolute;
 }
 
 #mac2 {
-top: 380px;
 left: 598px;
 position: absolute;
 }
 
 #mac3 {
-top: 380px;
 left: 692px;
 position: absolute;
 }
 
 #mac4 {
-top: 380px;
 left: 786px;
 position: absolute;
 }
 
 
 .logo {
-position: relative;
+position: absolute;
 height: 10px;
 width: 40px;
+top: 275px;
 z-index: 70;
 }
 
 #logo1 {
-top: 380px;
 left: 506px;
 }
 
 #logo2 {
-top: 380px;
-left: 558px;
+left: 601px;
 }
 
 #logo3 {
-top: 380px;
-left: 608px;
+left: 696px;
 }
 
 #logo4 {
-top: 380px;
-left: 657px;
+left: 789px;
 }
 
 
