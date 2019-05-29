@@ -130,21 +130,18 @@ input {
 }
 
 #mainContainer{
-    position: absolute;
+    position: fixed;
     z-index: 9;
     left: 70%;
     top: 30%;
     width: 200px;
-    height: 200px;
     margin: 0;
     background-color: #FFFF00;
     box-shadow: 2px 4px 4px black;
 }
 
-#mainContainerheader {
+#headerMover {
     padding: 10px;
     cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
 }
+

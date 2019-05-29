@@ -83,7 +83,7 @@ function newElement() {
     //happens when mouse is clicked
     function handleMouseClick(event) {
         //checks if target id corresponds to what we want to drag
-        if (event.target.id == "mainContainer" && objectClicked == 0) {
+        if ((event.target.id == "headerMover" || event.target.id == "postItText") && objectClicked == 0) {
             objectClicked = 1;
         }
         else {
