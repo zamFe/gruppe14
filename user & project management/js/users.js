@@ -1,7 +1,7 @@
 //global variables
 
 var userIdCount = 0;
-var users = [{}]; //index 0 of filler
+var users = [{}]; //index 0 is filler
 var currentUser = 0; //0 = no user
 
 //methods
