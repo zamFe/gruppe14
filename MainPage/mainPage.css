@@ -32,17 +32,51 @@ padding: 0;
 }
 
 
-.wrapper{
-text-align: center;
+#board {
 position: absolute;
-top: 186px;
+height: 580px;
+width: 980px;
+top: 130px;
 left: 20px;
+}
+
+
+.wrapperuper{
+position: absolute;
+left: 100px;
+top: 210px;
 width: 90%;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 150px  150px  150px 150px;
-grid-template-rows: 425px;
-grid-column-gap: 50px;
+grid-template-columns: 125px  125px  125px 125px 125px;
+grid-template-rows: 35px;
+grid-column-gap: 45px;
+grid-row-gap: 5px;
+}
+
+.uper{
+background-color: Grey;
+text-align: center;
+color: black;
+padding: 10px;
+border: 1px solid;
+border-radius: 4px;
+border-color: black;
+resize: none;
+outline: none;
+}
+
+.wrapper{
+text-align: center;
+position: absolute;
+top: 190px;
+left: 50px;
+width: 90%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 150px  150px  150px 150px 150px;
+grid-template-rows: 450px;
+grid-column-gap: 20px;
 grid-row-gap: 20px;
 }
 
@@ -58,91 +92,125 @@ border-color: rgb(51, 51, 204);
 
 .wrapper1{
 position: absolute;
-left: 32px;
-top: 225px;
+left: 100px;
+top: 260px;
 width: 90%;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 125px  125px  125px 125px;
-grid-template-rows: 80px  80px  80px 80px;
-grid-column-gap: 75px;
+grid-template-columns: 125px  125px  125px 125px 125px;
+grid-template-rows: 60px;
+grid-column-gap: 45px;
 grid-row-gap: 5px;
 }
 
 .item1{
-background: rgb(170, 170, 170);
+background-color: yellow;
 color: black;
 padding: 10px;
-border: 2px solid;
-border-radius: 10px;
+border: 0px solid;
+border-radius: 4px;
 border-color: black;
+resize: none;
+outline: none;
 }
 
 .wrapper2{
 position: absolute;
-left: 32px;
-top: 325px;
+left: 100px;
+top: 330px;
 width: 90%;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 125px  125px  125px 125px;
-grid-template-rows: 80px  80px  80px 80px;
-grid-column-gap: 75px;
+grid-template-columns: 125px  125px  125px 125px 125px;
+grid-template-rows: 60px;
+grid-column-gap: 45px;
 grid-row-gap: 5px;
 }
 
 .item2{
-background: rgb(170, 170, 170);
+background-color: yellow;
 color: black;
 padding: 10px;
-border: 2px solid;
-border-radius: 10px;
+border: 0px solid;
+border-radius: 4px;
 border-color: black;
+resize: none;
+outline: none;
 }
 
 .wrapper3{
 position: absolute;
-left: 32px;
-top: 425px;
+left: 100px;
+top: 400px;
 width: 90%;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 125px  125px  125px 125px;
-grid-template-rows: 80px  80px  80px 80px;
-grid-column-gap: 75px;
+grid-template-columns: 125px  125px  125px 125px 125px;
+grid-template-rows: 60px;
+grid-column-gap: 45px;
 grid-row-gap: 5px;
 }
 
 .item3{
-background: rgb(170, 170, 170);
+background-color: yellow;
 color: black;
 padding: 10px;
-border: 2px solid;
-border-radius: 10px;
+border: 0px solid;
+border-radius: 4px;
 border-color: black;
+resize: none;
+outline: none;
 }
 
 .wrapper4{
 position: absolute;
-left: 32px;
-top: 525px;
+left: 100px;
+top: 470px;
 width: 90%;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 125px  125px  125px 125px;
-grid-template-rows: 80px  80px  80px 80px;
-grid-column-gap: 75px;
+grid-template-columns: 125px  125px  125px 125px 125px;;
+grid-template-rows: 60px;
+grid-column-gap: 45px;
 grid-row-gap: 5px;
 }
 
 .item4{
-background: rgb(170, 170, 170);
+background-color: yellow;
 color: black;
 padding: 10px;
-border: 2px solid;
-border-radius: 10px;
+border: 0px solid;
+border-radius: 4px;
 border-color: black;
+resize: none;
+outline: none;
 }
+
+.wrapper5{
+position: absolute;
+left: 100px;
+top: 540px;
+width: 90%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 125px  125px  125px 125px 125px;
+grid-template-rows: 60px;
+grid-column-gap: 45px;
+grid-row-gap: 5px;
+}
+
+.item5{
+background-color: yellow;
+color: black;
+padding: 10px;
+border: 0px solid;
+border-radius: 4px;
+border-color: black;
+resize: none;
+outline: none;
+}
+
+
 /*
 #toDoBox {
 position: absolute;
@@ -174,95 +242,34 @@ resize: none;
 */
 
 
-
-.tabButton {
-	display: block;
-	text-decoration: none;
-	padding: 10px;
-	width: 100%;
-	transition: all 0.2s ease;
-}
-
-.tabButton:hover {
-	background-color: black;
-	padding-left: 50px;
-}
-
-.tabDivider {
-	display: block;
-	width: 100%;
-	height: 3px;
-	padding-left: 5px;
-	color: white;
-	background-color: white;
-}
-
-#sideBar {
-	z-index: 1;
-	top: 0px;
-	position: fixed;
-	width: 200px;
-	height: 100%;
-	border-left: solid white 5px;
-	color: white;
-	background-image: linear-gradient(to right, black 30%, darkblue);
-	right: -200px;
-	transition: all 0.3s ease;
-
-}
-
-#sideTab {
-	z-index: 0;
-	position: absolute;
-	width: 20px;
-	height: 60px;
-	background-color: white;
-	top: 50%;
-	transform: translateY(-50%);
-	left: -25px;
-	border-left: solid white 5px;
-	border-radius: 5%;
-
-}
-
-#sideBar:focus-within {
-	right: 0px;
-}
-#sideTab:focus {
-	outline: none;
-}
-
-
 #newsFeed {
 position: absolute;
 top: 250px;
-left: 1000px;
+left: 5px;
+width: 190px;
 font-size: 15px;
 font-family: times;
-border: 4px solid #ccc;
+border: 2px solid #ccc;
 border-radius: 8px;
 border-color: rgb(51, 51, 204);
 color: rgb(0, 0, 0);
 background-color: rgb(77, 158, 179);
 outline: none;
 resize: none;
-overflow: hidden;
 }
 
 #personalFeed {
 position: absolute;
 top: 450px;
-left: 1000px;
+left: 5px;
+width: 190px;
 font-size: 15px;
 font-family: times;
-border: 4px solid #ccc;
+border: 2px solid #ccc;
 border-radius: 8px;
 border-color: rgb(51, 51, 204);
 color: rgb(0, 0, 0);
 background-color: rgb(77, 158, 179);
 outline: none;
 resize: none;
-overflow: hidden;
 }
-
-
