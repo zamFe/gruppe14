@@ -79,14 +79,15 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#velkommen1{
-    position: relative;
-    top: 0px;
-    left:0px;
-    right: 0px;
-    margin: 0 auto;
-    text-align: center;
-    }
+img{
+  max-width: 30%;
+  height: auto;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  
+ }
 
 
 h6{
@@ -128,6 +129,7 @@ h5{
     top:200px;
     left:300px;
 }
+
 
 .information{
     margin: 1px;
@@ -216,6 +218,8 @@ height:20px;
     width: 200px;
     height:20px;
 }
+
+
 #repeatPassword{
     position: relative;
     top: 240px;
