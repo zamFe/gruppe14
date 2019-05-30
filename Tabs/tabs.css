@@ -123,68 +123,40 @@ main {
     border-right: solid rgba(255,255,255,1) 5px;
 }
 
-/*button*/
+/* popup */
 
-.button {
-    line-height: 50px;
-    border-color: black;
-    border: 1px;
-    width: 200px;
-    height: 40px;
-}
-/*
-.button:hover {
-    background-color: #0b245b;
-}
-
-
-.button-link {
-	font-family: 'Roboto Slab', serif;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 70px;
-    padding-right: 40px;
-    height: 100%;
-    width: 100%;
-}
-
-.button a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 15px;
+#popupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: calc(50% - 250px - 20px);
+    left: calc(50% - 250px);
+    color: white;
+    background-image: linear-gradient(to bottom, #559397, #adc5b8, #f9faf5);
+    box-shadow: 0 0 0 0 rgba(100,100,100,1);
+    border-radius: 0;
     text-align: center;
+    padding-top: 20px;
+    transition: all 1s ease-in-out;
 }
 
-#tab-button1 {
-    margin: 0;
-    left: -20px;
-    top: 0;
-    position: fixed;
-    background-image: url(images/TabBurgunder.png);
-    background-size: 100%;
+.createProjectInput {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 200px;
+    border: none;
 }
-#tab-button2 {
-    margin: auto;
-    left: 130px;
-    top: 0;
-    position: fixed;
-    background-image: url(images/TabWhite.png);
-    background-size: 100%;
+
+#cancelButton {
+    margin-top: 20px;
+    color: darkred;
 }
-#tab-button3 {
-    margin: auto;
-    left: 280px;
-    top: 0;
-    position: fixed;
-    background-image: url(images/TabBlue.png);
-    background-size: 100%;
+
+#cancelButton:hover {
+    color: red;
 }
-#tab-button4 {
-    margin: auto;
-    left: 430px;
-    top: 0;
-    position: fixed;
-    background-image: url(images/TabBurgunder.png);
-    background-size: 100%;
-}
-*/

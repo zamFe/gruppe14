@@ -31,13 +31,16 @@
                 <img id="addImg" src="Images/add.png" alt="image not found">
                 <div id="addDropDownContainer">
                     <h4>New Tab</h4>
-                    <div class="dropDownList">new project</div>
-                    <div class="dropDownList">load project</div>
-                    <div class="dropDownList">user profile</div>
-
-                </div>
-            </div>
+                    <div id="newProject" class="dropDownList" onclick="displayPopup('newProject');">new project</div>
+                    <div id="loadProject" class="dropDownList" onclick="displayPopup('loadProject');">load project</div>
+                    <div id="openProfile" class="dropDownList" onclick="displayPopup('openProfile');">user profile</div>
+                </div> <!-- end addDropDownContainer -->
+            </div> <!-- end add -->
         </div> <!-- end tabContainer -->
+
+        <div id="popupContainer">
+
+        </div> <!-- end popupContainer -->
 
     <main>
 
@@ -68,4 +71,6 @@
 
     </body>
     <script type="text/javascript" src="tabManager.js"></script>
+    <script type="text/javascript" src="popupManager.js"></script>
+    <script type="text/javascript" src="../user%20&%20project%20management/js/projects.js"></script>
 </html>
