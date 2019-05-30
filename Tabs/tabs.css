@@ -152,11 +152,26 @@ main {
     border: none;
 }
 
-#cancelButton {
+.cancelButton {
     margin-top: 20px;
     color: darkred;
 }
 
-#cancelButton:hover {
+.cancelButton:hover {
     color: red;
+}
+
+.loadProjectList {
+    overflow: hidden;
+    list-style: none;
+    padding: 10px 0 0 0;
+    width: 200px;
+    height: 30px;
+    border-bottom: solid;
+    transition: all 0.3s ease-in-out;
+}
+
+.loadProjectList:hover {
+    background-color: rgba(255,255,255,0.3);
+    height: 200px;
 }
