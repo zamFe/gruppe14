@@ -21,6 +21,15 @@ button {
     font-size: 15px;
 }
 
+/* sections */
+.section {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
 /* active flows */
 
 #welcomeMessage {
