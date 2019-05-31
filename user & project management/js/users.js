@@ -7,16 +7,15 @@ var currentUser = 0; //0 = no user
 //methods
 
 //create new user with incremented id
-function createNewUser(userName, password, email, age, firstName, lastName) {
+function createNewUser(name, userName, email, age, password) {
     userIdCount++;
     users[userIdCount] = {};
     users[userIdCount].id = userIdCount;
+    users[userIdCount].name = name;
     users[userIdCount].userName = userName;
-    users[userIdCount].password = password;
     users[userIdCount].email = email;
     users[userIdCount].age = age;
-    users[userIdCount].firstName = firstName;
-    users[userIdCount].lastName = lastName;
+    users[userIdCount].password = password;
     users[userIdCount].exp = 0;
     users[userIdCount].badgeId = "default";
     users[userIdCount].themeId = "default";
@@ -55,13 +54,18 @@ function updateUserDiv(user) {
     profileProgressBar.style.width = (user.exp * 100) / 1000 + "%";
 }
 
-//TESTING
+//events
 
-createNewUser("Ola123", "passord123",
-    "ola123@gmail.com", 22, "Ola",
-    "Normann");
-createNewUser("Arne420", "bengt123",
-    "arne420@gmail.com", 17, "Arne",
-    "420");
-
-users[1].exp = 300;
+function buildUser() {
+    var name = document.getElementById("name").value;
+    var userName = document.getElementById("userName").value;
+    var email = document.getElementById("email").value;
+    var dateOfBirth = document.getElementById("dateOfBirth").value;
+    var password = document.getElementById("password").value;
+    var repeatPassword = document.getElementById("repeatPassword").value;
+    if (repeatPassword != password){
+        alert("Passwords are not identical.");
+    } else {
+        createNewUser(name, userName, email, dateOfBirth, password, repeatPassword);
+    }
+}
