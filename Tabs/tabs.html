@@ -24,8 +24,9 @@
     </div> <!-- end sideBar !-->
 
         <div id="tabContainer">
-            <div id="mainTab" onClick="setActiveTab(event)" class="tab">
+            <div id="0" onClick="setActiveTab(event.target.parentNode)" class="tab">
                 <img class="tabImg" src="Images/TabWhite.png" alt="image not found">
+                <h3 id="mainTabTitle" class="tabTitle">Home</h3>
             </div>
             <div id="add" onClick="/*createNewTab('Images/TabWhite.png');*/">
                 <img id="addImg" src="Images/add.png" alt="image not found">
@@ -33,7 +34,7 @@
                     <h4>New Tab</h4>
                     <div id="newProject" class="dropDownList" onclick="displayPopup('newProject');">new project</div>
                     <div id="loadProject" class="dropDownList" onclick="displayPopup('loadProject');">load project</div>
-                    <div id="openProfile" class="dropDownList" onclick="displayPopup('openProfile');">user profile</div>
+                    <div id="" class="dropDownList" onclick="displayPopup('');">[placeholder]</div>
                 </div> <!-- end addDropDownContainer -->
             </div> <!-- end add -->
         </div> <!-- end tabContainer -->
@@ -42,9 +43,9 @@
 
         </div> <!-- end popupContainer -->
 
-    <main>
+    <main id="main">
 
-        <section id="welcomePage">
+        <section id="welcomePage" class="section">
             <br>
             <h1 id="welcomeMessage">Welcome back, [user]</h1>
             <div id="activeFlowsContainer">
@@ -60,12 +61,12 @@
                         [Title] [Member]
                     </li>
                 </ul>
-            </div>
-        </section>
+            </div> <!-- end activeFlowsContainer -->
+        </section> <!-- end SECTION welcomePage -->
 
-        <section id="profilePage">
+        <section id="profilePage" class="section">
 
-        </section>
+        </section> <!-- end SECTION profilePage -->
 
     </main>
 
