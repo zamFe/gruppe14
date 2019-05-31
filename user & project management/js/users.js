@@ -73,6 +73,6 @@ function buildUser() {
 function logInUser() {
     var userNameLogIn = document.getElementById("userNameLogIn").value;
     var passwordLogIn = document.getElementById("passwordLogIn").value;
-    createLogin(userNameLogIn, passwordLogIn);
+    login(userNameLogIn, passwordLogIn);
 
 }

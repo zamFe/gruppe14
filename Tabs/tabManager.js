@@ -22,7 +22,7 @@ function createNewTab(projectId) {
 
     //add content
     tab.onclick = function handleMouseEvent(e) {
-        setActiveTab(e.parentNode);
+        setActiveTab(e.target.parentNode);
     };
     tabImg.src = "./Images/TabWhite.png";
     tabTitle.innerHTML = projects[projectId].projectName;
@@ -59,8 +59,9 @@ function createNewTab(projectId) {
 }
 
 function setActiveTab(target) {
-    console.log(target);
-    document.getElementById(activeTab).zIndex = 0;
+    console.log("new tab:" + target);
+    document.getElementById(activeTab.toString()).zIndex = 0;
+    console.log("old tab:" + document.getElementById(activeTab.toString()));
     activeTab = parseInt(target.id, 10);
     target.style.zIndex = "1";
 }

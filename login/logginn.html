@@ -17,14 +17,14 @@
 
 <div class="container">
     <h2 id="username">Username</h2>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" required id ="userNameLogIn">
 
     <h2 id="password">Password</h2>
-    <input type="password" placeholder="Enter Password" name="psw" required id="userNameLogIn">
+    <input type="password" placeholder="Enter Password" name="psw" required id="passwordLogIn">
 
-    <button type="submit">Login</button>
+    <button type="submit" onclick="logInUser();">Login</button>
     <label id="remamber">
-        <input type="checkbox" checked="checked" name="remember" onclick="login()"> Remember me
+        <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
 </div><!-- END CONTAINER -->
 
@@ -35,5 +35,5 @@
 </form>
 
 </body>
-<script src="/user & project management/js/users.js"></script>
+<script src="../user & project management/js/users.js"></script>
 </html>
