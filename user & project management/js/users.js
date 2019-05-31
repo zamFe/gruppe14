@@ -69,3 +69,10 @@ function buildUser() {
         createNewUser(name, userName, email, dateOfBirth, password, repeatPassword);
     }
 }
+
+function logInUser() {
+    var userNameLogIn = document.getElementById("userNameLogIn").value;
+    var passwordLogIn = document.getElementById("passwordLogIn").value;
+    createLogin(userNameLogIn, passwordLogIn);
+
+}
