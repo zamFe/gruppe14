@@ -152,7 +152,7 @@ h5{
 
 }
 
-#firstName{
+#name{
 position: relative;
 top: 30px;
 left:0px;
@@ -167,7 +167,7 @@ height:20px;
 
 }
 
-#lastName{
+#userName{
 position: relative;
 top: 70px;
 left:0px;
