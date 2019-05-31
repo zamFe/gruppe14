@@ -7,7 +7,7 @@ var currentUser = 0; //0 = no user
 //methods
 
 //create new user with incremented id
-function createNewUser(name, userName, email, age, password) {
+function createNewUser(name, userName, email, age, password, repeatPassword, gender) {
     userIdCount++;
     users[userIdCount] = {};
     users[userIdCount].id = userIdCount;
@@ -16,6 +16,8 @@ function createNewUser(name, userName, email, age, password) {
     users[userIdCount].email = email;
     users[userIdCount].age = age;
     users[userIdCount].password = password;
+    users[userIdCount].repeatPassword = repeatPassword;
+    users[userIdCount].gender = gender;
     users[userIdCount].exp = 0;
     users[userIdCount].badgeId = "default";
     users[userIdCount].themeId = "default";
@@ -63,10 +65,13 @@ function buildUser() {
     var dateOfBirth = document.getElementById("dateOfBirth").value;
     var password = document.getElementById("password").value;
     var repeatPassword = document.getElementById("repeatPassword").value;
+    var gender = document.getElementById("female").checked = "female";
+    var gender = document.getElementById("male").checked = "male";
+    var gender = document.getElementById("other").checked = "other";
     if (repeatPassword != password){
         alert("Passwords are not identical.");
     } else {
-        createNewUser(name, userName, email, dateOfBirth, password, repeatPassword);
+        createNewUser(name, userName, email, dateOfBirth, password, repeatPassword, gender);
     }
 }
 
