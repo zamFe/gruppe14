@@ -5,6 +5,11 @@ height: 100%;
 margin: 0;
 }
 
+.page-wrap{
+width: 960px;
+margin: 0 auto;
+}
+
 #logoContainer{
     position: absolute;
     width: 50%;
@@ -27,6 +32,7 @@ margin: 0;
 
 #logoPicture{
     width: 500px;
+    max-width: 500px;
 }
 
 #folderLogo{
