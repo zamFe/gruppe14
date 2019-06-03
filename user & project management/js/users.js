@@ -79,5 +79,4 @@ function logInUser() {
     var userNameLogIn = document.getElementById("userNameLogIn").value;
     var passwordLogIn = document.getElementById("passwordLogIn").value;
     login(userNameLogIn, passwordLogIn);
-
 }
