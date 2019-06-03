@@ -144,7 +144,7 @@ position: absolute;
 height: 100px;
 width: 380px;
 top: 220px;
-left: 480px;
+left: calc(50% - 190px);
 z-index: 50;
 }
 
@@ -152,6 +152,7 @@ z-index: 50;
 .bubble {
 z-index: 50;
 top: 180px;
+
 }
 
 
