@@ -13,8 +13,8 @@ margin: 0 auto;
 #logoContainer{
     position: absolute;
     width: 50%;
-    left: 70px;
-    top: -150px;
+    left: 20px;
+    top: 30px;
     margin: 30px;
     /*background-color: #F9FAF5;*/
     text-align: center;
@@ -27,7 +27,7 @@ margin: 0 auto;
     margin: auto;
     /*background-color: #F9FAF5;*/
     padding: 10px;
-    left: 25%;
+    left: 28%;
 }
 
 #logoPicture{
@@ -38,11 +38,12 @@ margin: 0 auto;
 #folderLogo{
     position: absolute;
     width: 100px;
-    left:35px;
-    top: 60px;
+    left: 5px;
+    top: 30px;
 }
 
 #folderLogoBackground{
+    position: absolute;
     width: 110px;
     height: 110px;
     background-color: #0B245B;
@@ -50,6 +51,7 @@ margin: 0 auto;
     box-shadow: 0 0 10px 2px #f9faf5;
     margin: 20px;
     margin-top: 30px;
+    left: 20px;
 }
 
 #logInButton{
