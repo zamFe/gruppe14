@@ -20,10 +20,13 @@ function createNewTab(projectId) {
     var tabImg = document.createElement("img");
     var tabTitle = document.createElement("h3");
 
-    //add content
+    //add onclick to make sure tabs switch correctly
     tab.onclick = function handleMouseEvent(e) {
         setActiveTab(e.target.parentNode);
+
+
     };
+    //add content
     tabImg.src = "./Images/TabWhite.png";
     tabTitle.innerHTML = projects[projectId].projectName;
 
@@ -43,27 +46,43 @@ function createNewTab(projectId) {
     tab.style.order = add.style.order;
     add.style.order++;
 
-    //update z-index
-    setActiveTab(tab);
+    //update z-index and active tab
+    /*let previousTab = activeTab;
+    setActiveTab(tab);*/
 
     //second: build section
 
-    //build project section
+    //build project section and add to main
+    var main = document.getElementById("main");
     var section = document.createElement("section");
     section.id = "section" + sectionCounter;
     var title = document.createElement("h1");
     title.innerHTML = "THIS IS A PLACEHOLDER!";
 
+    section.appendChild(title);
+    main.appendChild(section);
 
-
+    //finally: switch page and update z-index
+    setActiveTab(tab);
 }
 
 function setActiveTab(target) {
-    console.log("new tab:" + target);
-    document.getElementById(activeTab.toString()).zIndex = 0;
-    console.log("old tab:" + document.getElementById(activeTab.toString()));
+    let previousTab = activeTab;
+    document.getElementById(activeTab.toString()).style.zIndex = "0";
     activeTab = parseInt(target.id, 10);
     target.style.zIndex = "1";
+
+    if (activeTab == 0) {
+        document.getElementById("home").style.display = "block";
+        document.getElementById("section" + previousTab).style.display = "none";
+    }
+    else if (previousTab == 0) {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("section" + activeTab).style.display = "block";
+    } else {
+        document.getElementById("section" + previousTab).style.display = "none";
+        document.getElementById("section" + activeTab).style.display = "block";
+    }
 }
 
 //script
