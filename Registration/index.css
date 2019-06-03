@@ -173,8 +173,6 @@ border: 2px rgb(11,36,91);
 border-radius: 6px;
 width: 200px;
 height:20px;
-
-
 }
 
 #userName{
@@ -269,9 +267,11 @@ height:20px;
 position: relative;
 background: #47e6ee; 
  border-radius: .4em; 
- height: 4px;
+ height: 10px;
  width: 150px;
  border: 5px solid transparent;
+ text-align: center;
+ font-size: 10px;
   
 }
 #speechBubble{
@@ -283,31 +283,28 @@ background: #47e6ee;
 }
 
 #speechBubble1{
-top: 176px;
+top: 205px;
 }
 
 #speechBubble2{
-top: 224px;
+top: 250px;
 }
 
 #speechBubble3{
-top: 281px; 
+top: 300px;
 }
+
 
 #speechBubble4{
-top: 301px;     
-}
-
- #speechBubble4{
-top: 329px;
+top: 343px;
 }
 
 #speechBubble5{
-top: 378px;        
+top: 385px;
 }
 
 #speechBubble6{
-top: 426px;
+top: 428px;
 }
 
 
