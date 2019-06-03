@@ -61,62 +61,33 @@
 <img class="pluss" id="pluss4" src="bilder-slu/pluss.png">
 
 
-<div class="wrapper">
+<div id="toDoColumn" class="wrapper">
+    <div class="item">
+        <input type="text" placeholder="Title..." class="itemTitle">
+        <textarea placeholder="detals..." class="itemText" rows="1" cols="10">
+
+        </textarea>
+        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch();">
+        <ul>DropDownMenu
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+<div id="OngoingColumn" class="wrapper">
     <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
 
     </textarea>
 </div>
 
-<div class="wrapper" id="wrapper2">
+<div id="StuckColumn" class="wrapper">
     <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
 
     </textarea>
 </div>
 
-<div class="wrapper" id="wrapper3">
+<div id="FinishedColumn" class="wrapper">
     <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-</div>
-
-<div class="wrapper" id="wrapper4">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
 
     </textarea>
 </div>
@@ -174,22 +145,8 @@ Design the Main Page for your project website
 
 
 </textarea>
-
-
     <div id="sideTab" tabindex="1"></div>
-
-
-
-
-
-
-
 </div>
-
-
-
-
 </body>
-
-
+<script src="projectStatusManager.js"></script>
 </html>
