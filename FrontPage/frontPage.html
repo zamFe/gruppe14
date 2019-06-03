@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="frontPage.css">
+    <link rel="stylesheet" href="frontpage.css">
     <meta charset="UTF-8">
-    <title>frontPage</title>
+    <title>Front Page</title>
 </head>
 <body>
-<div>test</div>
-<div class="page-wrap">
 
-    <div id="folderLogoBackground" onclick="refreshPage()">
-        <img id="folderLogo" src="bilder-slu/FolderLogo.png" alt="Task Binder Logo">
+<div id="folderLogoBackground" onclick="refreshPage()">
+    <img id="folderLogo" src="bilder-slu/FolderLogo.png" alt="Task Binder Logo">
+</div>
+
+<div id="logoFrontPage">
+    <div id="logoContainer">
+        <img id="logoPicture" src="bilder-slu/Logo.png" alt="Task Binder">
     </div>
+</div>
 
-    <div id="logoFrontPage">
+<div id="logInButton">
+    <a href="../login/logginn.html#">
+        <button class="frontPageButton" type="button">Login</button>
+    </a>
+</div>
 
-        <div id="logoContainer">
-            <img id="logoPicture" src="bilder-slu/Logo.png" alt="Task Binder">
-        </div>
-    </div>
-
-    <div id="logInButton">
-        <a href="file:///Users/Kongen/Documents/Skole/Webprosjekt/src/logginn.html#">
-            <button class="frontPageButton" type="button">Login</button>
-        </a>
-    </div>
-
-    <div id="newUserButton">
+<div id="newUserButton">
+    <a href="../Registration/main.html#">
         <button class="frontPageButton" type="button">New User</button>
-    </div>
+    </a>
+</div>
 
-
-
+<div id="animationContainer">
     <img id="people" src="bilder-slu/people.png">
 
     <img class="bubble" id="bubble1" src="bilder-slu/bubble1.png">
@@ -54,13 +52,12 @@
     <img class="logo" id="logo2" src="bilder-slu/taskbinder.png">
     <img class="logo" id="logo3" src="bilder-slu/taskbinder.png">
     <img class="logo" id="logo4" src="bilder-slu/taskbinder.png">
-
 </div>
 
 </body>
 <footer>
-    <div id="versionText">
-        <small>Version 0.1</small>
+    <h6 id="Policy">© By continuing, you agree to Task binder's</h6>
+    <h5 id="Policy2">Terms of service, Privacy policy</h5>
     </div>
 </footer>
 </html>
