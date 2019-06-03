@@ -1,3 +1,4 @@
+/*
 html{
     height: 100%;
     width: 100%;
@@ -10,8 +11,8 @@ body{
     background-size: cover;
     margin: 0;
 }
-
-h1{
+*/
+.profileh1{
     position: relative;
     text-align: center;
     top: 30px;
@@ -21,14 +22,14 @@ h1{
     font-size: xx-large;
 }
 
-h3{
+.profileh3{
     position: relative;
     text-align: center;
     color: #F9FAF5;
     top: 40%;
 }
 
-h2{
+.profileh2{
     position: relative;
     text-align: left;
     text-wrap: normal;
@@ -38,8 +39,12 @@ h2{
     font-size: 50px;
 }
 
-label{
+.profilelabel{
     color: #F9FAF5;
+    display: block;
+    left: 200px;
+    font: 1rem 'Fira Sans', sans-serif;
+    margin: .4rem 0;
 }
 
 .profile{
@@ -129,18 +134,10 @@ label{
 
 }
 
-
-
-label {
-    display: block;
-    left: 200px;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
+.profileinput {
     margin: .4rem 0;
 }
+
 
 .note {
     font-size: .8em;

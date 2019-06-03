@@ -2,6 +2,7 @@
     <header>
         <link rel="stylesheet" href="tabs.css" type="text/css">
         <link rel="stylesheet" href="../sidebarCode/sideBar.css" type="text/css">
+        <link rel="stylesheet" href="../Tabs/minside.css" type="text/css">
     </header>
 
     <body>
@@ -65,7 +66,55 @@
         </section> <!-- end SECTION welcomePage -->
 
         <section id="profilePage" class="section">
+            <section id="profilePage" class="section">
+                <h1 class="profileh1">Min Side</h1>
 
+                <div id="folderLogoBackground" onclick="refreshPage()">
+                    <img id="folderLogo" src="../minside/images/FolderLogo.png" alt="Task Binder Logo">
+                </div>
+
+                <div id="profilePictureContainer">
+                    <img id="profilePicture" src="../minside/images/blankProfilePicture.png" alt="Placeholder profile picture">
+                    <label class="profilelabel" for="avatar">Velg profilbilde</label>
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <input type="file" id="avatar" class="profileinput" name="avatar" accept="image/*">
+                        <input type="submit" id="submitProfilePicture" class="profileinput" value="Last opp">
+                    </form>
+                </div>
+
+                <div id="sloganContainer">
+                    <h2 class="profileh2">"When life gives you lemonade,</h2>
+                    <h2 class="profileh2">make lemons"</h2>
+                </div>
+
+                <div class="profile" id="myNameContainer">
+                    <p>Navn: </p>
+                    <p id="profileName"></p>
+                </div>
+
+                <div class="profile" id="myAgeContainer">
+                    <p>Alder:</p>
+                </div>
+
+                <div class="profile" id="mygenderContainer">
+                    <p>Kjønn:</p>
+                </div>
+
+                <div class="profile" id="myPhoneContainer">
+                    <p>Telefonnummer:</p>
+                </div>
+
+                <div class="profile" id="myMailContainer">
+                    <p>Epost:</p>
+                </div>
+
+                <div class="profile" id="myNicknameContainer">
+                    <p>Kallenavn:</p>
+                </div>
+
+                <div id="levelContainer">
+                    <h3 class="profileh3">LEVEL 60</h3>
+                </div>
         </section> <!-- end SECTION profilePage -->
 
     </main>
