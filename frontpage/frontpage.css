@@ -1,14 +1,18 @@
-/*id's*/
+/*tags*/
 
 html {
-height: 100%;
-margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
-.page-wrap{
-width: 960px;
-margin: 0 auto;
+body{
+    /*background-color: #F9FAF5;*/
+    margin-bottom: 335px;
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
+
+
+/*id's*/
 
 #logoContainer{
     position: absolute;
@@ -76,6 +80,11 @@ margin: 0 auto;
 
 /*classes*/
 
+.page-wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+
 .frontPageButton{
     position: absolute;
     left: 42%;
@@ -121,21 +130,8 @@ margin: 0 auto;
     transition: 0s;
 }
 
-/*tags*/
 
-h1{
-    color: yellow;
-}
-
-body{
-    /*background-color: #F9FAF5;*/
-    margin-bottom: 335px;
-    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-}
-
-footer{
-}
-
+/*animation*/
 
 #people {
 position: absolute;

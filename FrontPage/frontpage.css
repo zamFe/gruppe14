@@ -1,20 +1,24 @@
-/*id's*/
+/*tags*/
 
 html {
-height: 100%;
-margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
-.page-wrap{
-width: 960px;
-margin: 0 auto;
+body{
+    /*background-color: #F9FAF5;*/
+    margin-bottom: 335px;
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
+
+
+/*id's*/
 
 #logoContainer{
     position: absolute;
     width: 50%;
-    left: 70px;
-    top: -150px;
+    left: 20px;
+    top: 30px;
     margin: 30px;
     /*background-color: #F9FAF5;*/
     text-align: center;
@@ -27,7 +31,7 @@ margin: 0 auto;
     margin: auto;
     /*background-color: #F9FAF5;*/
     padding: 10px;
-    left: 25%;
+    left: 28%;
 }
 
 #logoPicture{
@@ -38,11 +42,12 @@ margin: 0 auto;
 #folderLogo{
     position: absolute;
     width: 100px;
-    left:35px;
-    top: 60px;
+    left: 5px;
+    top: 30px;
 }
 
 #folderLogoBackground{
+    position: absolute;
     width: 110px;
     height: 110px;
     background-color: #0B245B;
@@ -50,6 +55,7 @@ margin: 0 auto;
     box-shadow: 0 0 10px 2px #f9faf5;
     margin: 20px;
     margin-top: 30px;
+    left: 20px;
 }
 
 #logInButton{
@@ -75,6 +81,11 @@ margin: 0 auto;
 }
 
 /*classes*/
+
+.page-wrap{
+    width: 960px;
+    margin: 0 auto;
+}
 
 .frontPageButton{
     position: absolute;
@@ -121,28 +132,15 @@ margin: 0 auto;
     transition: 0s;
 }
 
-/*tags*/
 
-h1{
-    color: yellow;
-}
-
-body{
-    /*background-color: #F9FAF5;*/
-    margin-bottom: 335px;
-    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-}
-
-footer{
-}
-
+/*animation*/
 
 #people {
 position: absolute;
 height: 100px;
 width: 380px;
 top: 220px;
-left: 480px;
+left: calc(50% - 190px);
 z-index: 50;
 }
 
@@ -150,6 +148,7 @@ z-index: 50;
 .bubble {
 z-index: 50;
 top: 180px;
+
 }
 
 
