@@ -86,18 +86,17 @@ function popupLoadProject() {
     popup.appendChild(title);
 
     //list of projects
-    var projectList = document.createElement("ul");
-    //projectList.id = "loadProjectList";
+    var projectList = document.createElement("div");
+    projectList.id = "loadProjectListUl";
     //fill list with projects
     for(let i = projects.length-1; i > 0; i--) {
         console.log(i);
-        var project = document.createElement("li");
+        var project = document.createElement("div");
         project.classList.add("loadProjectList");
-        project.innerHTML = projects[i].projectName;
-        project.innerHTML += "<br><br>";
-        project.innerHTML += "tag: " + projects[i].tag;
-        project.innerText += " desc: " + projects[i].description;
-        project.innerHTML += " members: " + projects[i].members.length;
+        project.innerHTML = "<h3>" + projects[i].projectName
+            + "</h3><br> tag: " + projects[i].tag
+            + "<br> members: " + projects[i].members.length
+            + "<br> desc: <br>" + projects[i].description;
         projectList.appendChild(project);
     }
     popup.appendChild(projectList);
