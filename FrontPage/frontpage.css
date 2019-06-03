@@ -6,7 +6,6 @@ html {
 }
 
 body{
-    margin-bottom: 335px;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
 
@@ -90,13 +89,10 @@ h5{
     left: 43%;
 }
 
-#versionText{
+#footerText{
     position: absolute;
-    height: 10px;
     text-align: center;
-    bottom: 10px;
-    left: calc(50% - 30px);
-    color: #0b245b;
+    left: calc(50% - 120px);
 }
 
 #animationContainer{
@@ -134,7 +130,7 @@ h5{
     padding: 20px 32px;
     text-align: center;
     display: inline-block;
-    border: none;
+    border: solid #0b245b;
     border-radius: 4px;
     background-color: #0B245B;
     color: #F9FAF5;
