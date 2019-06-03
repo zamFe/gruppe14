@@ -1,9 +1,12 @@
 body{
     /*background-color: #F9FAF5;*/
-    margin: 0;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    overflow: hidden;
+    background-size: 1000px 1600px;
+    overflow: sroll;
+    height: 1600px;
 }
+
+
 
 html {
 height: 100%;
@@ -32,56 +35,242 @@ padding: 0;
 }
 
 
-#board {
-position: absolute;
-height: 580px;
-width: 980px;
-top: 130px;
-left: 20px;
+#timeTable{
+  width: 1200px;
+  height: 320px;
+
+  position: absolute;
+  top: 200px;
+  left: 2%;
+/*  border: solid;
+  border-color: red;*/
+  display: grid;
+}
+
+.timeTable{
+  background-color: rgba(255, 255, 255, .20);
+  backdrop-filter: blur(5px);
+}
+
+.names{
+  font-family: 'Roboto Slab', serif;
+	padding-left: 20px;
+    padding-right: 40px;
+    color: white;
+}
+
+#title{
+  top: 0px;
+  left: 0px;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+	padding-top: 7px;
+	padding-left: 20px;
+  padding-right: 40px;
+  color: white;
+}
+
+.dag{
+  font-family: 'Roboto Slab', serif;
+	padding-bottom: 7px;
+	padding-left: 20px;
+    padding-right: 40px;
+    color: white;
+}
+
+#dag1{
+  left: 12%;
+  top: 0px;
+  position: absolute;
+}
+
+#dag2{
+  left: 24%;
+  top: 0px;
+  position: absolute;
+}
+
+#dag3{
+  left: 36%;
+  top: 0px;
+  position: absolute;
+}
+
+#dag4{
+  left: 48%;
+  top: 0px;
+  position: absolute;
+}
+
+#dag5{
+  left: 60%;
+  top: 0px;
+  position: absolute;
+}
+#dag6{
+  left: 72%;
+  top: 0px;
+  position: absolute;
+}
+#dag7{
+  left: 84%;
+  top: 0px;
+  position: absolute;
+}
+
+#name1{
+  padding-top: 10px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+
+#name2{
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+
+#name3{
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+
+#name4{
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+
+#name5{
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+
+.timebuble{
+  background-color: #0b245b;
+  width: 250px;
+  height: 15px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.timebubleBurgundy{
+  background-color: #98063A;
+  width: 125px;
+  height: 15px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+#timeBuble1{
+  top: -18px;
+  left: 140px;
+  position: relative;
+}
+
+#timeBuble2{
+  top: -18px;
+  left: 140px;
+  position: relative;
+}
+#timeBuble3{
+  top: -18px;
+  left: 280px;
+  position: relative;
+}
+#timeBuble4{
+  top: -18px;
+  left: 280px;
+  position: relative;
+}
+#timeBuble5{
+  top: -18px;
+  left: 280px;
+  position: relative;
+}
+
+#timeBuble6{
+  top: -34px;
+  left: 420px;
+  position: relative;
+}
+
+#timeBuble7{
+  top: -34px;
+  left: 420px;
+  position: relative;
+}
+#timeBuble8{
+  top: -35px;
+  left: 140px;
+  position: relative;
+}
+#timeBuble9{
+  top: -35px;
+  left: 140px;
+  position: relative;
+}
+#timeBuble10{
+  top: -35px;
+  left: 140px;
+  position: relative;
 }
 
 
+
+.pluss {
+position: absolute;
+height: 20px;
+width: 20px;
+top: 630px;
+z-index: 100;
+}
+
+#pluss1 {
+left: 275px;
+}
+
+#pluss2 {
+left: 525px;
+}
+
+#pluss3 {
+left: 765px;
+}
+
+#pluss4 {
+left: 1015px;
+}
+
 .wrapperuper{
 position: absolute;
-left: 100px;
-top: 210px;
+left: 180px;
+top: 620px;
 width: 90%;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 125px  125px  125px 125px 125px;
 grid-template-rows: 35px;
-grid-column-gap: 45px;
+grid-column-gap: 120px;
 grid-row-gap: 5px;
+z-index: 100;
 }
 
 .uper{
-background-color: Grey;
+background-color: rgba(255, 255, 255, .20);
+backdrop-filter: blur(5px);
 text-align: center;
 color: black;
 padding: 10px;
-border: 1px solid;
 border-radius: 4px;
-border-color: black;
 resize: none;
 outline: none;
 }
 
-.wrapper{
-text-align: center;
-position: absolute;
-top: 190px;
-left: 50px;
-width: 90%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 150px  150px  150px 150px 150px;
-grid-template-rows: 450px;
-grid-column-gap: 20px;
-grid-row-gap: 20px;
-}
-
 .item{
-background: rgb(77, 158, 179);
+background-color: rgba(255, 255, 255, .20);
+backdrop-filter: blur(5px);
 color: black;
 padding: 10px;
 border: 4px solid;
@@ -90,21 +279,25 @@ border-color: rgb(51, 51, 204);
 }
 
 
-.wrapper1{
+.wrapper{
+  display: grid;
 position: absolute;
-left: 100px;
-top: 260px;
-width: 90%;
+left: 150px;
+top: 680px;
+height: 100%;
+width: 200px;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 125px  125px  125px 125px 125px;
-grid-template-rows: 60px;
-grid-column-gap: 45px;
+grid-template-columns: 200px;
+grid-template-rows: 150px 150px 150px 150px;
+grid-column-gap: 40px;
 grid-row-gap: 5px;
+  background-color: green;
 }
 
-.item1{
-background-color: yellow;
+.item{
+background-color: rgba(255, 255, 255, .20);
+backdrop-filter: blur(5px);
 color: black;
 padding: 10px;
 border: 0px solid;
@@ -114,102 +307,23 @@ resize: none;
 outline: none;
 }
 
-.wrapper2{
-position: absolute;
-left: 100px;
-top: 330px;
-width: 90%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 125px  125px  125px 125px 125px;
-grid-template-rows: 60px;
-grid-column-gap: 45px;
-grid-row-gap: 5px;
+#wrapper2{
+  left: 400px;
+  top: 680px;
+  background-color: red;
 }
 
-.item2{
-background-color: yellow;
-color: black;
-padding: 10px;
-border: 0px solid;
-border-radius: 4px;
-border-color: black;
-resize: none;
-outline: none;
+#wrapper3{
+  left: 650px;
+  top: 680px;
+  background-color: blue;
 }
 
-.wrapper3{
-position: absolute;
-left: 100px;
-top: 400px;
-width: 90%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 125px  125px  125px 125px 125px;
-grid-template-rows: 60px;
-grid-column-gap: 45px;
-grid-row-gap: 5px;
+#wrapper4{
+  left: 900px;
+  top: 680px;
+  background-color: yellow;
 }
-
-.item3{
-background-color: yellow;
-color: black;
-padding: 10px;
-border: 0px solid;
-border-radius: 4px;
-border-color: black;
-resize: none;
-outline: none;
-}
-
-.wrapper4{
-position: absolute;
-left: 100px;
-top: 470px;
-width: 90%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 125px  125px  125px 125px 125px;;
-grid-template-rows: 60px;
-grid-column-gap: 45px;
-grid-row-gap: 5px;
-}
-
-.item4{
-background-color: yellow;
-color: black;
-padding: 10px;
-border: 0px solid;
-border-radius: 4px;
-border-color: black;
-resize: none;
-outline: none;
-}
-
-.wrapper5{
-position: absolute;
-left: 100px;
-top: 540px;
-width: 90%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 125px  125px  125px 125px 125px;
-grid-template-rows: 60px;
-grid-column-gap: 45px;
-grid-row-gap: 5px;
-}
-
-.item5{
-background-color: yellow;
-color: black;
-padding: 10px;
-border: 0px solid;
-border-radius: 4px;
-border-color: black;
-resize: none;
-outline: none;
-}
-
 
 /*
 #toDoBox {
