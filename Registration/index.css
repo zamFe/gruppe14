@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 
-      #button1{
-        position: relative;
-        top: 500px;
+    max-width: 960px;
 
-    }
+    padding-right: 10px;
+    padding-left: 10px;
 
-    #button2{
-        top: 500px;
-        position: relative;
-      }
+
+}
+
+#buttonholder{
+    left: calc(50% - 200px);
+    position: relative;
+    top: 650px;
+    display: block;
+    width: 500px;
+}
+
+
 
     .button{
-        position: relative;
-        left: 37%;
         width: 200px;
         margin: 1rem;
         padding: 20px 32px;
@@ -62,13 +72,13 @@ html {
 body{
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 1500px;
         width: 100%;
-        overflow: hidden;
+        border-radius: auto;
+    
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 1500px 1500px;
 }
 
 
@@ -163,8 +173,6 @@ border: 2px rgb(11,36,91);
 border-radius: 6px;
 width: 200px;
 height:20px;
-
-
 }
 
 #userName{
@@ -235,11 +243,68 @@ height:20px;
 
 #genderContainer{
     position: relative;
-    top: 300px;
+    top: 235px;
     left:50px;
     right:50px;
-    width: 100px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
+}
+
+#female{
+    height: 25px;
+    width: 25px;
+}
+#other{
+    height: 25px;
+    width: 25px;
+}
+#male{
+    height: 25px;
+    width: 25px;
+
+}
+.speechBubble{
+position: relative;
+background: #47e6ee; 
+ border-radius: .4em; 
+ height: 10px;
+ width: 150px;
+ border: 5px solid transparent;
+ text-align: center;
+ font-size: 10px;
+  
+}
+#speechBubble{
+    left: calc(50% - 300px);
+    position: relative;
+    top: 35px;
+    display: block;
+    width: 150px;
+}
+
+#speechBubble1{
+top: 205px;
+}
+
+#speechBubble2{
+top: 250px;
+}
+
+#speechBubble3{
+top: 300px;
+}
+
+
+#speechBubble4{
+top: 343px;
+}
+
+#speechBubble5{
+top: 385px;
+}
+
+#speechBubble6{
+top: 428px;
 }
 
 

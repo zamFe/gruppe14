@@ -7,9 +7,9 @@
 </head>
 <body>
 
-<div id="folderLogoBackground" onclick="refreshPage()">
-    <img id="folderLogo" src="bilder-slu/FolderLogo.png" alt="Task Binder Logo">
-</div><!-- END CONTAINER -->
+    <div id="folderLogoBackground" onclick="refreshPage()">
+        <img id="folderLogo" src="bilder-slu/FolderLogo.png" alt="Task Binder Logo">
+    </div><!-- END CONTAINER -->
 
     <div id="logoContainer">
         <img id="logoPicture" src="bilder-slu/loggInn.png" alt="Task Binder">
@@ -22,18 +22,33 @@
     <h2 id="password">Password</h2>
     <input type="password" placeholder="Enter Password" name="psw" required id="passwordLogIn">
 
-    <button type="submit" onclick="logInUser();">Login</button>
-    <label id="remamber">
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <div id="loginContainer">
+        <button class="button" type="submit" onclick="logInUser();">Login</button>
+
+        <label id="remember">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div><!-- END CONTAINER -->
 </div><!-- END CONTAINER -->
 
-<div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+<div>
+    <button type="button" class="button">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
 </div><!-- END CONTAINER -->
 </form>
 
 </body>
-<script src="../user & project management/js/users.js"></script>
+
+<footer>
+    <div id="footerText">
+        <h6 id="Policy">© By continuing, you agree to Task binder's</h6>
+        <h5 id="Policy2">Terms of service, Privacy policy</h5>
+    </div>
+</footer>
 </html>
+
+<script>
+    function refreshPage(){
+        window.location.reload();
+    }
+</script>

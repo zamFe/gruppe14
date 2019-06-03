@@ -4,6 +4,18 @@
             <body>
         <link rel=styleSheet href="index.css" type="text/css">
         <title>Velkommen</title>
+
+        <div class="wrapper">
+
+        <div speechBubble id="speechBubble">
+                    <div speechBubble id="speechBubble1" class="speechBubble">Type inn your name</div>
+                    <div speechBubble id="speechBubble2" class="speechBubble">Type inn Username</div>
+                    <div speechBubble id="speechBubble3" class="speechBubble">Type inn your Email address</div>
+                    <div speechBubble id="speechBubble4" class="speechBubble">Selct your date of birth</div>
+                    <div speechBubble id="speechBubble5" class="speechBubble">Type inn your Password</div>
+                    <div speechBubble id="speechBubble6" class="speechBubble"> Repeat your Password</div>
+                </div>
+
             
         
 
@@ -12,7 +24,13 @@
         <div id="velkommen">
                 <img id="velkommen1" src="Images/welcome.png"></img>
             
+
             <div id="registrering">
+
+
+                    
+
+
                     <form action="/action_page.php" id="Information" class="Information">
                      <input type="text" placeholder="Name" id="name" class="name" name="name"><br>
                     <input type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
@@ -20,9 +38,12 @@
                     <input type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
                      <input type="Password" placeholder="Password" id="password">
                     <input type="password"  placeholder="Repeat password" id="repeatPassword">
+
                     
                     <h6 id="Policy">© By continuing, you agree to Task binder's</h6>
         <h5 id="Policy2">Terms of service, Privacy policy</h5>
+
+        
 
 
         
@@ -44,11 +65,11 @@
                     
             </div>
             <buttonholder id="buttonholder">
-            <button type="button" id="button1" class="button" onclick="buildUser();">Register</button>
-            <button type="button" id="button2" class="button">Home</button>
+            <button type="button" id="button1" class="button" onclick="buildUser();">Home</button>
+            <button type="button" id="button2" class="button">Register</button>
         </buttonholder>
             
-
+</div>
 
             </body>
             <script src="../user & project management/js/users.js"></script>
