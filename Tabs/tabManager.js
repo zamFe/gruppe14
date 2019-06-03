@@ -68,6 +68,9 @@ function createNewTab(projectId) {
 }
 
 function openProfileTab() {
+    if(document.getElementById("profileTab")) {
+        return "profile already open";
+    }
     sectionCounter++;
     //first: make tab
 
