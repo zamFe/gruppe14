@@ -14,8 +14,8 @@
             
             <div id="registrering">
                     <form action="/action_page.php" id="Information" class="Information">
-                     <input type="text" placeholder="First name" id="firstName" class="firstName" name="firstName"><br>
-                    <input type="text" placeholder="Last name" id="lastName" class="lastName" lastName ="LastName"><br>
+                     <input type="text" placeholder="Name" id="name" class="name" name="name"><br>
+                    <input type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
                     <input type="text" placeholder="E-mail" id="email" class="email" email="email"><br>
                     <input type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
                      <input type="Password" placeholder="Password" id="password">
@@ -31,11 +31,11 @@
                     
 
                   
-                <div id="Gender">
-                    <form action="" id="Gender" class="Gender">
-                    <input type="radio" id="Female" class="Female" name="gender" value="Female"> Female <br>
-                    <input type="radio" id="Male" class="Male" name="gender" value="Male"> Male <br>
-                    <input type="radio" id="Other" class="Other" name="gender" value="Other"> Other <br>
+                <div id="genderContainer">
+                    <form action="" id="gender" class="gender">
+                    <input type="radio" id="female" class="female" name="gender" value="female"> Female <br>
+                    <input type="radio" id="male" class="male" name="gender" value="male"> Male <br>
+                    <input type="radio" id="other" class="other" name="gender" value="other"> Other <br>
                     </form>
                 </div>
                 </div>
@@ -44,12 +44,12 @@
                     
             </div>
             <buttonholder id="buttonholder">
-            <button type="button" id="button1" class="button">Login</button>
+            <button type="button" id="button1" class="button" onclick="buildUser();">Register</button>
             <button type="button" id="button2" class="button">Home</button>
         </buttonholder>
             
 
 
             </body>
-            <script></script>
+            <script src="../user & project management/js/users.js"></script>
 </html>

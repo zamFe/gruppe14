@@ -101,6 +101,17 @@ function popupLoadProject() {
         projectList.appendChild(project);
     }
     popup.appendChild(projectList);
+
+    //close popup button
+    var cancelButton = document.createElement("button");
+    cancelButton.innerHTML = "X";
+    cancelButton.classList.add("cancelButton");
+    cancelButton.onclick = function handleChild(e) {
+        e.stopPropagation();
+        closePopup();
+    };
+    cancelButton.placeholder = "cancel";
+    popup.appendChild(cancelButton);
 }
 
 //closes the popup regardless of content

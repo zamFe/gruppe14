@@ -9,30 +9,31 @@
 
 <div id="folderLogoBackground" onclick="refreshPage()">
     <img id="folderLogo" src="bilder-slu/FolderLogo.png" alt="Task Binder Logo">
-</div>
+</div><!-- END CONTAINER -->
 
     <div id="logoContainer">
         <img id="logoPicture" src="bilder-slu/loggInn.png" alt="Task Binder">
-    </div>
+    </div><!-- END CONTAINER -->
 
 <div class="container">
     <h2 id="username">Username</h2>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" required id ="userNameLogIn">
 
     <h2 id="password">Password</h2>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required id="passwordLogIn">
 
-    <button type="submit">Login</button>
+    <button type="submit" onclick="logInUser();">Login</button>
     <label id="remamber">
         <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
-</div>
+</div><!-- END CONTAINER -->
 
 <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
-</div>
+</div><!-- END CONTAINER -->
 </form>
 
 </body>
+<script src="../user & project management/js/users.js"></script>
 </html>
