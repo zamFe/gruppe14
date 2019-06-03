@@ -342,6 +342,15 @@ html {
     text-align: center;
 }
 
+.searchList{
+    overflow: hidden;
+    background-color: white;
+    height: auto;
+    max-height: 300px;
+    list-style: circle;
+
+}
+
 #ToDoColumn {
 
 }

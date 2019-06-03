@@ -26,8 +26,15 @@ function addColumnBlock(column) {
 
 }
 
-function renderMemberSearch() {
+function renderMemberSearch(event) {
+    var searchList = event.target.nextElementSibling;
+    console.log(searchList.classList);
     var testArr = ["Arne", "Arild", "Ariel", "Bente", "Bjarne", "Bodil", "Charlie", "Cora", "Christine"];
+    for (var i = 0; i < testArr.length; i++) {
+        var listElement = document.createElement("li");
+        listElement.innerHTML = testArr[i];
+        searchList.appendChild(listElement);
+    }
 }
 
 //linear code
