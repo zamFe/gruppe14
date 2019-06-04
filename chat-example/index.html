@@ -10,30 +10,31 @@
         margin: 0;
     }
 
-    body {font-family: Arial, Helvetica, sans-serif;
+    body {
+        font-family: Arial, Helvetica, sans-serif;
         background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
         margin: 0;
         padding: 0;
         overflow: hidden;
         z-index: 10;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
-    * {box-sizing: border-box;}
+    * {
+        box-sizing: border-box;
+    }
 
 
     .open-button {
         background-color: #555;
-        color: white;
+        color: #F9FAF5;
         padding: 16px 20px;
         border: none;
         cursor: pointer;
-        opacity: 0.8;
+        opacity: 0.5;
         position: fixed;
         bottom: 23px;
         right: 28px;
         width: 280px;
     }
-
-
 
     .chat-popup {
         display: block; /*none*/
@@ -44,20 +45,12 @@
         opacity: 0.7;
         z-index: 9;
     }
-    #myForm{
-        background-color: rgba(8, 63, 88, 0.925);
-        backdrop-filter: blur(5px);
-
-    }
 
     .form-container {
         max-width: 300px;
         padding: 10px;
-        /* background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);*/
         background-color:rgba(175, 188, 221, 0.664);
-
     }
-
 
     .form-container ul {
         width: 100%;
@@ -71,16 +64,14 @@
         overflow: auto;
     }
 
-
     .form-container ul:focus {
         background-color: rgba(255, 255, 255, .20);
         outline: none;
     }
 
-
     .form-container .btn {
         background-color: rgb(213, 223, 213);
-        color: rgb(15, 15, 15);
+        color: #F9FAF5;
         padding: 16px 20px;
         border: none;
         cursor: pointer;
@@ -89,32 +80,66 @@
         opacity: 0.8;
     }
 
-
     .form-container .cancel {
-        background-color: rgb(201, 202, 207);
-    }
+        background-color: black;
 
+    }
 
     .form-container .btn:hover, .open-button:hover {
         opacity: 1;
     }
 
+    #myForm{
+        background-color: rgba(8, 63, 88, 0.925);
+        backdrop-filter: blur(5px);
+    }
 
     #btn{
         background-color:rgba(40, 48, 156, 0.801);
     }
 
+    #messages{
+        list-style-type: none;
+        margin-bottom: 4px;
+        padding: 0;
+    }
 
+    #messages li{
+        padding: 5px 8px;
+    }
 
-    #messages { list-style-type: none; margin-bottom: 4px; padding: 0; }
-    #messages li { padding: 5px 8px; }
-    #messages li:nth-child(odd) { background: #eee;}
+    #messages li:nth-child(odd) {
+        background: #eee;
+    }
 
-    form input { border: solid 1px; padding: 12px; width: 100%; margin-right: .5%; margin-bottom: 4px; }
-    form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 8px; }
-</style>
+    form input {
+        border: solid 1px;
+        padding: 12px;
+        width: 100%;
+        margin-right: .5%;
+        margin-bottom: 4px;
+    }
 
+    form button{
+        width: 9%;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 8px;
+    }
 
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(85, 147, 151, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    </style>
 </head>
 <body>
 
@@ -147,6 +172,15 @@
             $('#messages').append($('<li>').text(msg));
         });
     });
+</script>
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
 </script>
 
 </body>
