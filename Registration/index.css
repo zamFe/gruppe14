@@ -8,6 +8,7 @@
     margin-bottom: auto;
 
     max-width: 960px;
+    max-height: 1000px;
 
     padding-right: 10px;
     padding-left: 10px;
@@ -17,8 +18,8 @@
 
 #buttonholder{
     left: calc(50% - 200px);
-    position: relative;
-    top: 650px;
+    position: absolute;
+    top: 900px;
     display: block;
     width: 500px;
 }
@@ -52,9 +53,8 @@
         background: #f1f1f1;
         display: block;
         position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -30px !important;
+        padding-top: 100px;
+        padding-left: 100px;
         margin-top: -120%;
         opacity: 0;
         transition: all 0.8s
@@ -73,7 +73,7 @@ body{
         margin: 0;
         padding: 0;
         height: 1500px;
-        width: 100%;
+        width: 1500px;
         border-radius: auto;
     
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -269,10 +269,20 @@ height:20px;
 position: relative;
 background: #47e6ee; 
  border-radius: .4em; 
- height: 4px;
+ height: 7px;
  width: 150px;
  border: 5px solid transparent;
+ text-align: center;
+ font-size: 10px;
+
+}
+
+
   
+  
+#speechBubble{
+    opacity: 0.7;
+    transition: .5s ease-in;
 }
 #speechBubble{
     left: calc(50% - 300px);
@@ -281,33 +291,49 @@ background: #47e6ee;
     display: block;
     width: 150px;
 }
-
-#speechBubble1{
-top: 176px;
+.speechBubble:after { 
+content: ''; 
+position: absolute;
+right: 0;
+top: 50%; 
+width: 0; 
+height: 0; 
+border: 12px solid transparent; 
+border-left-color:#47e6ee; 
+border-right:0; 
+margin-top: -12px; 
+margin-right: -12px; 
 }
 
+#speechBubble1{
+visibility: hidden;
+top: 241px;
+}
+
+
 #speechBubble2{
-top: 224px;
+top: 286px;
+visibility: hidden;
 }
 
 #speechBubble3{
-top: 281px; 
+top: 340px; 
+visibility: hidden;
 }
 
 #speechBubble4{
-top: 301px;     
-}
-
- #speechBubble4{
-top: 329px;
+top: 384px;     
+visibility: hidden;
 }
 
 #speechBubble5{
-top: 378px;        
+top: 430px;  
+visibility: hidden;      
 }
 
 #speechBubble6{
-top: 426px;
+top: 477px;
+visibility: hidden;
 }
 
 

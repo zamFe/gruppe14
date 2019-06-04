@@ -7,17 +7,17 @@
 
         <div class="wrapper">
 
+       
         <div speechBubble id="speechBubble">
-                    <div speechBubble id="speechBubble1" class ="speechBubble"></div>
-                    <div speechBubble id="speechBubble2" class="speechBubble"></div>
-                    <div speechBubble id="speechBubble3" class="speechBubble"></div>
-                    <div speechBubble id="speechBubble4" class="speechBubble"></div>
-                    <div speechBubble id="speechBubble5" class="speechBubble"></div>
-                    <div speechBubble id="speechBubble6" class="speechBubble"></div>
-                </div>
 
-            
-        
+                    <div speechBubble id="speechBubble1" class="speechBubble">First and last name</div>
+                    <div speechBubble id="speechBubble2" class="speechBubble">Nick name</div>
+                    <div speechBubble id="speechBubble3" class="speechBubble">Write you'r e-mail address</div>
+                    <div speechBubble id="speechBubble4" class="speechBubble">When is your birthday?</div>
+                    <div speechBubble id="speechBubble5" class="speechBubble">New password</div>
+                    <div speechBubble id="speechBubble6" class="speechBubble">Repeat password</div>
+                </div>
+            </div>
 
 
         
@@ -32,12 +32,12 @@
 
 
                     <form action="/action_page.php" id="Information" class="Information">
-                     <input type="text" placeholder="Name" id="name" class="name" name="name"><br>
-                    <input type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
-                    <input type="text" placeholder="E-mail" id="email" class="email" email="email"><br>
-                    <input type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
-                     <input type="Password" placeholder="Password" id="password">
-                    <input type="password"  placeholder="Repeat password" id="repeatPassword">
+                    <input onfocus="fadein1();" onblur="fadeout1();" type="text" placeholder="Name" id="name" class="name" name="name"><br>
+                    <input onfocus="fadein2();" onblur="fadeout2();" type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
+                    <input onfocus="fadein3();" onblur="fadeout3();" type="text" placeholder="E-mail" id="email" class="email" email="email"><br>
+                    <input onfocus="fadein4();" onblur="fadeout4();" type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
+                    <input onfocus="fadein5();" onblur="fadeout5();" type="Password" placeholder="Password" id="password">
+                    <input onfocus="fadein6();" onblur="fadeout6();" type="password"  placeholder="Repeat password" id="repeatPassword">
 
                     
                     <h6 id="Policy">© By continuing, you agree to Task binder's</h6>
@@ -72,5 +72,5 @@
 </div>
 
             </body>
-            <script src="../user & project management/js/users.js"></script>
+            <script src="index.js"></script>
 </html>
