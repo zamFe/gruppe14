@@ -1,35 +1,80 @@
 <!DOCTYPE html>
+
+
+-- Start HTML --
+
 <html lang="en">
+
+
+
+-- Start Head --
+
 <head>
+
     <link rel="stylesheet" href="frontpage.css">
     <meta charset="UTF-8">
     <title>Front Page</title>
+
 </head>
+
+-- End Head --
+
+
+
+
+-- Start Body --
+
 <body>
 
 <div id="folderLogoBackground" onclick="refreshPage()">
+
     <img id="folderLogo" src="bilder-slu/FolderLogo.png" alt="Task Binder Logo">
-</div>
+
+</div> -- End Logo Backround --
+
+
 
 <div id="logoFrontPage">
+
     <div id="logoContainer">
+
         <img id="logoPicture" src="bilder-slu/Logo.png" alt="Task Binder">
-    </div>
-</div>
+
+    </div> -- End Logocontainer --
+
+</div> -- End Logo --
+
+
+
 
 <div id="logInButton">
+
     <a href="../login/logginn.html#">
+
         <button class="frontPageButton" type="button">Login</button>
+
     </a>
-</div>
+
+</div> -- Login Button --
+
+
+
 
 <div id="newUserButton">
+
     <a href="../Registration/main.html#">
+
         <button class="frontPageButton" type="button">New User</button>
+
     </a>
-</div>
+
+</div> -- New User Button --
+
+
+
 
 <div id="animationContainer">
+
     <img id="people" src="bilder-slu/people.png">
 
     <img class="bubble" id="bubble1" src="bilder-slu/bubble1.png">
@@ -52,19 +97,45 @@
     <img class="logo" id="logo2" src="bilder-slu/taskbinder.png">
     <img class="logo" id="logo3" src="bilder-slu/taskbinder.png">
     <img class="logo" id="logo4" src="bilder-slu/taskbinder.png">
-</div>
+
+</div> -- End Logo with Animation --
+
+
 
 </body>
+
+-- End Body --
+
+
+
+-- Start Footer --
+
 <footer>
+
     <div id="footerText">
     <h6 id="Policy">© By continuing, you agree to Task binder's</h6>
     <h5 id="Policy2">Terms of service, Privacy policy</h5>
-    </div>
+    </div> -- End Footer Text --
+
 </footer>
+
+-- End Footer --
+
+
+
 </html>
 
+-- End HTML --
+
+
+
+-- Start Script --
+
 <script>
+
     function refreshPage(){
-        window.location.reload();
+    window.location.reload();
     }
 </script>
+
+-- End Script --
