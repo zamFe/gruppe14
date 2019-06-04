@@ -63,6 +63,8 @@ function popupNewProject() {
         createNewProject(projectName.value, description.value,
             tag.value, members.value,
             [], [],[],[]);
+        closePopup();
+        createNewTab(projects.length-1);
     };
     popup.appendChild(createProjectButton);
 
@@ -97,6 +99,10 @@ function popupLoadProject() {
             + "</h3><br> tag: " + projects[i].tag
             + "<br> members: " + projects[i].members.length
             + "<br> desc: <br>" + projects[i].description;
+        project.onclick = function handleProjectPopupClick(e) {
+            createNewTab(i);
+            closePopup();
+        };
         projectList.appendChild(project);
     }
     popup.appendChild(projectList);

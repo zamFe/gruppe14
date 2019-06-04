@@ -52,43 +52,32 @@
     <div class="uper">Finished</div>
 </div>
 
-<img class="pluss" id="pluss1" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss1" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
-<img class="pluss" id="pluss2" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss2" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
-<img class="pluss" id="pluss3" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss3" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
-<img class="pluss" id="pluss4" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss4" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
 
 <div id="toDoColumn" class="wrapper">
     <div class="item">
         <input type="text" placeholder="Title..." class="itemTitle">
-        <textarea placeholder="detals..." class="itemText" rows="1" cols="10">
-
-        </textarea>
-        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);">
-        <ul class="searchList">DropDownMenu
+        <textarea placeholder="details..." class="itemText" rows="1" cols="10"></textarea>
+        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);" onblur="removeMemberSearch(event);" onkeyup="hideMemberSearch(event);">
+        <ul class="searchList">Members
         </ul>
     </div>
 </div>
 
 <div id="OngoingColumn" class="wrapper">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
 </div>
 
 <div id="StuckColumn" class="wrapper">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
 </div>
 
 <div id="FinishedColumn" class="wrapper">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
 </div>
 
 <!--

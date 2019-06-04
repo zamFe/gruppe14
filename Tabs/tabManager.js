@@ -58,6 +58,7 @@ function createNewTab(projectId) {
     var section = document.createElement("section");
     section.id = "section" + sectionCounter;
     var title = document.createElement("h1");
+    title.id = "projectPageTitle";
     title.innerHTML = "THIS IS A PLACEHOLDER!";
 
     section.appendChild(title);
