@@ -59,7 +59,7 @@ function createNewTab(projectId) {
     section.id = "section" + sectionCounter;
     var title = document.createElement("h1");
     title.id = "projectPageTitle";
-    title.innerHTML = "THIS IS A PLACEHOLDER!";
+    title.innerHTML = projects[projectId].projectName;
 
     section.appendChild(title);
     main.appendChild(section);
@@ -138,28 +138,6 @@ function setActiveTab(target) {
     } else {
         document.getElementById("section" + activeTab).style.display = "block";
     }
-
-    /*
-    //checks if active or previous is home and displays correctly
-    if (activeTab == 0) {
-        document.getElementById("home").style.display = "block";
-        document.getElementById("section" + previousTab).style.display = "none";
-    }
-    else if (previousTab == 0 && target.id == "profileTab") {
-        document.getElementById("home").style.display = "none";
-        document.getElementById("profilePage").style.display = "block";
-    }
-    else if (previousTab == 0) {
-        document.getElementById("home").style.display = "none";
-        document.getElementById("section" + activeTab).style.display = "block";
-    } else if (target.id == "profileTab") {
-        document.getElementById("section" + previousTab).style.display = "none";
-        document.getElementById("profilePage").style.display = "block";
-    } else {
-        document.getElementById("section" + previousTab).style.display = "none";
-        document.getElementById("section" + activeTab).style.display = "block";
-    }
-    */
 }
 
 //script

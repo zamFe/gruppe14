@@ -78,6 +78,8 @@ button {
     Flex: 0;
     flex-basis: 120px;
     z-index: 0;
+    width: 150px;
+    cursor: default;
 }
 
 .tabImg {
@@ -88,11 +90,30 @@ button {
 
 .tabTitle {
     position: relative;
+    white-space: nowrap;
+    overflow-x: scroll;
     text-align: left;
     padding-left: 15px;
     width: inherit;
     height: inherit;
     top: -50px;
+}
+
+.closeTabButton {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    top: -125px;
+    left: 150px;
+    transition: all 0.1s ease-in-out;
+    color: darkred;
+    cursor: pointer;
+}
+
+.closeTabButton:hover {
+    color: black;
 }
 
 #add {
@@ -204,6 +225,14 @@ button {
     background-color: rgba(255,255,255,0.3);
     max-height: 300px;
     overflow: scroll;
+}
+
+/* project page */
+
+#projectPageTitle {
+    color: white;
+    white-space: nowrap;
+    font-size: 4em;
 }
 
 /* scrollbar */
