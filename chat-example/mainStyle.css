@@ -1,0 +1,108 @@
+html{
+    height: 100%;
+    margin: 0;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 10;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+* {box-sizing: border-box;}
+
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+
+
+.chat-popup {
+    display: block; /*none*/
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 1px solid #0a0097;
+    opacity: 0.7;
+    z-index: 9;
+}
+#myForm{
+    background-color: rgba(8, 63, 88, 0.925);
+    backdrop-filter: blur(5px);
+
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    /* background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);*/
+    background-color:rgba(175, 188, 221, 0.664);
+
+}
+
+
+.form-container ul {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #fcfbfb;
+    resize: none;
+    min-height: 200px;
+
+
+}
+
+
+.form-container ul:focus {
+    background-color: rgba(255, 255, 255, .20);
+    outline: none;
+}
+
+
+.form-container .btn {
+    background-color: rgb(213, 223, 213);
+    color: rgb(15, 15, 15);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+
+.form-container .cancel {
+    background-color: rgb(201, 202, 207);
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.label{
+    background-color: rgba(55, 173, 241, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+#btn{
+    background-color:rgba(40, 48, 156, 0.801);
+}
+
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee;}
+
+form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
