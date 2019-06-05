@@ -5,19 +5,19 @@
         <link rel=styleSheet href="index.css" type="text/css">
         <title>Velkommen</title>
 
-        <div class="wrapper">
 
+       
         <div speechBubble id="speechBubble">
-                    <div speechBubble id="speechBubble1" class="speechBubble">Type inn your name</div>
-                    <div speechBubble id="speechBubble2" class="speechBubble">Type inn Username</div>
-                    <div speechBubble id="speechBubble3" class="speechBubble">Type inn your Email address</div>
-                    <div speechBubble id="speechBubble4" class="speechBubble">Selct your date of birth</div>
-                    <div speechBubble id="speechBubble5" class="speechBubble">Type inn your Password</div>
-                    <div speechBubble id="speechBubble6" class="speechBubble"> Repeat your Password</div>
-                </div>
 
-            
-        
+                    <div speechBubble id="speechBubble1" class="speechBubble"><h6 id="speechBubbleText1">First and last name</h6></div>
+                    <div speechBubble id="speechBubble2" class="speechBubble"><h6 id="speechBubbleText2">Nick name</h6></div>
+                    <div speechBubble id="speechBubble3" class="speechBubble"><h6 id="speechBubbleText3">Write you'r e-mail address</h6></div>
+                    <div speechBubble id="speechBubble4" class="speechBubble"><h6 id="speechBubbleText4">When is your birthday?</h6></div>
+                    <div speechBubble id="speechBubble5" class="speechBubble"><h6 id="speechBubbleText5">New password</h6></div>
+                    <div speechBubble id="speechBubble6" class="speechBubble"><h6 id="speechBubbleText6">Repeat password</h6></div>
+                    
+                </div>
+            </div>
 
 
         
@@ -32,12 +32,12 @@
 
 
                     <form action="/action_page.php" id="Information" class="Information">
-                     <input type="text" placeholder="Name" id="name" class="name" name="name"><br>
-                    <input type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
-                    <input type="text" placeholder="E-mail" id="email" class="email" email="email"><br>
-                    <input type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
-                     <input type="Password" placeholder="Password" id="password">
-                    <input type="password"  placeholder="Repeat password" id="repeatPassword">
+                    <input onfocus="fadein1();" onblur="fadeout1();" type="text" placeholder="Name" id="name" class="name" name="name"><br>
+                    <input onfocus="fadein2();" onblur="fadeout2();" type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
+                    <input onfocus="fadein3();" onblur="fadeout3();" type="text" placeholder="E-mail" id="email" class="email" email="email"><br>
+                    <input onfocus="fadein4();" onblur="fadeout4();" type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
+                    <input onfocus="fadein5();" onblur="fadeout5();" type="Password" placeholder="Password" id="password">
+                    <input onfocus="fadein6();" onblur="fadeout6();" type="password"  placeholder="Repeat password" id="repeatPassword">
 
                     
                     <h6 id="Policy">© By continuing, you agree to Task binder's</h6>
@@ -54,23 +54,23 @@
                   
                 <div id="genderContainer">
                     <form action="" id="gender" class="gender">
-                    <input type="radio" id="female" class="female" name="gender" value="female"> Female <br>
-                    <input type="radio" id="male" class="male" name="gender" value="male"> Male <br>
-                    <input type="radio" id="other" class="other" name="gender" value="other"> Other <br>
+                    <input type="radio" id="female" class="female" name="gender" value="female"><h6 id="femaleText"> Female </h6><br>
+                    <input type="radio" id="male" class="male" name="gender" value="male"><h6 id="maleText"> Male </h6><br>
+                    <input type="radio" id="other" class="other" name="gender" value="other"><h6 id ="otherText"> Other </h6><br>
                     </form>
                 </div>
                 </div>
+            
 
                 
-                    
+                <div id="buttonholder">
+                        <button type="button" id="button1" class="button" onclick="buildUser();">Home</button>
+                        <button type="button" id="button2" class="button">Register</button>
+                </div>
             </div>
-            <buttonholder id="buttonholder">
-            <button type="button" id="button1" class="button" onclick="buildUser();">Home</button>
-            <button type="button" id="button2" class="button">Register</button>
-        </buttonholder>
             
 </div>
 
             </body>
-            <script src="../user & project management/js/users.js"></script>
+            <script src="index.js"></script>
 </html>
