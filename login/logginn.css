@@ -202,9 +202,9 @@ img.avatar {
 /* The "Forgot password" text */
 span.psw {
     position: relative;
-    left: calc(50% - 250px);
-    top: 100px;
-    padding-top: 16px;
+    margin: 0 auto;
+    text-align: center;
+    top: -50px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -219,11 +219,12 @@ span.psw {
   }
 }
 
-#footerText{
+#footerContainer{
     position: absolute;
     text-align: center;
     left: calc(50% - 150px);
-    top: 200px;
+    top: 100px;
+
 }
 #Policy{
     position: relative;
