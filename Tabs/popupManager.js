@@ -92,7 +92,6 @@ function popupLoadProject() {
     projectList.id = "loadProjectListUl";
     //fill list with projects
     for(let i = projects.length-1; i > 0; i--) {
-        console.log(i);
         var project = document.createElement("div");
         project.classList.add("loadProjectList");
         project.innerHTML = "<h3>" + projects[i].projectName
