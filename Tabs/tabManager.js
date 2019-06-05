@@ -57,9 +57,46 @@ function createNewTab(projectId) {
     var main = document.getElementById("main");
     var section = document.createElement("section");
     section.id = "section" + sectionCounter;
+    //title
     var title = document.createElement("h1");
     title.id = "projectPageTitle";
     title.innerHTML = projects[projectId].projectName;
+    //insert task columns and all additional content into section
+    section.innerHTML =
+        '<div class="wrapperuper">\n' +
+        '    <div class="uper">To-Do</div>\n' +
+        '    <div class="uper">Ongoing</div>\n' +
+        '    <div class="uper">Stuck</div>\n' +
+        '    <div class="uper">Finished</div>\n' +
+        '</div>\n' +
+        '\n' +
+        '<img class="pluss" id="pluss1" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '\n' +
+        '<img class="pluss" id="pluss2" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '\n' +
+        '<img class="pluss" id="pluss3" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '\n' +
+        '<img class="pluss" id="pluss4" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '\n' +
+        '1\n' +
+        '<div id="toDoColumn" class="wrapper">\n' +
+        '    <div class="item">\n' +
+        '        <input type="text" placeholder="Title..." class="itemTitle">\n' +
+        '        <textarea placeholder="details..." class="itemText" rows="1" cols="10"></textarea>\n' +
+        '        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);" onblur="removeMemberSearch(event);" onkeyup="hideMemberSearch(event);">\n' +
+        '        <ul class="searchList">Members\n' +
+        '        </ul>\n' +
+        '    </div>\n' +
+        '</div>\n' +
+        '\n' +
+        '<div id="OngoingColumn" class="wrapper">\n' +
+        '</div>\n' +
+        '\n' +
+        '<div id="StuckColumn" class="wrapper">\n' +
+        '</div>\n' +
+        '\n' +
+        '<div id="FinishedColumn" class="wrapper">\n' +
+        '</div>';
 
     section.appendChild(title);
     main.appendChild(section);
