@@ -6,12 +6,12 @@ html {
 
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-size: cover;
 }
 
 footer{
     position: relative;
     margin: 0;
-
 }
 
 h6{
@@ -20,7 +20,6 @@ h6{
     z-index: 10;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-
 }
 
 h5{
@@ -47,7 +46,6 @@ h5{
 #logoPicture{
     position: relative;
     width: 700px;
-
 }
 
 #folderLogo{

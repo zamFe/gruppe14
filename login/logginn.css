@@ -7,6 +7,7 @@ html {
 
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-size: cover;
 }
 
 footer{
@@ -68,6 +69,7 @@ background: #9a073c;
  border: 5px solid transparent;
  text-align: center;
  font-size: 40px;
+ left: 180px;
 
 }
 
@@ -88,16 +90,33 @@ margin-right: -20px;
 
 #speechBubble1{
 visibility: hidden;
-top: 464px;
+top: 200px;
 background-color: #9a073c;
 }
 
 
 #speechBubble2{
-top: 472px;
+top: 290px;
 visibility: hidden;
 background-color: #9a073c;
 }
+
+#speechBubbleText1{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -40px;
+    font-size: 20px;
+}
+
+
+#speechBubbleText2{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -40px;
+    font-size: 20px;
+  }
 
 /* Bordered form */
 
@@ -183,9 +202,9 @@ img.avatar {
 /* The "Forgot password" text */
 span.psw {
     position: relative;
-    left: calc(50% - 250px);
-    top: 100px;
-    padding-top: 16px;
+    margin: 0 auto;
+    text-align: center;
+    top: -50px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -200,17 +219,17 @@ span.psw {
   }
 }
 
-#footerText{
+#footerContainer{
     position: absolute;
     text-align: center;
-    left: calc(50% - 120px);
-    top:200px;
+    left: calc(50% - 150px);
+    top: 100px;
+
 }
 #Policy{
     position: relative;
     margin: 0 auto;
     text-align: center;
-
 }
 
 #Policy2{
