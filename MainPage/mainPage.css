@@ -27,16 +27,46 @@ html {
     width: 500px;
 }
 
-#timeTable {
-    width: 1200px;
-    height: 320px;
+.button {
+    position: absolute;
+    background-color: #0b245b;
+    color: #F9FAF5;
+    border: solid #0b245b;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
 
+.button:hover{
+    color: #0B245B;
+    background-color: #F9FAF5;;
+    border: solid #0B245B;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#button1 {
+    left: 50px;
+    top: 200px;
+}
+
+#button2 {
+    left: 170px;
+    top: 200px;
+}
+
+
+#timeTable {
+    width: 0px;
+    height: 0px;
     position: absolute;
     top: 200px;
     left: 2%;
     /*  border: solid;
       border-color: red;*/
     display: grid;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .timeTable {
@@ -71,158 +101,212 @@ html {
 }
 
 #dag1 {
-    left: 12%;
+    left: 155px;
     top: 0px;
     position: absolute;
 }
 
 #dag2 {
-    left: 24%;
+    left: 285px;
     top: 0px;
     position: absolute;
 }
 
 #dag3 {
-    left: 36%;
+    left: 435px;
     top: 0px;
     position: absolute;
 }
 
 #dag4 {
-    left: 48%;
+    left: 580px;
     top: 0px;
     position: absolute;
 }
 
 #dag5 {
-    left: 60%;
+    left: 720px;
     top: 0px;
     position: absolute;
 }
 
 #dag6 {
-    left: 72%;
+    left: 855px;
     top: 0px;
     position: absolute;
 }
 
 #dag7 {
-    left: 84%;
+    left: 1000px;
     top: 0px;
     position: absolute;
 }
 
 #name1 {
-    padding-top: 10px;
-    top: 0px;
+    top: -25px;
     left: 0px;
     position: relative;
 }
 
 #name2 {
-    top: 0px;
+    top: -20px;
     left: 0px;
     position: relative;
 }
 
 #name3 {
-    top: 0px;
+    top: -15px;
     left: 0px;
     position: relative;
 }
 
 #name4 {
-    top: 0px;
+    top: -10px;
     left: 0px;
     position: relative;
 }
 
 #name5 {
-    top: 0px;
+    top: -5px;
     left: 0px;
     position: relative;
 }
 
 .timebuble {
-    background-color: #0b245b;
+    background-color: rgba(255, 255, 255, .20);
     width: 250px;
     height: 15px;
     border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    font-size: 11px;
 }
 
 .timebubleBurgundy {
-    background-color: #98063A;
+    background-color: rgba(255, 255, 255, .40);
     width: 125px;
     height: 15px;
     border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    font-size: 11px;
 }
 
 #timeBuble1 {
-    top: -18px;
+    top: 50px;
     left: 140px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble2 {
-    top: -18px;
+    top: 122px;
     left: 140px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble3 {
-    top: -18px;
+    top: 192px;
     left: 280px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble4 {
-    top: -18px;
+    top: 264px;
     left: 280px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble5 {
-    top: -18px;
+    top: 334px;
     left: 280px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble6 {
-    top: -34px;
-    left: 420px;
-    position: relative;
+    top: 50px;
+    left: 405px;
+    position: absolute;
 }
 
 #timeBuble7 {
-    top: -34px;
-    left: 420px;
-    position: relative;
+    top: 122px;
+    left: 405px;
+    position: absolute;
 }
 
 #timeBuble8 {
-    top: -35px;
+    top: 192px;
     left: 140px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble9 {
-    top: -35px;
+    top: 264px;
     left: 140px;
-    position: relative;
+    position: absolute;
 }
 
 #timeBuble10 {
-    top: -35px;
+    top: 334px;
     left: 140px;
-    position: relative;
+    position: absolute;
+}
+
+#timeBuble11 {
+    top: 50px;
+    left: 560px;
+    position: absolute;
+}
+
+#timeBuble12 {
+    top: 122px;
+    left: 560px;
+    position: absolute;
+}
+
+#timeBuble13 {
+    top: 192px;
+    left: 560px;
+    position: absolute;
+}
+
+#timeBuble14 {
+    top: 192px;
+    left: 690px;
+    position: absolute;
+}
+
+#timeBuble15 {
+    top: 264px;
+    left: 560px;
+    position: absolute;
+}
+
+#timeBuble16 {
+    top: 334px;
+    left: 560px;
+    position: absolute;
+}
+
+#timeBuble17 {
+    top: 334px;
+    left: 690px;
+    position: absolute;
 }
 
 
+
+#container {
+    position: relative;
+    height: 750px;
+    width: 1200px;
+    top: 100px;
+    left: 50px;
+}
+
 .pluss {
     position: absolute;
+    top: 8px;
     height: 20px;
     width: 20px;
-    top: 630px;
     z-index: 100;
 }
 
@@ -248,7 +332,7 @@ html {
     padding: 0;
     position: absolute;
     left: 180px;
-    top: 620px;
+    top: 0;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -402,57 +486,25 @@ html {
 }
 
 #toDoColumn {
-
+    top: 50px;
 }
 
 #OngoingColumn {
     left: 400px;
-    top: 680px;
+    top: 50px;
 
 }
 
 #StuckColumn {
     left: 650px;
-    top: 680px;
+    top: 50px;
 
 }
 
 #FinishedColumn {
     left: 900px;
-    top: 680px;
-
+    top: 50px;
 }
-
-/*
-#toDoBox {
-position: absolute;
-height: 400px;
-width: 200px;
-background-color: rgb(77, 158, 179);
-border: 4px solid;
-border-radius: 8px;
-border-color: rgb(51, 51, 204);
-text-align: center;
-}
-
-#toDo {
-position: absolute;
-height: 110px;
-width: 180px;
-top: 230px;
-left: 18px;
-font-size: 15px;
-font-family: times;
-border-radius: 8px;
-color: rgb(0, 0, 0);
-background-color: rgb(200, 200, 200);
-text-align: center;
-outline: none;
-resize: none;
-}
-
-*/
-
 
 #newsFeed {
     position: absolute;
@@ -461,6 +513,7 @@ resize: none;
     width: 190px;
     font-size: 15px;
     font-family: times;
+    text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
     border-color: rgb(51, 51, 204);
@@ -477,6 +530,7 @@ resize: none;
     width: 190px;
     font-size: 15px;
     font-family: times;
+    text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
     border-color: rgb(51, 51, 204);
@@ -484,6 +538,14 @@ resize: none;
     background-color: rgb(77, 158, 179);
     outline: none;
     resize: none;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
 }
 
 ::-webkit-scrollbar {

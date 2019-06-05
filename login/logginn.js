@@ -17,3 +17,28 @@ function logInUser() {
 function forgotpassword(){
     prompt("Enter your e-mail address:");
 }
+
+
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function inputname1(){
+  document.getElementById("speechBubble1").style.visibility="visible";
+
+ }
+
+  function inputname2(){
+    document.getElementById("speechBubble1").style.visibility ="hidden";
+    }
+
+    function inputpasword1(){
+      document.getElementById("speechBubble2").style.visibility="visible";
+
+     }
+
+      function inputpasword2(){
+        document.getElementById("speechBubble2").style.visibility ="hidden";
+        }

@@ -1,7 +1,6 @@
 /*tags*/
 
 html {
-    width: 100%;
     height: 100%;
     margin: 0;
 }
@@ -57,6 +56,47 @@ h5{
 #logoPicture {
     width: 400px;
     height: 175px;
+}
+
+
+.speechBubble{
+position: absolute;
+background: #9a073c;
+ border-radius: .4em;
+ height: 45px;
+ width: 190px;
+ border: 5px solid transparent;
+ text-align: center;
+ font-size: 40px;
+
+}
+
+.speechBubble:after {
+content: '';
+position: absolute;
+right: 0;
+top: 50%;
+width: 0;
+height: 0;
+border: 20px solid transparent;
+border-left-color:#9a073c;
+border-right:0;
+margin-top: -20px;
+margin-right: -20px;
+}
+
+
+#speechBubble1{
+visibility: hidden;
+top: 464px;
+background-color: #9a073c;
+}
+
+
+#speechBubble2{
+top: 472px;
+visibility: hidden;
+background-color: #9a073c;
 }
 
 /* Bordered form */
@@ -117,6 +157,10 @@ input[type=text], input[type=password] {
     width: 100%;
 }
 
+#cancelbutton {
+top: 5px;
+}
+
 #remember {
     position: absolute;
     top: 60px;
@@ -135,10 +179,6 @@ img.avatar {
     border-radius: 50%;
 }
 
-/* Add padding to containers */
-.container {
-    padding: 16px;
-}
 
 /* The "Forgot password" text */
 span.psw {
