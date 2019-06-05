@@ -2,13 +2,22 @@
 //variables
 
 var activeTab = 0; //0 = main tab
-var sectionCounter = 0; //counts created sections (projects and profile pages)
+var sectionCounter = 0; //counts created sections (projects)
 var colorArr = ["White" + "Blue" + "Burgunder"];
 
 //methods
 
 //create new tab for a project
 function createNewTab(projectId) {
+    //make sure project isn't already open
+    var main = document.getElementById("main");
+    for (let i = 0; i < main.children.length; i++) {
+        if (main.children[i].id == "section" + projectId) {
+            setActiveTab(document.getElementById(projectId));
+            return "project already open";
+        }
+    }
+
     sectionCounter++;
 
     //first: make tab
@@ -20,6 +29,7 @@ function createNewTab(projectId) {
     var tab = document.createElement("div");
     var tabImg = document.createElement("img");
     var tabTitle = document.createElement("h3");
+    var tabClose = document.createElement("h3");
 
     //add onclick to make sure tabs switch correctly
     tab.onclick = function handleMouseEvent(e) {
@@ -30,16 +40,24 @@ function createNewTab(projectId) {
     //add content
     tabImg.src = "./Images/TabWhite.png";
     tabTitle.innerHTML = projects[projectId].projectName;
+    tabClose.innerHTML = "X";
+    tabClose.onclick = function handleOnclick(event) {
+        console.log(event.target.parentElement.id);
+        activeTab = 0;
+        closeTab(event.target.parentElement.id);
+    };
 
     //add id and class
-    tab.id = sectionCounter;
+    tab.id = projectId;
     tab.classList.add("tab");
     tabImg.classList.add("tabImg");
     tabTitle.classList.add("tabTitle");
+    tabClose.classList.add("closeTabButton");
 
     //put it on the website
     tab.appendChild(tabImg);
     tab.appendChild(tabTitle);
+    tab.appendChild(tabClose);
     tabContainer.appendChild(tab);
 
     //update flex-grid order
@@ -54,9 +72,8 @@ function createNewTab(projectId) {
     //second: build section
 
     //build project section and add to main
-    var main = document.getElementById("main");
     var section = document.createElement("section");
-    section.id = "section" + sectionCounter;
+    section.id = "section" + projectId;
     //title
     var title = document.createElement("h1");
     title.id = "projectPageTitle";
@@ -106,7 +123,6 @@ function createNewTab(projectId) {
         '\n' +
         '<div id="FinishedColumn" class="wrapper">\n' +
         '</div>';
-    document.body.style.backgroundSize = "cover";
 
     //add section to main
     main.appendChild(section);
@@ -116,10 +132,12 @@ function createNewTab(projectId) {
 }
 
 function openProfileTab() {
+    //make sure profile isnt already open
     if(document.getElementById("profileTab")) {
+        setActiveTab(document.getElementById("profileTab"));
         return "profile already open";
     }
-    sectionCounter++;
+    //sectionCounter++;
     //first: make tab
 
     //get main container
@@ -129,6 +147,7 @@ function openProfileTab() {
     var tab = document.createElement("div");
     var tabImg = document.createElement("img");
     var tabTitle = document.createElement("h3");
+    var tabClose = document.createElement("h3");
 
     //add onclick to make sure tabs switch correctly
     tab.onclick = function handleMouseEvent(e) {
@@ -137,18 +156,24 @@ function openProfileTab() {
 
     };
     //add content
-    tabImg.src = "./Images/TabWhite.png";
+    tabImg.src = "./Images/TabRed.png";
     tabTitle.innerHTML = "Profile";
+    tabClose.innerHTML = "X";
+    tabClose.onclick = function handleOnclick(event) {
+        closeTab(event.target.parentElement.id);
+    };
 
     //add id and class
     tab.id = "profileTab";
     tab.classList.add("tab");
     tabImg.classList.add("tabImg");
     tabTitle.classList.add("tabTitle");
+    tabClose.classList.add("closeTabButton");
 
     //put it on the website
     tab.appendChild(tabImg);
     tab.appendChild(tabTitle);
+    tab.appendChild(tabClose);
     tabContainer.appendChild(tab);
 
     //update flex-grid order
@@ -165,6 +190,41 @@ function openProfileTab() {
 
 //set tab to active, works as an onclick event or from js
 function setActiveTab(target) {
+    //procedure if tab is closed
+    if(target == null) {
+        console.log("tab deleted");
+        let previousTab = activeTab;
+        activeTab = document.getElementById("main").lastElementChild.id;
+        var profileTabIsOpen = false;
+        for(let i = 0; i < document.getElementById("tabContainer").childElementCount; i++) {
+            if(document.getElementById("tabContainer").children[i].id == "profileTab") {
+                profileTabIsOpen = true;
+            }
+        }
+        console.log("profile tab is" + profileTabIsOpen);
+        console.log("tab deleted. replacing with " + activeTab);
+        if(activeTab == "home" || (activeTab == "profilePage" && document.getElementById("main").childElementCount == 2)) {
+            activeTab = "0";
+        } else if(activeTab == "profilePage") {
+            activeTab = "profileTab";
+        } else if (activeTab.indexOf("section") == 0) {
+            activeTab = activeTab.slice(activeTab.length-1);
+            if (profileTabIsOpen && document.getElementById(activeTab).style.order < document.getElementById("profileTab").style.order) {
+                console.log("switching to profileTab..");
+                activeTab = "profileTab";
+            }
+        }
+
+        if(activeTab == 0) {
+            document.getElementById("home").style.display = "";
+        } else if (activeTab == "profileTab") {
+            document.getElementById("profilePage").style.display = "block";
+
+        } else {
+            document.getElementById("section" + activeTab).style.display = "";
+        }
+        return "deleted tab";
+    }
     let previousTab = activeTab;
     document.getElementById(activeTab.toString()).style.zIndex = "0";
     activeTab = target.id;
@@ -175,16 +235,41 @@ function setActiveTab(target) {
     } else if (previousTab == "profileTab") {
         document.getElementById("profilePage").style.display = "none";
     } else {
+        console.log("previous tab was:" + previousTab);
         document.getElementById("section" + previousTab).style.display = "none";
     }
 
     if(activeTab == 0) {
-        document.getElementById("home").style.display = "block";
+        document.getElementById("home").style.display = "";
     } else if (activeTab == "profileTab") {
         document.getElementById("profilePage").style.display = "block";
     } else {
-        document.getElementById("section" + activeTab).style.display = "block";
+        document.getElementById("section" + activeTab).style.display = "";
     }
+}
+
+function closeTab(projectId) {
+    var section;
+    if(projectId == "profileTab") {
+        section = document.getElementById("profilePage");
+        section.style.display = "none";
+    } else {
+        section = document.getElementById("section" + projectId);
+        while(section.hasChildNodes()) {
+            section.removeChild(section.firstChild);
+            section.remove();
+        }
+    }
+    var tab;
+    if(projectId == "profileTab") {
+        tab = document.getElementById("profileTab")
+    } else {
+        tab = document.getElementById(projectId);
+    }
+    while(tab.hasChildNodes()) {
+        tab.removeChild(tab.firstChild);
+    }
+    tab.remove();
 }
 
 //script
