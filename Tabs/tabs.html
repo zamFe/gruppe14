@@ -3,6 +3,8 @@
         <link rel="stylesheet" href="tabs.css" type="text/css">
         <link rel="stylesheet" href="../sidebarCode/sideBar.css" type="text/css">
         <link rel="stylesheet" href="../Tabs/minside.css" type="text/css">
+        <link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css">
+        <!--link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css"-->
     </header>
 
     <body>
@@ -28,6 +30,7 @@
             <div id="0" onClick="setActiveTab(event.target.parentNode)" class="tab">
                 <img class="tabImg" src="Images/TabWhite.png" alt="image not found">
                 <h3 id="mainTabTitle" class="tabTitle">Home</h3>
+                <h3 class="closeTabButton">X</h3>
             </div>
             <div id="add" onClick="/*createNewTab('Images/TabWhite.png');*/">
                 <img id="addImg" src="Images/add.png" alt="image not found">
@@ -35,7 +38,7 @@
                     <h4>New Tab</h4>
                     <div id="newProject" class="dropDownList" onclick="displayPopup('newProject');">new project</div>
                     <div id="loadProject" class="dropDownList" onclick="displayPopup('loadProject');">load project</div>
-                    <div id="" class="dropDownList" onclick="displayPopup('');">[placeholder]</div>
+                    <div id="" class="dropDownList" onclick="openProfileTab();">UserProfile</div>
                 </div> <!-- end addDropDownContainer -->
             </div> <!-- end add -->
         </div> <!-- end tabContainer -->
@@ -122,4 +125,5 @@
     <script type="text/javascript" src="../user%20&%20project%20management/js/projects.js"></script>
     <script type="text/javascript" src="tabManager.js"></script>
     <script type="text/javascript" src="popupManager.js"></script>
+    <script type="text/javascript" src="projectStatusManager.js"></script>
 </html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Socket.IO chat</title>
+    <style>
+
+    html{
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: 10;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .open-button {
+        background-color: #555;
+        color: #F9FAF5;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.5;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+    }
+
+    .chat-popup {
+        display: block; /*none*/
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 1px solid #0a0097;
+        opacity: 0.7;
+        z-index: 9;
+    }
+
+    .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color:rgba(175, 188, 221, 0.664);
+    }
+
+    .form-container ul {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #fcfbfb;
+        resize: none;
+        min-height: 200px;
+        max-height: 200px;
+        overflow: auto;
+    }
+
+    .form-container ul:focus {
+        background-color: rgba(255, 255, 255, .20);
+        outline: none;
+    }
+
+    .form-container .btn {
+        background-color: rgb(213, 223, 213);
+        color: #F9FAF5;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+    }
+
+    .form-container .cancel {
+        background-color: black;
+
+    }
+
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+    }
+
+    #myForm{
+        background-color: rgba(8, 63, 88, 0.925);
+        backdrop-filter: blur(5px);
+    }
+
+    #btn{
+        background-color:rgba(40, 48, 156, 0.801);
+    }
+
+    #messages{
+        list-style-type: none;
+        margin-bottom: 4px;
+        padding: 0;
+    }
+
+    #messages li{
+        padding: 5px 8px;
+    }
+
+    #messages li:nth-child(odd) {
+        background: #eee;
+    }
+
+    form input {
+        border: solid 1px;
+        padding: 12px;
+        width: 100%;
+        margin-right: .5%;
+        margin-bottom: 4px;
+    }
+
+    form button{
+        width: 9%;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 8px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(85, 147, 151, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    </style>
+</head>
+<body>
+
+<button class="open-button" id="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+
+<form action="" class="form-container">
+    <h1>Chat</h1>
+    <label for="msg"><b>Message</b></label>
+    <ul id="messages"></ul>
+    <input id="m" autocomplete="off" placeholder="Type message.."/>
+    <button type="submit" class="btn" id="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+    $(function () {
+        var socket = io();
+        $('form').submit(function(e){
+            e.preventDefault(); // prevents page reloading
+            socket.emit('chat message', $('#m').val());
+            $('#m').val('');
+            return false;
+        });
+        socket.on('chat message', function(msg){
+            $('#messages').append($('<li>').text(msg));
+        });
+    });
+</script>
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

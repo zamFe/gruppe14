@@ -1,5 +1,5 @@
+/*
 body {
-    /*background-color: #F9FAF5;*/
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: 1000px 1600px;
     overflow: scroll;
@@ -11,6 +11,7 @@ html {
     height: 100%;
     margin: 0;
 }
+*/
 
 #logoContainer {
     position: absolute;
@@ -25,14 +26,6 @@ html {
 #logoPicture {
     width: 500px;
 }
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 
 #timeTable {
     width: 1200px;
@@ -250,6 +243,9 @@ html {
 }
 
 .wrapperuper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     position: absolute;
     left: 180px;
     top: 620px;
@@ -264,6 +260,9 @@ html {
 }
 
 .uper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: rgba(255, 255, 255, .20);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -275,6 +274,9 @@ html {
 }
 
 .wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     display: grid;
     position: absolute;
     overflow-y: scroll;
@@ -291,7 +293,22 @@ html {
     grid-row-gap: 5px;
 }
 
+.wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background-color: rgba(85, 147, 151, 0.5);
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 .item {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: rgba(255, 255, 255, .20);
     backdrop-filter: blur(5px);
     border-radius: 4px;
@@ -302,7 +319,22 @@ html {
     transition: all 0.5s ease-in-out;
 }
 
+.item::-webkit-scrollbar {
+    width: 5px;
+}
+
+.item::-webkit-scrollbar-track {
+    background-color: rgba(85, 147, 151, 0.5);
+}
+
+.item::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 .itemText {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     display: block;
     position: relative;
     background-color: rgba(255, 255, 255, .20);
@@ -320,6 +352,9 @@ html {
 }
 
 .itemTitle {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     position: relative;
     width: 100%;
     height: 30%;
@@ -333,6 +368,9 @@ html {
 }
 
 .itemSearch {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     position: relative;
     height: 15%;
     width: 100%;
@@ -343,6 +381,9 @@ html {
 }
 
 .searchList {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     visibility: hidden;
     overflow: hidden;
     background-color: rgba(255,255,255,0.8);
@@ -446,18 +487,10 @@ resize: none;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: rgba(85, 147, 151, 0.5);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.4);
+    width: 0;
 }
 
 ::placeholder {
-    color: white;
-    opacity: 0.5;
+    color: black;
+    opacity: 0.6;
 }
