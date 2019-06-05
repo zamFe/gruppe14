@@ -1,8 +1,33 @@
+/*tags*/
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 
 body{
-    /*background-color: #F9FAF5;*/
-    margin-bottom: 335px;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+}
+
+footer{
+    position: relative;
+    margin: 0;
+    bottom: 0;
+}
+
+h6{
+    color: #0b245b;
+    z-index: 10;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5{
+    color: rgb(99, 123, 175);
+    z-index: 10;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #folderLogo{
@@ -20,109 +45,136 @@ body{
     box-shadow: 0 0 10px 2px #f9faf5;
     margin: 20px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 #logoContainer{
-position: absolute;
-left: 450px;
-top: 20px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 20px;
 }
 
 #logoPicture {
-width: 400px;
-height: 175px;
+    width: 400px;
+    height: 175px;
 }
 
 /* Bordered form */
 
-
 #username {
-  margin: auto;
-  text-align: center;
-  left: 200px;
+    margin: 0;
+    text-align: center;
+    left: 200px;
+    padding: 10px;
 }
 
 #password {
-  margin: auto;
-  text-align: center;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#passwordLogIn{
+    margin-bottom: 30px;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 50%;
-  padding: 12px 20px;
-  top:250xp;
-  border: 1px solid #ccc;
-  box-sizing: 250xp;
-  text-align: center;
-  position: relative;
-  display: block;
-  left: 290px;
+    position: relative;
+    left: calc(50% - 200px);
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 400px;
+    height: 40px;
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: rgb(0, 225, 51);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  position: relative;
-  left: 310px;
+.button {
+    background-color: #0b245b;
+    color: #F9FAF5;
+    padding: 14px 20px;
+    margin:10px 0;
+    border: solid #0b245b;
+    cursor: pointer;
+    width: 200px;
+    position: relative;
+    left: calc(50% - 100px);
 }
 
 /* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.8;
+.button:hover{
+    color: #0B245B;
+    background-color: #F9FAF5;;
+    border: solid #0B245B;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-  position: relative;
-  left: 590px;
+#loginContainer{
+    position: relative;
+    width: 100%;
 }
 
-#remamber {
-position: absolute;
-top:480px;
-left: 580px;
+#remember {
+    position: absolute;
+    top: 60px;
+    left: 46%;
 }
 
 /* Center the avatar image inside this container */
 .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+    text-align: center;
+    margin: 24px 0 12px 0;
 }
 
 /* Avatar image */
 img.avatar {
-  width: 40%;
-  border-radius: 50%;
+    width: 40%;
+    border-radius: 50%;
 }
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+    padding: 16px;
 }
 
 /* The "Forgot password" text */
 span.psw {
-  float: right;
-  padding-top: 16px;
+    position: relative;
+    left: calc(50% - 250px);
+    top: 100px;
+    padding-top: 16px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
-    display: block;
-    float: none;
+      display: block;
+      float: none;
   }
+
   .cancelbtn {
-    width: 100%;
+      width: 100%;
   }
+}
+
+#footerText{
+    position: absolute;
+    text-align: center;
+    left: calc(50% - 120px);
+    top:200px;
+}
+#Policy{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#Policy2{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
 }

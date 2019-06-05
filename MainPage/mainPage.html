@@ -52,73 +52,32 @@
     <div class="uper">Finished</div>
 </div>
 
-<img class="pluss" id="pluss1" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss1" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
-<img class="pluss" id="pluss2" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss2" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
-<img class="pluss" id="pluss3" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss3" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
-<img class="pluss" id="pluss4" src="bilder-slu/pluss.png">
+<img class="pluss" id="pluss4" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
 
 
-<div class="wrapper">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
+<div id="toDoColumn" class="wrapper">
+    <div class="item">
+        <input type="text" placeholder="Title..." class="itemTitle">
+        <textarea placeholder="details..." class="itemText" rows="1" cols="10"></textarea>
+        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);" onblur="removeMemberSearch(event);" onkeyup="hideMemberSearch(event);">
+        <ul class="searchList">Members
+        </ul>
+    </div>
 </div>
 
-<div class="wrapper" id="wrapper2">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
+<div id="OngoingColumn" class="wrapper">
 </div>
 
-<div class="wrapper" id="wrapper3">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
+<div id="StuckColumn" class="wrapper">
 </div>
 
-<div class="wrapper" id="wrapper4">
-    <textarea class="item" rows="1" cols="10">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
-    <textarea class="item" rows="10" cols="30">
-
-    </textarea>
+<div id="FinishedColumn" class="wrapper">
 </div>
 
 <!--
@@ -174,22 +133,8 @@ Design the Main Page for your project website
 
 
 </textarea>
-
-
     <div id="sideTab" tabindex="1"></div>
-
-
-
-
-
-
-
 </div>
-
-
-
-
 </body>
-
-
+<script src="projectStatusManager.js"></script>
 </html>

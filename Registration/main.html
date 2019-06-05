@@ -5,17 +5,17 @@
         <link rel=styleSheet href="index.css" type="text/css">
         <title>Velkommen</title>
 
-        <div class="wrapper">
 
        
         <div speechBubble id="speechBubble">
 
-                    <div speechBubble id="speechBubble1" class="speechBubble">First and last name</div>
-                    <div speechBubble id="speechBubble2" class="speechBubble">Nick name</div>
-                    <div speechBubble id="speechBubble3" class="speechBubble">Write you'r e-mail address</div>
-                    <div speechBubble id="speechBubble4" class="speechBubble">When is your birthday?</div>
-                    <div speechBubble id="speechBubble5" class="speechBubble">New password</div>
-                    <div speechBubble id="speechBubble6" class="speechBubble">Repeat password</div>
+                    <div speechBubble id="speechBubble1" class="speechBubble"><h6 id="speechBubbleText1">First and last name</h6></div>
+                    <div speechBubble id="speechBubble2" class="speechBubble"><h6 id="speechBubbleText2">Nick name</h6></div>
+                    <div speechBubble id="speechBubble3" class="speechBubble"><h6 id="speechBubbleText3">Write you'r e-mail address</h6></div>
+                    <div speechBubble id="speechBubble4" class="speechBubble"><h6 id="speechBubbleText4">When is your birthday?</h6></div>
+                    <div speechBubble id="speechBubble5" class="speechBubble"><h6 id="speechBubbleText5">New password</h6></div>
+                    <div speechBubble id="speechBubble6" class="speechBubble"><h6 id="speechBubbleText6">Repeat password</h6></div>
+                    
                 </div>
             </div>
 
@@ -54,20 +54,20 @@
                   
                 <div id="genderContainer">
                     <form action="" id="gender" class="gender">
-                    <input type="radio" id="female" class="female" name="gender" value="female"> Female <br>
-                    <input type="radio" id="male" class="male" name="gender" value="male"> Male <br>
-                    <input type="radio" id="other" class="other" name="gender" value="other"> Other <br>
+                    <input type="radio" id="female" class="female" name="gender" value="female"><h6 id="femaleText"> Female </h6><br>
+                    <input type="radio" id="male" class="male" name="gender" value="male"><h6 id="maleText"> Male </h6><br>
+                    <input type="radio" id="other" class="other" name="gender" value="other"><h6 id ="otherText"> Other </h6><br>
                     </form>
                 </div>
                 </div>
+            
 
                 
-                    
+                <div id="buttonholder">
+                        <button type="button" id="button1" class="button" onclick="buildUser();">Home</button>
+                        <button type="button" id="button2" class="button">Register</button>
+                </div>
             </div>
-            <buttonholder id="buttonholder">
-            <button type="button" id="button1" class="button" onclick="buildUser();">Home</button>
-            <button type="button" id="button2" class="button">Register</button>
-        </buttonholder>
             
 </div>
 

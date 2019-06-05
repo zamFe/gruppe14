@@ -1,20 +1,24 @@
-/*tags*/
+
 
 html {
     height: 100%;
     margin: 0;
 }
 
+
 body{
-    margin-bottom: 335px;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
+
+
 
 footer{
     position: relative;
     margin: 0;
     bottom: 0;
 }
+
+
 
 h6{
     color: rgb(166, 189, 240);
@@ -23,12 +27,16 @@ h6{
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+
 h5{
     color: rgb(99, 123, 175);
     z-index: 10;
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 
 /*id's*/
@@ -90,13 +98,10 @@ h5{
     left: 43%;
 }
 
-#versionText{
+#footerText{
     position: absolute;
-    height: 10px;
     text-align: center;
-    bottom: 10px;
-    left: calc(50% - 30px);
-    color: #0b245b;
+    left: calc(50% - 120px);
 }
 
 #animationContainer{
@@ -134,7 +139,7 @@ h5{
     padding: 20px 32px;
     text-align: center;
     display: inline-block;
-    border: none;
+    border: solid #0b245b;
     border-radius: 4px;
     background-color: #0B245B;
     color: #F9FAF5;
@@ -169,6 +174,7 @@ h5{
     opacity: 1;
     transition: 0s;
 }
+
 
 
 /*animation*/
