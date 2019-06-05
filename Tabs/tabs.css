@@ -89,6 +89,10 @@ button {
     filter: drop-shadow(-10px -3px 15px black);
 }
 
+#mainTabTitle {
+    color: white;
+}
+
 .tabTitle {
     position: relative;
     white-space: nowrap;
@@ -109,18 +113,18 @@ button {
     top: -125px;
     left: 150px;
     transition: all 0.1s ease-in-out;
-    color: darkred;
+    color: gray;
     cursor: pointer;
 }
 
 .closeTabButton:hover {
-    color: black;
+    color: darkred;
 }
 
 #add {
     padding-left: 30px;
     height: 40px;
-    order: 1;
+    order: 2;
 }
 
 #addImg {

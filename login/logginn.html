@@ -37,15 +37,16 @@
 
 
 
-    <div class="container">
+    <div speechBubble id="speechBubble1" class="speechBubble"><h6 id="speechBubbleText1">First and last name</h6></div>
+    <div speechBubble id="speechBubble2" class="speechBubble"><h6 id="speechBubbleText2">Nick name</h6></div>
 
 
         <h2 id="username">Username</h2>
-        <input type="text" placeholder="Enter Username" name="uname" required id ="userNameLogIn">
+        <input onfocus="inputname1" onblur="inputname2" type="text" placeholder="Enter Username" name="uname" required id ="userNameLogIn">
 
 
         <h2 id="password">Password</h2>
-        <input type="password" placeholder="Enter Password" name="psw" required id="passwordLogIn">
+        <input onfocus="inputpasword1" onblur="inputpasword2" type="password" placeholder="Enter Password" name="psw" required id="passwordLogIn">
 
 
 
@@ -58,12 +59,12 @@
              </label>
 
         </div> <!-- End Container -->
-    </div> <!-- End Container -->
+
 
 
     <div>
         <a href="../FrontPage/frontPage.html">
-         <button type="button" class="button">Cancel</button>
+         <button id="cancelbutton" type="button" class="button">Cancel</button>
         </a>
          <span class="psw">Forgot <a href="#" onclick="forgotpassword()">password?</a></span>
     </div> <!-- End Container -->

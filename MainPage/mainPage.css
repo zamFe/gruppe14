@@ -461,6 +461,7 @@ resize: none;
     width: 190px;
     font-size: 15px;
     font-family: times;
+    text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
     border-color: rgb(51, 51, 204);
@@ -477,6 +478,7 @@ resize: none;
     width: 190px;
     font-size: 15px;
     font-family: times;
+    text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
     border-color: rgb(51, 51, 204);
@@ -484,6 +486,15 @@ resize: none;
     background-color: rgb(77, 158, 179);
     outline: none;
     resize: none;
+}
+
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
 }
 
 ::-webkit-scrollbar {
