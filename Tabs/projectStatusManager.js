@@ -7,21 +7,36 @@
 //adds a columnBlock to desired column
 function addColumnBlock(column) {
     var target;
-    console.log(column.target);
+    var section = column.target.parentElement.parentElement;
+    var project = projects[section.id.split("section")[1]];
+    var columnArray;
+    var columnName;
     if (column.target.classList.contains("pluss1")) {
         target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+        columnArray = project.toDo;
+        columnName = "toDo";
     } else if (column.target.classList.contains("pluss2")) {
         target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+        columnArray = project.ongoing;
+        columnName = "Ongoing";
     } else if (column.target.classList.contains("pluss3")) {
         target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+        columnArray = project.stuck;
+        columnName = "Stuck";
     } else if (column.target.classList.contains("pluss4")) {
         target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+        columnArray = project.finished;
+        columnName = "Finished";
     }
 
     var columnBlock = document.createElement("div");
 
     //add values
     columnBlock.classList.add("item");
+    columnBlock.draggable = true;
+    columnBlock.ondragstart = function handleDragover(e) {
+        drag(e);
+    };
 
     //create children elements
     var title = document.createElement("input");
@@ -55,6 +70,18 @@ function addColumnBlock(column) {
     var searchList = document.createElement("ul");
     searchList.classList.add("searchList");
     columnBlock.appendChild(searchList);
+
+    //identificate and add to correct project array
+
+    columnBlock.id = project.id + "-" + columnName + "-" + columnArray.length;
+    let columnObject = {
+        id: project.id + "-" + columnName + "-" + columnArray.length,
+        title: "",
+        description: "",
+        members: []
+    };
+    columnArray.push(columnObject);
+
 
     //finally append block
     target.appendChild(columnBlock);

@@ -6,7 +6,7 @@ var projects = [{}]; //index 0 is filler
 //methods
 
 //create new project with incremented id
-function createNewProject(projectName, description, tag, members, toDo, ongoing, stuck, finished) {
+function createNewProject(projectName, description, tag, members) {
     projectIdCount++;
     projects[projectIdCount] = {};
     projects[projectIdCount].id = projectIdCount;
@@ -14,10 +14,10 @@ function createNewProject(projectName, description, tag, members, toDo, ongoing,
     projects[projectIdCount].description = description;
     projects[projectIdCount].tag = tag;
     projects[projectIdCount].members = members.split(',');
-    projects[projectIdCount].toDo = toDo;
-    projects[projectIdCount].ongoing = ongoing;
-    projects[projectIdCount].stuck = stuck;
-    projects[projectIdCount].finished = finished;
+    projects[projectIdCount].toDo = [];
+    projects[projectIdCount].ongoing = [];
+    projects[projectIdCount].stuck = [];
+    projects[projectIdCount].finished = [];
 }
 
 function getProjectData(id) {

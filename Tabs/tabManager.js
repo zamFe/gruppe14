@@ -147,16 +147,16 @@ function createNewTab(projectId) {
         '<img class="pluss pluss4" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
         '\n' +
-        '<div class="wrapper toDoColumn">\n' +
+        '<div class="wrapper toDoColumn" ondrop="drop(event, this)" ondragover="allowDrop(event)">\n' +
         '</div>\n' +
         '\n' +
-        '<div class="wrapper OngoingColumn">\n' +
+        '<div class="wrapper OngoingColumn" ondrop="drop(event, this)" ondragover="allowDrop(event)">\n' +
         '</div>\n' +
         '\n' +
-        '<div class="wrapper StuckColumn">\n' +
+        '<div class="wrapper StuckColumn" ondrop="drop(event, this)" ondragover="allowDrop(event)">\n' +
         '</div>\n' +
         '\n' +
-        '<div class="wrapper FinishedColumn">\n' +
+        '<div class="wrapper FinishedColumn" ondrop="drop(event, this)" ondragover="allowDrop(event)">\n' +
         '   </div>\n' +
         '</div>\n';
 
@@ -168,7 +168,7 @@ function createNewTab(projectId) {
 }
 
 function openProfileTab() {
-    //make sure profile isnt already open
+    //make sure profile isn't already open
     if(document.getElementById("profileTab")) {
         setActiveTab(document.getElementById("profileTab"));
         return "profile already open";
@@ -231,14 +231,15 @@ function setActiveTab(target) {
         console.log("tab deleted");
         let previousTab = activeTab;
         activeTab = document.getElementById("main").lastElementChild.id;
+        //control if profileTab is open
         var profileTabIsOpen = false;
         for(let i = 0; i < document.getElementById("tabContainer").childElementCount; i++) {
             if(document.getElementById("tabContainer").children[i].id == "profileTab") {
                 profileTabIsOpen = true;
             }
         }
-        console.log("profile tab is" + profileTabIsOpen);
-        console.log("tab deleted. replacing with " + activeTab);
+        //update activeTab, as it is currently related to main, not tabContainer.
+        //this could be fixed but i don't want to change too much this close to deadline, also don't have time
         if(activeTab == "home" || (activeTab == "profilePage" && document.getElementById("main").childElementCount == 2)) {
             activeTab = "0";
         } else if(activeTab == "profilePage") {
@@ -251,6 +252,7 @@ function setActiveTab(target) {
             }
         }
 
+        //display correct tab
         if(activeTab == 0) {
             document.getElementById("home").style.display = "";
         } else if (activeTab == "profileTab") {
@@ -266,6 +268,7 @@ function setActiveTab(target) {
     activeTab = target.id;
     target.style.zIndex = "1";
 
+    //hide previous tab
     if(previousTab == 0) {
         document.getElementById("home").style.display = "none";
     } else if (previousTab == "profileTab") {
@@ -275,6 +278,7 @@ function setActiveTab(target) {
         document.getElementById("section" + previousTab).style.display = "none";
     }
 
+    //display active tab
     if(activeTab == 0) {
         document.getElementById("home").style.display = "";
     } else if (activeTab == "profileTab") {
@@ -286,6 +290,7 @@ function setActiveTab(target) {
 
 function closeTab(projectId) {
     var section;
+    //make sure not do delete profilePage
     if(projectId == "profileTab") {
         section = document.getElementById("profilePage");
         section.style.display = "none";
