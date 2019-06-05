@@ -12,75 +12,84 @@
     <img id="logoPicture" src="bilder-slu/Logo.png" alt="Task Binder">
 </div>
 
-<img id="board" src="bilder-slu/pinboard.png">
+<button class="button" id="button1" type="button" onClick = "document.getElementById('timeTable').style.height = '400px'; document.getElementById('timeTable').style.width = '1200px'; document.getElementById('container').style.top = '650px'; document.getElementById('timeTable').style.transition = '0.8s'; document.getElementById('container').style.transition = '0.8s';">Open Timetable!</button>
+
+<button class="button" id="button2" type="button" onClick = "document.getElementById('timeTable').style.height = '0px'; document.getElementById('timeTable').style.width = '0px'; document.getElementById('container').style.top = '200px'; document.getElementById('timeTable').style.transition = '0.8s'; document.getElementById('container').style.transition = '0.8s';">Close Timetable!</button>
+
+<div id="timeTable" class="timeTable">
+    <div id="title" class="deltakere">Members</div>
+    <div id="dag1" class="dag">Day 1</div>
+    <div id="dag2" class="dag">Day 2</div>
+    <div id="dag3" class="dag">Day 3</div>
+    <div id="dag4" class="dag">Day 4</div>
+    <div id="dag5" class="dag">Day 5</div>
+    <div id="dag6" class="dag">Day 6</div>
+    <div id="dag7" class="dag">Day 7</div>
+
+    <div id="name1" class="names">Maya</div>
+    <div id="timeBuble1" class="timebuble">Start on MainPage</div>
+    <div id="timeBuble6" class="timebubleBurgundy">Write Report</div>
+    <div id="timeBuble11" class="timebuble">Continue on Mainpage</div>
+    <div id="name2" class="names">Felix</div>
+    <div id="timeBuble2" class="timebuble">Start on Add Function</div>
+    <div id="timeBuble7" class="timebubleBurgundy">Write Report</div>
+    <div id="timeBuble12" class="timebuble">Continue on Add Function</div>
+    <div id="name3" class="names">Kristian</div>
+    <div id="timeBuble3" class="timebuble">Start on Chatbox</div>
+    <div id="timeBuble8" class="timebubleBurgundy">Write Report</div>
+    <div id="timeBuble13" class="timebubleBurgundy">Continue on Chatbox</div>
+    <div id="timeBuble14" class="timebubleBurgundy">Start on Frontpage</div>
+    <div id="name4" class="names">Sindre</div>
+    <div id="timeBuble4" class="timebuble">Start on Login Page</div>
+    <div id="timeBuble9" class="timebubleBurgundy">Write Report</div>
+    <div id="timeBuble15" class="timebuble">Continue on Login Page</div>
+    <div id="name5" class="names">Eskild</div>
+    <div id="timeBuble5" class="timebuble">Write Main Report</div>
+    <div id="timeBuble10" class="timebubleBurgundy">Write Report</div>
+    <div id="timeBuble16" class="timebubleBurgundy">Start on Logo</div>
+    <div id="timeBuble17" class="timebubleBurgundy">Continue on Logo</div>
 
 
-
-<div class="wrapper1">
-    <div class="item1">Kristian</div>
-    <textarea class="item1" rows="1" cols="10">
-*
-    </textarea>
-    <textarea class="item1" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item1" rows="10" cols="30">
-*
-    </textarea>
 </div>
 
-<div class="wrapper2">
-    <div class="item2">Eskild</div>
-    <textarea class="item2" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item2" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item2" rows="10" cols="30">
-*
-    </textarea>
+
+<div id="container">
+
+<div class="wrapperuper">
+    <div class="uper">To-Do</div>
+    <div class="uper">Ongoing</div>
+    <div class="uper">Stuck</div>
+    <div class="uper">Finished</div>
 </div>
 
-<div class="wrapper3">
-    <div class="item3">Maya</div>
-    <textarea class="item3" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item3" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item3" rows="10" cols="30">
-*
-    </textarea>
+<img class="pluss" id="pluss1" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
+
+<img class="pluss" id="pluss2" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
+
+<img class="pluss" id="pluss3" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
+
+<img class="pluss" id="pluss4" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">
+
+
+<div id="toDoColumn" class="wrapper">
+    <div class="item">
+        <input type="text" placeholder="Title..." class="itemTitle">
+        <textarea placeholder="details..." class="itemText" rows="1" cols="10"></textarea>
+        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);" onblur="removeMemberSearch(event);" onkeyup="hideMemberSearch(event);">
+        <ul class="searchList">Members
+        </ul>
+    </div>
 </div>
 
-<div class="wrapper4">
-    <div class="item4">Felix</div>
-    <textarea class="item4" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item4" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item4" rows="10" cols="30">
-*
-    </textarea>
+<div id="OngoingColumn" class="wrapper">
 </div>
 
-<div class="wrapper5">
-    <div class="item5">Sindre</div>
-    <textarea class="item5" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item5" rows="10" cols="30">
-*
-    </textarea>
-    <textarea class="item5" rows="10" cols="30">
-*
-    </textarea>
+<div id="StuckColumn" class="wrapper">
 </div>
 
+<div id="FinishedColumn" class="wrapper">
+   </div>
+</div>
 
 <!--
 <div id="toDoBox">
@@ -106,6 +115,8 @@ Design the Main Page for your project website
     <div class="tabDivider"></div>
     <a class="tabButton" href="turIntro.html">Ta en tur</a>
     <div class="tabDivider"></div>
+
+
     <textarea id="newsFeed" rows="10" cols="30" disabled>
                News Feed
 
@@ -135,22 +146,8 @@ Design the Main Page for your project website
 
 
 </textarea>
-
-
     <div id="sideTab" tabindex="1"></div>
-
-
-
-
-
-
-
 </div>
-
-
-
-
 </body>
-
-
+<script src="test.js"></script>
 </html>

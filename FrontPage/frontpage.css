@@ -1,35 +1,30 @@
-
-
 html {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
-
 
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
 
-
-
 footer{
     position: relative;
     margin: 0;
-    bottom: 0;
+
 }
 
-
-
 h6{
-    color: rgb(166, 189, 240);
+    position: relative;
+    color: #0b245b;
     z-index: 10;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+
 }
 
-
-
 h5{
+    position: relative;
     color: rgb(99, 123, 175);
     z-index: 10;
     font-size: 17px;
@@ -37,31 +32,22 @@ h5{
 }
 
 
-
-
 /*id's*/
 
 #logoContainer{
-    position: absolute;
-    width: 50%;
+    position: relative;
+    width: 100%;
     left: 20px;
     top: 30px;
-    margin: 30px;
+    margin: 0;
     text-align: center;
 }
 
-#logoFrontPage{
-    position: absolute;
-    width: 50%;
-    height: 20rem;
-    margin: 0;
-    padding: 10px;
-    left: 32%;
-}
 
 #logoPicture{
-    width: 500px;
-    max-width: 500px;
+    position: relative;
+    width: 700px;
+
 }
 
 #folderLogo{
@@ -84,56 +70,42 @@ h5{
     cursor: pointer;
 }
 
-#logInButton{
-    position: absolute;
-    margin: 10px;
-    top: 70%;
-    left: 43%;
-}
-
-#newUserButton{
-    position: absolute;
-    margin: 10px;
-    top: 80%;
-    left: 43%;
-}
-
 #footerText{
-    position: absolute;
+    position: relative;
     text-align: center;
-    left: calc(50% - 120px);
 }
 
 #animationContainer{
-    position: absolute;
-    left: calc(50% - 170px);
+    position: relative;
+    width:500px;
+    height: 200px;
+    margin: 0;
+    padding-top: 10px;
+    top: 10%;
+    left: calc(50% - 250px);
 }
 
 #Policy{
     position: relative;
-    top: 700px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
     text-align: center;
-
 }
 
 #Policy2{
     position: relative;
-    top: 710px;
     left:0;
     right: 0;
     margin: 0 auto;
     text-align: center;
-
 }
+
+
 /*classes*/
 
 .frontPageButton{
-    position: absolute;
-    left: 42%;
-    top: -100px;
+    position: relative;
+    left: calc(50% - 110px);
+    bottom: 80%;
     width: 200px;
     margin: 1rem;
     padding: 20px 32px;
@@ -176,27 +148,25 @@ h5{
 }
 
 
-
 /*animation*/
 
 #people {
-    position: absolute;
+    position: relative;
     height: 100px;
-    width: 380px;
-    top: 220px;
-
+    width: 360px;
+    top: 15%;
+    left: calc(50% - 180px);
     z-index: 50;
 }
 
 .bubble {
     z-index: 50;
-    top: 180px;
-
+    top: -10px;
 }
 
 #bubble1 {
     position: absolute;
-    left: 60px;
+    left: 120px;
     height: 50px;
     width: 50px;
 
@@ -221,7 +191,7 @@ h5{
 
 #bubble2 {
     position: absolute;
-    left: 155px;
+    left: 210px;
     height: 50px;
     width: 50px;
 
@@ -247,7 +217,7 @@ h5{
 
 #bubble3 {
     position: absolute;
-    left: 250px;
+    left: 300px;
     height: 50px;
     width: 50px;
     animation-delay: 2s;
@@ -273,7 +243,7 @@ h5{
 
 #bubble4 {
     position: absolute;
-    left: 345px;
+    left: 390px;
     height: 50px;
     width: 50px;
     animation-delay: 3s;
@@ -298,9 +268,7 @@ h5{
 }
 
 #book {
-    position: absolute;
-    top:250px;
-
+    position: relative;
     height: 50px;
     width: 50px;
     z-index: 10;
@@ -313,8 +281,8 @@ h5{
 
 @keyframes bookmove {
     0% {
-        top: 250px;
-        left: 90px;
+        top: 20px;
+        right: 300px;
         opacity: 0;
     }
 
@@ -372,16 +340,15 @@ h5{
     }
 
     100% {
-        top: 160px;
-        left: 30px;
+        top: -10px;
+        right: 400px;
         opacity: 0;
         transform: rotate(360deg);
     }
 }
 
 #brain {
-    position: absolute;
-    top:250px;
+    position: relative;
     height: 50px;
     width: 50px;
     z-index: 10;
@@ -397,8 +364,8 @@ h5{
 
 @keyframes brainmove {
     0% {
-        top: 250px;
-        left: 250px;
+        top: 0;
+        right: 250px;
         opacity: 0;
     }
 
@@ -456,18 +423,15 @@ h5{
     }
 
     100% {
-        top: 160px;
-        left: 50px;
-        opacity: 1;
+        top: -80px;
+        right: 120px;
         transform: rotate(360deg);
         opacity: 0;
     }
 }
 
 #work {
-    position: absolute;
-    top:250px;
-    left: 680px;
+    position: relative;
     height: 50px;
     width: 50px;
     z-index: 10;
@@ -482,8 +446,8 @@ h5{
 
 @keyframes workmove {
     0% {
-        top: 250px;
-        left: 200px;
+        top: -50px;
+        left: 270px;
         opacity: 0;
     }
 
@@ -541,18 +505,15 @@ h5{
     }
 
     100% {
-        top: 160px;
-        left: 290px;
-        opacity: 1;
+        top: -170px;
+        left: 150px;
         transform: rotate(360deg);
         opacity: 0;
     }
 }
 
 #money {
-    position: absolute;
-    top:250px;
-    left: 780px;
+    position: relative;
     height: 50px;
     width: 50px;
     z-index: 10;
@@ -567,8 +528,8 @@ h5{
 
 @keyframes moneymove {
     0% {
-        top: 250px;
-        left: 300px;
+        top: -25px;
+        left: 350px;
         opacity: 0;
     }
 
@@ -626,9 +587,8 @@ h5{
     }
 
     100% {
-        top: 160px;
+        top: 50px;
         left: 400px;
-        opacity: 0;
         transform: rotate(360deg);
         opacity: 0;
     }
@@ -638,7 +598,7 @@ h5{
     position: absolute;
     height: 30px;
     width: 45px;
-    top: 270px;
+    top: 110px;
     background-color: rgb(144, 144, 144);
     border-radius: 25%;
     border-style: solid;
@@ -647,47 +607,43 @@ h5{
 }
 
 #mac1 {
-    left: 30px;
-    position: absolute;
+    left: 80px;
 }
 
 #mac2 {
-    left: 125px;
-    position: absolute;
+    left: 175px;
 }
 
 #mac3 {
-    left: 220px;
-    position: absolute;
+    left: 270px;
 }
 
 #mac4 {
-    left: 315px;
-    position: absolute;
+    left: 365px;
 }
 
 .logo {
     position: absolute;
     height: 10px;
     width: 40px;
-    top: 275px;
+    top: 120px;
     z-index: 70;
 }
 
 #logo1 {
-    left: 33px;
+    left: 82px;
 }
 
 #logo2 {
-    left: 128px;
+    left: 177px;
 }
 
 #logo3 {
-    left: 223px;
+    left: 272px;
 }
 
 #logo4 {
-    left: 318px;
+    left: 367px;
 }
 
 

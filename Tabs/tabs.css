@@ -2,11 +2,12 @@
 
 html, body{
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -78,6 +79,8 @@ button {
     Flex: 0;
     flex-basis: 120px;
     z-index: 0;
+    width: 150px;
+    cursor: default;
 }
 
 .tabImg {
@@ -86,8 +89,14 @@ button {
     filter: drop-shadow(-10px -3px 15px black);
 }
 
+#mainTabTitle {
+    color: white;
+}
+
 .tabTitle {
     position: relative;
+    white-space: nowrap;
+    overflow-x: scroll;
     text-align: left;
     padding-left: 15px;
     width: inherit;
@@ -95,10 +104,27 @@ button {
     top: -50px;
 }
 
+.closeTabButton {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    top: -125px;
+    left: 150px;
+    transition: all 0.1s ease-in-out;
+    color: gray;
+    cursor: pointer;
+}
+
+.closeTabButton:hover {
+    color: darkred;
+}
+
 #add {
     padding-left: 30px;
     height: 40px;
-    order: 1;
+    order: 2;
 }
 
 #addImg {
@@ -204,6 +230,14 @@ button {
     background-color: rgba(255,255,255,0.3);
     max-height: 300px;
     overflow: scroll;
+}
+
+/* project page */
+
+#projectPageTitle {
+    color: white;
+    white-space: nowrap;
+    font-size: 4em;
 }
 
 /* scrollbar */
