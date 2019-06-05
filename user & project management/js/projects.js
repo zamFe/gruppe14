@@ -18,6 +18,7 @@ function createNewProject(projectName, description, tag, members) {
     projects[projectIdCount].ongoing = [];
     projects[projectIdCount].stuck = [];
     projects[projectIdCount].finished = [];
+    updateActiveProjectList(projects[projectIdCount]);
 }
 
 function getProjectData(id) {
@@ -26,6 +27,14 @@ function getProjectData(id) {
 
 function loadProject(projectName) {
 
+}
+
+function updateActiveProjectList(project) {
+    var list = document.getElementById("activeList");
+    var listElement = document.createElement("li");
+    listElement.classList.add("activeListObject");
+    listElement.innerHTML = project.projectName + " | members: " + project.members.length;
+    list.appendChild(listElement);
 }
 
 //code
