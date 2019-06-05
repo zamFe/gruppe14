@@ -1,15 +1,12 @@
 /*tags*/
 
 html {
-    width: 100%;
     height: 100%;
     margin: 0;
-    padding 0;
 }
 
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    background-size: 1px 750px;
 }
 
 footer{
