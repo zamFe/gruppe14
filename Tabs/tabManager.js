@@ -88,7 +88,49 @@ function createNewTab(projectId) {
     }
     section.appendChild(members);
     //insert task columns and all additional content into section
-    section.innerHTML +=
+    section.innerHTML += '<button class="button" id="button1" type="button" onClick = "document.getElementById(\'timeTable\').style.height = \'400px\'; document.getElementById(\'timeTable\').style.width = \'1200px\'; document.getElementById(\'container\').style.top = \'650px\'; document.getElementById(\'timeTable\').style.transition = \'0.8s\'; document.getElementById(\'container\').style.transition = \'0.8s\';">Open Timetable!</button>\n' +
+        '\n' +
+        '<button class="button" id="button2" type="button" onClick = "document.getElementById(\'timeTable\').style.height = \'0px\'; document.getElementById(\'timeTable\').style.width = \'0px\'; document.getElementById(\'container\').style.top = \'200px\'; document.getElementById(\'timeTable\').style.transition = \'0.8s\'; document.getElementById(\'container\').style.transition = \'0.8s\';">Close Timetable!</button>\n' +
+        '\n' +
+        '<div id="timeTable" class="timeTable">\n' +
+        '    <div id="title" class="deltakere">Members</div>\n' +
+        '    <div id="dag1" class="dag">Day 1</div>\n' +
+        '    <div id="dag2" class="dag">Day 2</div>\n' +
+        '    <div id="dag3" class="dag">Day 3</div>\n' +
+        '    <div id="dag4" class="dag">Day 4</div>\n' +
+        '    <div id="dag5" class="dag">Day 5</div>\n' +
+        '    <div id="dag6" class="dag">Day 6</div>\n' +
+        '    <div id="dag7" class="dag">Day 7</div>\n' +
+        '\n' +
+        '    <div id="name1" class="names">Maya</div>\n' +
+        '    <div id="timeBuble1" class="timebuble">Start on MainPage</div>\n' +
+        '    <div id="timeBuble6" class="timebubleBurgundy">Write Report</div>\n' +
+        '    <div id="timeBuble11" class="timebuble">Continue on Mainpage</div>\n' +
+        '    <div id="name2" class="names">Felix</div>\n' +
+        '    <div id="timeBuble2" class="timebuble">Start on Add Function</div>\n' +
+        '    <div id="timeBuble7" class="timebubleBurgundy">Write Report</div>\n' +
+        '    <div id="timeBuble12" class="timebuble">Continue on Add Function</div>\n' +
+        '    <div id="name3" class="names">Kristian</div>\n' +
+        '    <div id="timeBuble3" class="timebuble">Start on Chatbox</div>\n' +
+        '    <div id="timeBuble8" class="timebubleBurgundy">Write Report</div>\n' +
+        '    <div id="timeBuble13" class="timebubleBurgundy">Continue on Chatbox</div>\n' +
+        '    <div id="timeBuble14" class="timebubleBurgundy">Start on Frontpage</div>\n' +
+        '    <div id="name4" class="names">Sindre</div>\n' +
+        '    <div id="timeBuble4" class="timebuble">Start on Login Page</div>\n' +
+        '    <div id="timeBuble9" class="timebubleBurgundy">Write Report</div>\n' +
+        '    <div id="timeBuble15" class="timebuble">Continue on Login Page</div>\n' +
+        '    <div id="name5" class="names">Eskild</div>\n' +
+        '    <div id="timeBuble5" class="timebuble">Write Main Report</div>\n' +
+        '    <div id="timeBuble10" class="timebubleBurgundy">Write Report</div>\n' +
+        '    <div id="timeBuble16" class="timebubleBurgundy">Start on Logo</div>\n' +
+        '    <div id="timeBuble17" class="timebubleBurgundy">Continue on Logo</div>\n' +
+        '\n' +
+        '\n' +
+        '</div>\n' +
+        '\n' +
+        '\n' +
+        '<div id="container">\n' +
+        '\n' +
         '<div class="wrapperuper">\n' +
         '    <div class="uper">To-Do</div>\n' +
         '    <div class="uper">Ongoing</div>\n' +
@@ -96,23 +138,23 @@ function createNewTab(projectId) {
         '    <div class="uper">Finished</div>\n' +
         '</div>\n' +
         '\n' +
-        '<img class="pluss" id="pluss1" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss" id="pluss1" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
-        '<img class="pluss" id="pluss2" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss" id="pluss2" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
-        '<img class="pluss" id="pluss3" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss" id="pluss3" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
-        '<img class="pluss" id="pluss4" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss" id="pluss4" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
         '\n' +
         '<div id="toDoColumn" class="wrapper">\n' +
-        '    <!--div class="item">\n' +
+        '    <div class="item">\n' +
         '        <input type="text" placeholder="Title..." class="itemTitle">\n' +
         '        <textarea placeholder="details..." class="itemText" rows="1" cols="10"></textarea>\n' +
         '        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);" onblur="removeMemberSearch(event);" onkeyup="hideMemberSearch(event);">\n' +
         '        <ul class="searchList">Members\n' +
         '        </ul>\n' +
-        '    </div-->\n' +
+        '    </div>\n' +
         '</div>\n' +
         '\n' +
         '<div id="OngoingColumn" class="wrapper">\n' +
@@ -122,7 +164,8 @@ function createNewTab(projectId) {
         '</div>\n' +
         '\n' +
         '<div id="FinishedColumn" class="wrapper">\n' +
-        '</div>';
+        '   </div>\n' +
+        '</div>\n';
 
     //add section to main
     main.appendChild(section);

@@ -1,5 +1,5 @@
-body {
-    /*background-color: #F9FAF5;*/
+/* body {
+    background-color: #F9FAF5;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: 1000px 1600px;
     overflow: scroll;
@@ -11,6 +11,7 @@ html {
     height: 100%;
     margin: 0;
 }
+*/
 
 #logoContainer {
     position: absolute;
@@ -27,11 +28,11 @@ html {
 }
 
 
-* {
+/* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+}*/
 
 .button {
 position: absolute;
@@ -304,7 +305,7 @@ top: 100px;
 position: relative;
 height: 750px;
 width: 1200px;
-top: 200px;
+top: 0;
 left: 50px;
 }
 
@@ -333,7 +334,8 @@ left: 50px;
 }
 
 .wrapperuper {
-    position: absolute;
+    position: relative;
+    background-color: green;
     left: 180px;
     margin: 0 auto;
     display: grid;
@@ -345,6 +347,7 @@ left: 50px;
 }
 
 .uper {
+    background-color: green;
     background-color: rgba(255, 255, 255, .20);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -460,39 +463,7 @@ left: 50px;
 #FinishedColumn {
     left: 900px;
     top: 50px;
-
 }
-
-/*
-#toDoBox {
-position: absolute;
-height: 400px;
-width: 200px;
-background-color: rgb(77, 158, 179);
-border: 4px solid;
-border-radius: 8px;
-border-color: rgb(51, 51, 204);
-text-align: center;
-}
-
-#toDo {
-position: absolute;
-height: 110px;
-width: 180px;
-top: 230px;
-left: 18px;
-font-size: 15px;
-font-family: times;
-border-radius: 8px;
-color: rgb(0, 0, 0);
-background-color: rgb(200, 200, 200);
-text-align: center;
-outline: none;
-resize: none;
-}
-
-*/
-
 
 #newsFeed {
     position: absolute;
