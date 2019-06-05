@@ -98,7 +98,7 @@ h6{
     
 
 }
-#Policy{
+#policy{
     position: relative;
     top: 552px;
     left:0px;
@@ -114,7 +114,7 @@ h5{
     font-family: 'Times New Roman', Times, serif;
     
 }
-#Policy2{
+#policy2{
     position: relative;
     top: 558px;
     left:0px;
@@ -141,21 +141,21 @@ h5{
     
 }
 
-#velkommen {
+#welcome {
     width: 100%;
     height: 100%;
     top: -312px;
     position: relative;
 }
 
-#velkommen1 {
+#welcome1 {
     position: relative;
     left: calc(50% - 250px);
     margin: 0;
     padding: 0;
 }
 
-#registrering{
+#registration{
     width: 500px;
     height: auto;
     position: relative;
