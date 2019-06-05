@@ -1,16 +1,11 @@
-
-
 html {
     height: 100%;
     margin: 0;
 }
 
-
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
 }
-
-
 
 footer{
     position: relative;
@@ -18,16 +13,12 @@ footer{
     bottom: 0;
 }
 
-
-
 h6{
-    color: rgb(166, 189, 240);
+    color: #0b245b;
     z-index: 10;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
-
-
 
 h5{
     color: rgb(99, 123, 175);
@@ -35,8 +26,6 @@ h5{
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
 }
-
-
 
 
 /*id's*/
@@ -87,14 +76,14 @@ h5{
 #logInButton{
     position: absolute;
     margin: 10px;
-    top: 70%;
+    top: 60%;
     left: 43%;
 }
 
 #newUserButton{
     position: absolute;
     margin: 10px;
-    top: 80%;
+    top: 70%;
     left: 43%;
 }
 
@@ -116,7 +105,6 @@ h5{
     right: 0;
     margin: 0 auto;
     text-align: center;
-
 }
 
 #Policy2{
@@ -128,6 +116,8 @@ h5{
     text-align: center;
 
 }
+
+
 /*classes*/
 
 .frontPageButton{
@@ -176,7 +166,6 @@ h5{
 }
 
 
-
 /*animation*/
 
 #people {
@@ -184,14 +173,12 @@ h5{
     height: 100px;
     width: 380px;
     top: 220px;
-
     z-index: 50;
 }
 
 .bubble {
     z-index: 50;
     top: 180px;
-
 }
 
 #bubble1 {
