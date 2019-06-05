@@ -88,9 +88,9 @@ function createNewTab(projectId) {
     }
     section.appendChild(members);
     //insert task columns and all additional content into section
-    section.innerHTML += '<button class="button" id="button1" type="button" onClick = "document.getElementById(\'timeTable\').style.height = \'400px\'; document.getElementById(\'timeTable\').style.width = \'1200px\'; document.getElementById(\'container\').style.top = \'650px\'; document.getElementById(\'timeTable\').style.transition = \'0.8s\'; document.getElementById(\'container\').style.transition = \'0.8s\';">Open Timetable!</button>\n' +
+    section.innerHTML += '<button class="button" id="button1" type="button" onClick = "openTimeLine(event.target);">Open Timetable!</button>\n' +
         '\n' +
-        '<button class="button" id="button2" type="button" onClick = "document.getElementById(\'timeTable\').style.height = \'0px\'; document.getElementById(\'timeTable\').style.width = \'0px\'; document.getElementById(\'container\').style.top = \'200px\'; document.getElementById(\'timeTable\').style.transition = \'0.8s\'; document.getElementById(\'container\').style.transition = \'0.8s\';">Close Timetable!</button>\n' +
+        '<button class="button" id="button2" type="button" onClick = "closeTimeLine(event.target)">Close Timetable!</button>\n' +
         '\n' +
         '<div id="timeTable" class="timeTable">\n' +
         '    <div id="title" class="deltakere">Members</div>\n' +
@@ -138,32 +138,25 @@ function createNewTab(projectId) {
         '    <div class="uper">Finished</div>\n' +
         '</div>\n' +
         '\n' +
-        '<img class="pluss" id="pluss1" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss pluss1" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
-        '<img class="pluss" id="pluss2" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss pluss2" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
-        '<img class="pluss" id="pluss3" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss pluss3" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
-        '<img class="pluss" id="pluss4" src="bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
+        '<img class="pluss pluss4" src="../MainPage/bilder-slu/pluss.png" onclick="addColumnBlock(event)">\n' +
         '\n' +
         '\n' +
-        '<div id="toDoColumn" class="wrapper">\n' +
-        '    <div class="item">\n' +
-        '        <input type="text" placeholder="Title..." class="itemTitle">\n' +
-        '        <textarea placeholder="details..." class="itemText" rows="1" cols="10"></textarea>\n' +
-        '        <input type="search" placeholder="Add members here" class="itemSearch" onfocus="renderMemberSearch(event);" onblur="removeMemberSearch(event);" onkeyup="hideMemberSearch(event);">\n' +
-        '        <ul class="searchList">Members\n' +
-        '        </ul>\n' +
-        '    </div>\n' +
+        '<div class="wrapper toDoColumn">\n' +
         '</div>\n' +
         '\n' +
-        '<div id="OngoingColumn" class="wrapper">\n' +
+        '<div class="wrapper OngoingColumn">\n' +
         '</div>\n' +
         '\n' +
-        '<div id="StuckColumn" class="wrapper">\n' +
+        '<div class="wrapper StuckColumn">\n' +
         '</div>\n' +
         '\n' +
-        '<div id="FinishedColumn" class="wrapper">\n' +
+        '<div class="wrapper FinishedColumn">\n' +
         '   </div>\n' +
         '</div>\n';
 
@@ -313,6 +306,26 @@ function closeTab(projectId) {
         tab.removeChild(tab.firstChild);
     }
     tab.remove();
+}
+
+function openTimeLine(target) {
+    target = target.nextElementSibling.nextElementSibling;
+    let container = target.nextElementSibling;
+    target.style.height = '400px';
+    target.style.width = '1200px';
+    container.style.top = '650px';
+    target.style.transition = '0.8s';
+    container.style.transition = '0.8s';
+}
+
+function closeTimeLine(target) {
+    target = target.nextElementSibling;
+    let container = target.nextElementSibling;
+    target.style.height = '0px';
+    target.style.width = '0px';
+    container.style.top = '200px';
+    target.style.transition = '0.8s';
+    container.style.transition = '0.8s';
 }
 
 //script

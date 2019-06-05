@@ -7,19 +7,15 @@
 //adds a columnBlock to desired column
 function addColumnBlock(column) {
     var target;
-    switch (column.target.id) {
-        case "pluss1":
-            target = document.getElementById("toDoColumn");
-            break;
-        case "pluss2":
-            target = document.getElementById("OngoingColumn");
-            break;
-        case "pluss3":
-            target = document.getElementById("StuckColumn");
-            break;
-        case "pluss4":
-            target = document.getElementById("FinishedColumn");
-            break;
+    console.log(column.target);
+    if (column.target.classList.contains("pluss1")) {
+        target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+    } else if (column.target.classList.contains("pluss2")) {
+        target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+    } else if (column.target.classList.contains("pluss3")) {
+        target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+    } else if (column.target.classList.contains("pluss4")) {
+        target = column.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
     }
 
     var columnBlock = document.createElement("div");
