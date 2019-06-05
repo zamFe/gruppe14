@@ -7,9 +7,7 @@ html {
 
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    height: 100%;
-    width: 100%;
-    background-size: 1px 100%;
+    background-size: cover;
 }
 
 footer{
@@ -224,14 +222,13 @@ span.psw {
 #footerText{
     position: absolute;
     text-align: center;
-    left: calc(50% - 120px);
-    top:200px;
+    left: calc(50% - 150px);
+    top: 200px;
 }
 #Policy{
     position: relative;
     margin: 0 auto;
     text-align: center;
-
 }
 
 #Policy2{

@@ -6,6 +6,7 @@ html {
 
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-size: cover;
 }
 
 footer{
