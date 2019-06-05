@@ -1,6 +1,6 @@
 /* fonts */
 
-h1, p, div{
+h1, h2, h3 p, div{
 	font-family: 'Montserrat', sans-serif;
 }
 
