@@ -61,7 +61,7 @@ function addColumnBlock(column) {
         renderMemberSearch(e);
     };
     search.onblur = function handleSearchBlur(e) {
-        removeMemberSearch(e);
+        //removeMemberSearch(e);
     };
     search.onkeyup = function handleSearchHiding(e) {
         hideMemberSearch(e);
@@ -98,6 +98,19 @@ function renderMemberSearch(event) {
         var listElement = document.createElement("li");
         listElement.classList.add("memberSearchElement");
         listElement.innerHTML = testArr[i];
+        listElement.id = testArr[i];
+        //creates onclick to add users to columnBlock
+        console.log("working on it...");
+        listElement.onclick = function addToBox(event) {
+                addMemberToSearchBar(event);
+                var ul = event.target.parentElement;
+                ul.previousElementSibling.style.zIndex = "0";
+                ul.previousElementSibling.value = "";
+                while (ul.hasChildNodes()) {
+                    ul.removeChild(ul.lastChild);
+                }
+            searchList.style.visibility = "hidden";
+        };
         searchList.appendChild(listElement);
     }
 }
@@ -135,4 +148,18 @@ function removeMemberSearch(event) {
     searchList.style.visibility = "hidden";
 }
 
+//add member when list element clicked
+function addMemberToSearchBar(event) {
+    var memberBar = event.target.parentElement.previousElementSibling;
+    console.log(memberBar);
+    var member = document.createElement("div");
+    member.innerHTML = event.target.innerHTML;
+    member.classList.add("memberSquare");
+    memberBar.style.backgroundColor = "red";
+    var memberRemoveButton = document.createElement("div");
+    memberRemoveButton.classList.add("memberSquareRemove");
+    member.append(memberRemoveButton);
+    memberBar.appendChild(member);
+    console.log("beep");
+}
 //linear code

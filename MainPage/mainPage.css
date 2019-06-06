@@ -486,6 +486,16 @@ html {
     background-color: rgba(255,255,2,0.5);
 }
 
+.memberSquare {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+}
+
 .toDoColumn {
     top: 50px;
 }

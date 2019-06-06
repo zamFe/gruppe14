@@ -329,7 +329,7 @@ function closeTimeLine(target) {
     let container = target.nextElementSibling;
     target.style.height = '0px';
     target.style.width = '0px';
-    container.style.top = '200px';
+    container.style.top = '100px';
     target.style.transition = '0.8s';
     container.style.transition = '0.8s';
 }
