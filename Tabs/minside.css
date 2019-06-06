@@ -49,12 +49,19 @@ body{
 
 .profile{
     position: relative;
-    width: 400px;
+    width: auto;
     margin: 0;
-    text-align: right;
+    text-align: left;
+    left: 200px;
+    top: 30px;
     color: #F9FAF5;
     font-weight: bold;
     font-family: sans-serif;
+}
+
+.profileSubtext {
+    color: lightgray;
+    font-size: 20px;
 }
 
 #profilePictureContainer{
@@ -114,11 +121,11 @@ body{
 
 }
 
-#myAgeContainer{
+#myBirthContainer{
 
 }
 
-#mygenderContainer{
+#myGenderContainer{
 
 }
 

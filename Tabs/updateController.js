@@ -37,9 +37,16 @@ function loadCurrentUser() {
     return JSON.parse(localStorage.getItem("currentUser"));
 }
 
+//update user data in Tabs.html
 function updateTabsUser() {
-    let userId = loadCurrentUser();
-    document.getElementById("welcomeMessage").innerHTML = "Welcome back, " + users[userId].name;
+    let user = users[loadCurrentUser()];
+    document.getElementById("profileTitle").innerHTML = user.name + " (" + user.userName + ")";
+    document.getElementById("welcomeMessage").innerHTML = "Welcome back, " + user.name;
+    document.getElementById("profileName").innerHTML = user.name;
+    document.getElementById("profileBirth").innerHTML = user.dateOfBirth;
+    document.getElementById("profileGender").innerHTML = user.gender;
+    document.getElementById("profileMail").innerHTML = user.email;
+    document.getElementById("profileNickname").innerHTML = user.userName;
 }
 
 //linear code
