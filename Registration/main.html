@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-            <body>
+    <head>
         <link rel=styleSheet href="index.css" type="text/css">
         <title>welcome</title>
+    </head>
+    <body>
+        <div speechBubble id="speechBubble1" class="speechBubble"><h6 id="speechBubbleText1">First and last name</h6></div>
+        <div speechBubble id="speechBubble2" class="speechBubble"><h6 id="speechBubbleText2">Nickname</h6></div>
+        <div speechBubble id="speechBubble3" class="speechBubble"><h6 id="speechBubbleText3">Write your e-mail address</h6></div>
+        <div speechBubble id="speechBubble4" class="speechBubble"><h6 id="speechBubbleText4">When is your birthday?</h6></div>
+        <div speechBubble id="speechBubble5" class="speechBubble"><h6 id="speechBubbleText5">New password</h6></div>
+        <div speechBubble id="speechBubble6" class="speechBubble"><h6 id="speechBubbleText6">Repeat password</h6></div>
 
-
-       
-        
-        
-
-                    <div speechBubble id="speechBubble1" class="speechBubble"><h6 id="speechBubbleText1">First and last name</h6></div>
-                    <div speechBubble id="speechBubble2" class="speechBubble"><h6 id="speechBubbleText2">Nickname</h6></div>
-                    <div speechBubble id="speechBubble3" class="speechBubble"><h6 id="speechBubbleText3">Write your e-mail address</h6></div>
-                    <div speechBubble id="speechBubble4" class="speechBubble"><h6 id="speechBubbleText4">When is your birthday?</h6></div>
-                    <div speechBubble id="speechBubble5" class="speechBubble"><h6 id="speechBubbleText5">New password</h6></div>
-                    <div speechBubble id="speechBubble6" class="speechBubble"><h6 id="speechBubbleText6">Repeat password</h6></div>
-                    
-                </div>
-            
-
-
-        
         <div id="welcome">
-                <img id="welcome1" src="Images/welcome.png"></img>
-            
-
+            <img id="welcome1" src="Images/welcome.png"></img>
             <div id="registration">
-
-
-                    
-
-
                     <form action="/action_page.php" id="Information" class="Information">
                     <input onfocus="fadein1();" onblur="fadeout1();" type="text" placeholder="Name" id="name" class="name" name="name"><br>
                     <input onfocus="fadein2();" onblur="fadeout2();" type="text" placeholder="User name" id="userName" class="userName" userName ="userName"><br>
@@ -39,20 +22,11 @@
                     <input onfocus="fadein4();" onblur="fadeout4();" type ="date" placeholder="Date of birth(date.month.year)" id="dateOfBirth" class="dateOfBirth" dateOfBirth="dateOfBirth"><br>
                     <input onfocus="fadein5();" onblur="fadeout5();" type="Password" placeholder="Password" id="password">
                     <input onfocus="fadein6();" onblur="fadeout6();" type="password"  placeholder="Repeat password" id="repeatPassword">
-
+                    </form>
                     
                     <h6 id="policy">© By continuing, you agree to Task binder's</h6>
-        <h5 id="policy2">Terms of service, Privacy policy</h5>
+                        <h5 id="policy2">Terms of service, Privacy policy</h5>
 
-        
-
-
-        
-
-                    
-                    
-
-                  
                 <div id="genderContainer">
                     <form action="" id="gender" class="gender">
                     <input type="radio" id="female" class="female" name="gender" value="female"><h6 id="femaleText"> Female </h6><br>
@@ -60,18 +34,18 @@
                     <input type="radio" id="other" class="other" name="gender" value="other"><h6 id ="otherText"> Other </h6><br>
                     </form>
                 </div>
-                </div>
             
 
                 
                 <div id="buttonholder">
-                        <button type="button" id="button1" class="button" onclick="buildUser();">Home</button>
-                        <button type="button" id="button2" class="button">Register</button>
+                        <button type="button" id="button1" class="button" onclick="window.location.href = '../frontpage/frontPage.html'">Home</button>
+                        <button type="button" id="button2" class="button" onclick="buildUser();">Register</button>
                 </div>
-            </div>
-            
+
 </div>
 
             </body>
             <script src="index.js"></script>
+            <script src="../user & project management/js/users.js"></script>
+            <script src="../Tabs/updateController.js"></script>
 </html>
