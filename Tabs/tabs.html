@@ -6,14 +6,14 @@
         <link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css">
         <link rel="stylesheet" href="chatt.css" type="text/css">
         <link rel="stylesheet" href="../Post-it/postIt.css" type="text/css">
-        <!--link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css"-->
+        <link rel="stylesheet" href="users.css" type="text/css">
     </header>
 
     <body>
 
     <div id="sideBar">
 
-        <h3>[Project name]</h3>
+        <h3></h3>
         <div class="tabDivider"></div>
         <div class="tabButton" onclick="createNewPostIt();">New sticky note</div>
         <div class="tabDivider"></div>
@@ -24,10 +24,13 @@
 
         <div id="sideTab" tabindex="1">
             <span style="padding: 0; margin: 0; color: black; text-align: center;">
-                <br>
-                <span style="font-size: 10px;"></span>
+                side
                 <br><br><br>
                 ...
+                <br>
+                ...
+                <br><br><br>
+                tab
             </span>
         </div>
 
@@ -87,10 +90,10 @@
             <form action="/action_page.php" class="form-container">
                 <h1>Chat</h1>
 
-                <label for="msg"><b>Message</b></label>
+                <label><b>Message</b></label>
                 <textarea placeholder="Type message.." name="msg" required></textarea>
 
-                <button type="submit" class="btn" id="btn">Send</button>
+                <button type="button" class="btn" id="btn">Send</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
@@ -170,7 +173,14 @@
                 </div>
 
                 <div id="levelContainer">
-                    <h3 class="profileh3">LEVEL 60</h3>
+                    <div id="user_box">
+                        <img id="user_img" src="../images/profile_picture_1.jpg" alt="">
+                        <h1 id="profileBoxUsername">Username</h1>
+                        <div id="profileBoxDescription">Log in to see user details</div>
+                        <div id="profileProgressBG">
+                            <div id="profileProgressBar">0/0exp - level 0</div>
+                        </div>
+                    </div>
                 </div>
         </section> <!-- end SECTION profilePage -->
 
