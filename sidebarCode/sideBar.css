@@ -68,15 +68,19 @@ a {
 #sideTab {
 	z-index: 0;
 	position: absolute;
-	width: 20px;
-	height: 60px;
+	width: 40px;
+	height: 160px;
 	background-color: white;
 	top: 50%;
 	transform: translateY(-50%);
-	left: -25px;
-	border-left: solid white 5px;
-	border-radius: 5%;
-	
+	left: -45px;
+	border-radius: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+#sideTab:hover {
+    background-color: rgb(200,200,200);
+    box-shadow: yellow;
 }
 
 #sideBar:focus-within {

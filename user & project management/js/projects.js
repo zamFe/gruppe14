@@ -1,13 +1,13 @@
 //global variables
 
-var projectIdCount = 0;
+//var projectIdCount = 0;
 //var projects = [{}]; //index 0 is filler
 
 //methods
 
 //create new project with incremented id
 function createNewProject(projectName, description, tag, members) {
-    projectIdCount++;
+    let projectIdCount = projects.length;
     projects[projectIdCount] = {};
     projects[projectIdCount].id = projectIdCount;
     projects[projectIdCount].projectName = projectName;
@@ -18,7 +18,12 @@ function createNewProject(projectName, description, tag, members) {
     projects[projectIdCount].ongoing = [];
     projects[projectIdCount].stuck = [];
     projects[projectIdCount].finished = [];
-    updateActiveProjectList(projects[projectIdCount]);
+
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    if(page == "tabs.html") {
+        updateActiveProjectList(projects[projectIdCount]);
+    }
     saveProjects(projects);
 }
 
@@ -31,6 +36,9 @@ function updateActiveProjectList(project) {
     var listElement = document.createElement("li");
     listElement.classList.add("activeListObject");
     listElement.innerHTML = project.projectName + " | members: " + project.members.length;
+    listElement.onclick = function handleProjectPopupClick(e) {
+        createNewTab(project.id);
+    };
     list.appendChild(listElement);
 }
 
