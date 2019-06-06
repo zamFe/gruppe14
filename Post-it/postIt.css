@@ -1,3 +1,4 @@
+/*
 html{
     height: 100%;
     width: 100%;
@@ -17,10 +18,12 @@ body{
     margin: 0;
 }
 
-/* Include the padding and border in an element's total width and height */
-* {
+// Include the padding and border in an element's total width and height
+*/
+
+/* {
     box-sizing: content-box;
-}
+}*/
 
 /* Remove margins and padding from the list */
 #myUL {
@@ -129,7 +132,7 @@ body{
     background-color: #bbb;
 }
 
-#mainContainer{
+.postItMainContainer{
     position: fixed;
     display: inline-block;
     z-index: 9;
@@ -141,12 +144,12 @@ body{
     box-shadow: 2px 4px 4px black;
 }
 
-#headerMover {
+.headerMover {
     padding: 10px;
     cursor: move;
 }
 
-#closePostItButton{
+.closePostItButton{
     color: #F9FAF5;
     padding: 0;
     margin: 0;

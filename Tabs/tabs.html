@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../Tabs/minside.css" type="text/css">
         <link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css">
         <link rel="stylesheet" href="chatt.css" type="text/css">
+        <link rel="stylesheet" href="../Post-it/postIt.css" type="text/css">
         <!--link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css"-->
     </header>
 
@@ -14,7 +15,7 @@
 
         <h3>[Project name]</h3>
         <div class="tabDivider"></div>
-        <a class="tabButton" href="#">New sticky note</a>
+        <div class="tabButton" onclick="createNewPostIt();">New sticky note</div>
         <div class="tabDivider"></div>
         <a class="tabButton" href="#">Profile</a>
         <div class="tabDivider"></div>
@@ -54,6 +55,22 @@
 </textarea>
 
     </div> <!-- end sideBar !-->
+
+    <div id="masterNoteContainer" style="width: 0; height: 0; position: relative; margin: 0; padding: 0;">
+    <div class="postItMainContainer" id="dummyNote">
+
+        <div class="header headerMover">
+            <span  onclick="closeit(event)" class="closePostItButton">X</span>
+            <h2 class="postItText">Post-it</h2>
+            <input type="text" class="myInput" placeholder="Note..">
+            <span onclick="newElement(event)" class="addBtn">Add</span>
+        </div>
+
+        <ul class="myUL" style="list-style-type: none">
+        </ul>
+
+    </div> <!-- end postItMainContainer -->
+    </div>
 
     <div id="chat">
 
@@ -160,6 +177,7 @@
     <script type="text/javascript" src="projectStatusManager.js"></script>
     <script type="text/javascript" src="dragAndDropManager.js"></script>
     <script type="text/javascript" src="chatt.js"></script>
+    <script type="text/javascript" src="../Post-it/postIt.js"></script>
     <script src="../Tabs/updateController.js"></script>
     <script>
         updateTabsUser();
