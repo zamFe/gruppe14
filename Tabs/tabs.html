@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="../sidebarCode/sideBar.css" type="text/css">
         <link rel="stylesheet" href="../Tabs/minside.css" type="text/css">
         <link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css">
+        <link rel="stylesheet" href="chatt.css" type="text/css">
         <!--link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css"-->
     </header>
 
@@ -19,12 +20,60 @@
         <div class="tabDivider"></div>
         <a class="tabButton" href="#">Profile</a>
         <div class="tabDivider"></div>
-        <a class="tabButton" href="#">Home</a>
+        <a class="tabButton" href="file:///Users/Kongen/Documents/Skole/real%20webprosjekt/gruppe14/FrontPage/frontPage.html">Home</a>
         <div class="tabDivider"></div>
 
         <div id="sideTab" tabindex="1"></div>
 
+        <textarea id="newsFeed" rows="10" cols="30" disabled>
+               News Feed
+
+* 14:05 26/05-19 Felix are done with his part on the MainPage. Go finnish your part!
+
+* 21:07 25/05-19 You are finished with your part on the picture menu. Good job!
+
+* 19:46 25/05-19 Maya are stuck on here main asignment, maby ask if she needs help?
+
+* 15:22 24/05-19 Kristian added a task to the to-do list! Go an check it out!
+
+
+
+</textarea>
+
+
+        <textarea id="personalFeed" rows="10" cols="30" disabled>
+             Personal Feed
+
+* 14:05 26/05-19 Felix are done with his part on the MainPage. Go finnish your part!
+
+* 21:07 25/05-19 You are finished with your part on the picture menu. Good job!
+
+* 19:46 25/05-19 Maya are stuck on here main asignment, maby ask if she needs help?
+
+* 15:22 24/05-19 Kristian added a task to the to-do list! Go an check it out!
+
+
+</textarea>
+
     </div> <!-- end sideBar !-->
+
+    <div id="chat">
+
+        <button class="open-button" id="open-button" onclick="openForm()">Chat</button>
+
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                <button type="submit" class="btn" id="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+    </div>
 
         <div id="tabContainer">
             <div id="0" onClick="setActiveTab(event.target.parentNode)" class="tab">
@@ -117,5 +166,6 @@
     <script type="text/javascript" src="popupManager.js"></script>
     <script type="text/javascript" src="projectStatusManager.js"></script>
     <script type="text/javascript" src="dragAndDropManager.js"></script>
+    <script type="text/javascript" src="chatt.js"></script>
     <script src="../Tabs/updateController.js"></script>
 </html>
