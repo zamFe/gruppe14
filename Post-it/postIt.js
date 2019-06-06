@@ -10,6 +10,16 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
+
+// Close post-it note
+function closeit() {
+
+    var postItClose = document.getElementById("mainContainer");
+
+    postItClose.style.display = "none";
+}
+
+
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
@@ -109,3 +119,4 @@ function newElement() {
         }
     }
 })();
+
