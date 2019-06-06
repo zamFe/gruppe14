@@ -54,7 +54,7 @@ a {
 }
 
 #sideBar {
-	z-index: 2;
+	z-index: 201;
 	position: fixed;
 	width: 200px;
 	height: 100%;
