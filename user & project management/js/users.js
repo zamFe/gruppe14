@@ -1,8 +1,8 @@
 //global variables
 
 //var userIdCount = 0;
-var users = [{}]; //index 0 is filler
-var currentUser = loadCurrentUser(); //0 = no user
+/*var users = [{}]; //index 0 is filler
+var currentUser = loadCurrentUser(); //0 = no user*/
 
 //methods
 
@@ -35,7 +35,8 @@ function login(username, password) {
     for (let i = 1; i < users.length; i++) {
         if (users[i].userName.localeCompare(username) === 0
             && users[i].password.localeCompare(password) === 0) {
-            currentUser = i;
+            console.log("successfull login, saving: " + i);
+            saveCurrentUser(i);
             //updateUserDiv(getUserData(currentUser));
             return 1;
         }

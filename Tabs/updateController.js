@@ -37,6 +37,11 @@ function loadCurrentUser() {
     return JSON.parse(localStorage.getItem("currentUser"));
 }
 
+function updateTabsUser() {
+    let userId = loadCurrentUser();
+    document.getElementById("welcomeMessage").innerHTML = "Welcome back, " + users[userId].name;
+}
+
 //linear code
 var currentUser = 0;
 var users = [{}];
@@ -44,9 +49,9 @@ var projects = [{}];
 if(users.length < loadUsers().length) {
     users = loadUsers();
 }
-if(projects.length < loadProjects().length) {
-    projects = loadProjects();
-}
 if(currentUser < loadCurrentUser()) {
     currentUser = loadCurrentUser();
 }
+/*if(projects.length < loadProjects().length) {
+    projects = loadProjects();
+}*/
