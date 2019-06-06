@@ -14,7 +14,7 @@
     left: calc(50% - 250px);
     position: relative;
     padding: 0;
-    top: -10%;
+    top: -50px;
     display: block;
     width: 500px;
 }
@@ -65,6 +65,7 @@ html, body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: 1500px 1500px;
+    overflow: hidden;
 }
 
 
