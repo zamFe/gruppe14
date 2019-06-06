@@ -1,3 +1,4 @@
+//password placeholder fixing
 function myFunction() {
     var x = document.getElementById("myInput");
     if (x.type === "password") {
@@ -7,6 +8,7 @@ function myFunction() {
     }
   }
 
+  //repeatPassword placeholder fixing
   function myFunction1() {
     var x = document.getElementById("myInput");
     if (x.type === "repeatPassword") {
@@ -14,6 +16,23 @@ function myFunction() {
     } else {
       x.type = "repeatPassword";
     }
+  }
+
+  function register() {
+      var password = document.getElementById("password");
+      var passwordRepeat = document.getElementById("repeatPassword");
+      var userName = document.getElementById("userName");
+      var name = document.getElementById("name");
+      if(userName.value == "" || password.value == "" ) {
+          alert("please fill inn forms");
+          return;
+      } else if(password.value != passwordRepeat.value) {
+          alert("passwords do not match");
+          return;
+      }   else {
+          buildUser();
+          window.location.href = '../login/logginn.html';
+      }
   }
 
   // When the user clicks on <div>, open the popup

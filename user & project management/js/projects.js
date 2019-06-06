@@ -1,7 +1,7 @@
 //global variables
 
 var projectIdCount = 0;
-var projects = [{}]; //index 0 is filler
+//var projects = [{}]; //index 0 is filler
 
 //methods
 
@@ -19,14 +19,11 @@ function createNewProject(projectName, description, tag, members) {
     projects[projectIdCount].stuck = [];
     projects[projectIdCount].finished = [];
     updateActiveProjectList(projects[projectIdCount]);
+    saveProjects(projects);
 }
 
 function getProjectData(id) {
     return projects[id];
-}
-
-function loadProject(projectName) {
-
 }
 
 function updateActiveProjectList(project) {

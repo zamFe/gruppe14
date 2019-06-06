@@ -1,13 +1,9 @@
-var username;
-var password;
-
-
 function logInUser() {
 
     username = document.getElementById("userNameLogIn").value;
     password = document.getElementById("passwordLogIn").value;
 
-    if (username == "user" && password == "psw123") {
+    if (login(username, password)) {
         location.href = "../Tabs/tabs.html";
     } else {
         alert("Wrong username and/or password")
@@ -17,8 +13,6 @@ function logInUser() {
 function forgotpassword(){
     prompt("Enter your e-mail address:");
 }
-
-
 
 function myFunction() {
   var popup = document.getElementById("myPopup");

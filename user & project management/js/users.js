@@ -1,20 +1,20 @@
 //global variables
 
-var userIdCount = 0;
+//var userIdCount = 0;
 var users = [{}]; //index 0 is filler
-var currentUser = 0; //0 = no user
+var currentUser = loadCurrentUser(); //0 = no user
 
 //methods
 
 //create new user with incremented id
-function createNewUser(name, userName, email, age, password, repeatPassword, gender) {
-    userIdCount++;
+function createNewUser(name, userName, email, dateOfBirth, password, repeatPassword, gender) {
+    let userIdCount = users.length;
     users[userIdCount] = {};
     users[userIdCount].id = userIdCount;
     users[userIdCount].name = name;
     users[userIdCount].userName = userName;
     users[userIdCount].email = email;
-    users[userIdCount].age = age;
+    users[userIdCount].dateOfBirth = dateOfBirth;
     users[userIdCount].password = password;
     users[userIdCount].repeatPassword = repeatPassword;
     users[userIdCount].gender = gender;
@@ -36,7 +36,7 @@ function login(username, password) {
         if (users[i].userName.localeCompare(username) === 0
             && users[i].password.localeCompare(password) === 0) {
             currentUser = i;
-            updateUserDiv(getUserData(currentUser));
+            //updateUserDiv(getUserData(currentUser));
             return 1;
         }
     }
@@ -78,8 +78,4 @@ function buildUser() {
     }
 }
 
-function logInUser() {
-    var userNameLogIn = document.getElementById("userNameLogIn").value;
-    var passwordLogIn = document.getElementById("passwordLogIn").value;
-    login(userNameLogIn, passwordLogIn);
-}
+//code
