@@ -1,17 +1,4 @@
-/*
-html{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-}
 
-body{
-    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-}
-*/
 .profileh1{
     position: relative;
     text-align: center;
@@ -49,12 +36,11 @@ body{
 
 .profile{
     position: relative;
-    width: 200px;
+    width: 500px;
     margin: 0;
     text-align: left;
-    left: 200px;
+    left: 13%;
     top: 30px;
-    background-color: rgba(255,255,255,0.7);
     color: black;
     font-weight: bold;
     font-family: sans-serif;
