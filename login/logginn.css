@@ -8,10 +8,12 @@ html {
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: cover;
+    overflow: hidden;
 }
 
 footer{
-    position: relative;
+    position: absolute;
+    width: 100%;
     margin: 0;
     bottom: 0;
 }
@@ -30,33 +32,29 @@ h5{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#folderLogo{
-    position: relative;
-    width: 100px;
-    left:5px;
-    top: 30px;
-}
-
-#folderLogoBackground{
-    width: 110px;
-    height: 110px;
-    background-color: #0B245B;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 2px #f9faf5;
-    margin: 20px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
 #logoContainer{
-    position: absolute;
+    position: relative;
     left: calc(50% - 200px);
-    top: 20px;
+    width: 300px;
 }
 
 #logoPicture {
     width: 400px;
     height: 175px;
+}
+
+#nameContainer {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    left: calc(50% - 150px);
+}
+
+#passwordContainer {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    left: calc(50% - 150px);
 }
 
 
@@ -90,14 +88,16 @@ margin-right: -20px;
 
 #speechBubble1{
 visibility: hidden;
-top: 150px;
+top: -50px;
+left: -300px;
 background-color: #9a073c;
 }
 
 
 #speechBubble2{
-top: 185px;
 visibility: hidden;
+top: -80px;
+left: -300px;
 background-color: #9a073c;
 }
 
@@ -173,17 +173,22 @@ input[type=text], input[type=password] {
 
 #loginContainer{
     position: relative;
-    width: 100%;
+    width: 300px;
+    left: calc(50% - 150px);
 }
 
-#cancelbutton {
-top: 5px;
+#cancelContainer{
+    position: relative;
+    width: 300px;
+    left: calc(50% - 150px);
 }
+
 
 #remember {
     position: absolute;
-    top: 60px;
-    left: 46%;
+    top: 160px;
+    left: 90px;
+    text-align: left;
 }
 
 /* Center the avatar image inside this container */
@@ -216,15 +221,13 @@ span.psw {
 
   .cancelbtn {
       width: 100%;
+
   }
 }
 
 #footerContainer{
-    position: absolute;
+    position: relative;
     text-align: center;
-    left: calc(50% - 150px);
-    top: 100px;
-
 }
 #Policy{
     position: relative;

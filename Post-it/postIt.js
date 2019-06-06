@@ -12,11 +12,12 @@ for (i = 0; i < myNodelist.length; i++) {
 
 
 // Close post-it note
-function closeit() {
-
-    var postItClose = document.getElementById("mainContainer");
-
-    postItClose.style.display = "none";
+function closeit(event) {
+    var note = event.target.parentElement.parentElement;
+    while(note.hasChildNodes()) {
+        note.removeChild(note.lastChild);
+    }
+    note.parentElement.removeChild(note);
 }
 
 
@@ -40,10 +41,10 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 // Create a new list item when clicking on the "Add" button
-function newElement() {
+function newElement(event) {
 
     var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
+    var inputValue = event.target.previousElementSibling.value;
     var t = document.createTextNode(inputValue);
 
     li.appendChild(t);
@@ -51,9 +52,9 @@ function newElement() {
     if (inputValue === '') {
         alert("You must write something!");
     } else {
-        document.getElementById("myUL").appendChild(li);
+        event.target.parentElement.parentElement.lastElementChild.appendChild(li);
     }
-    document.getElementById("myInput").value = "";
+    event.target.previousElementSibling.value = "";
 
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
@@ -74,15 +75,14 @@ function newElement() {
 (function() {
     var mousePos;
     var objectClicked = 0;
+    var targetNote;
 
     document.onmousemove = handleMouseMove;
     document.onclick = handleMouseClick;
-    setInterval(getMousePosition, 100); // setInterval repeats every X ms
+    setInterval(getMousePosition, 10); // setInterval repeats every X ms
 
     function handleMouseMove(event) {
         var dot, eventDoc, doc, body, pageX, pageY;
-
-        event = event;
 
         mousePos = {
             x: event.pageX,
@@ -90,11 +90,19 @@ function newElement() {
         };
     }
 
+    //close dummy container
+    var dummy = document.getElementById("dummyNote");
+    while(dummy.hasChildNodes()) {
+        dummy.removeChild(dummy.lastChild);
+    }
+    dummy.parentElement.removeChild(dummy);
+
     //happens when mouse is clicked
     function handleMouseClick(event) {
         //checks if target id corresponds to what we want to drag
-        if ((event.target.id == "headerMover" || event.target.id == "postItText") && objectClicked == 0) {
+        if ((event.target.classList.contains("headerMover") || event.target.classList.contains("postItText")) && objectClicked == 0) {
             objectClicked = 1;
+            targetNote = event.target.parentElement;
         }
         else {
             objectClicked = 0;
@@ -103,9 +111,9 @@ function newElement() {
 
     function getMousePosition() {
         //element that will be dragged
-        note = document.getElementById("mainContainer");
+        //note = document.getElementById("postItMainContainer");
+        var note = targetNote;
         var pos = mousePos;
-        console.log(mousePos);
         if (!pos) {
             // We haven't seen any movement yet
         }
@@ -113,10 +121,27 @@ function newElement() {
             // Use pos.x and pos.y
             //drags object when objectClicked is true;
             if (objectClicked == 1) {
-                note.style.left = (mousePos.x) + 'px';
-                note.style.top = (mousePos.y) + 'px';
+                note.style.left = (mousePos.x-window.pageXOffset) + 'px';
+                note.style.top = (mousePos.y-window.pageYOffset) + 'px';
             }
         }
     }
 })();
 
+function createNewPostIt() {
+    let target = document.getElementById("masterNoteContainer");
+    target.innerHTML +=
+        '<div class="postItMainContainer">\n' +
+        '\n' +
+        '        <div class="header headerMover">\n' +
+        '            <span  onclick="closeit(event)" class="closePostItButton">X</span>\n' +
+        '            <h2 class="postItText">Post-it</h2>\n' +
+        '            <input type="text" id="myInput" placeholder="Note..">\n' +
+        '            <span onclick="newElement(event)" class="addBtn">Add</span>\n' +
+        '        </div>\n' +
+        '\n' +
+        '        <ul id="myUL" style="list-style-type: none">\n' +
+        '        </ul>\n' +
+        '\n' +
+        '    </div>';
+}

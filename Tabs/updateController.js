@@ -47,18 +47,29 @@ function updateTabsUser() {
     document.getElementById("profileGender").innerHTML = user.gender;
     document.getElementById("profileMail").innerHTML = user.email;
     document.getElementById("profileNickname").innerHTML = user.userName;
+
+    //user level-box on profile page
+    document.getElementById("profileBoxUsername").innerHTML = user.userName;
+    document.getElementById("profileBoxDescription").innerHTML = "Gender: " + user.gender + "<br> email: " + user.email
+    let profileProgressBar = document.getElementById("profileProgressBar");
+    profileProgressBar.innerHTML = user.exp + "/" + 1000 + " - level " + 1;
+    profileProgressBar.style.width = (user.exp * 100) / 1000 + "%";
 }
 
 //linear code
 var currentUser = 0;
 var users = [{}];
 var projects = [{}];
+
+createNewProject("Get Started", "intro project", "tutorial", "TaskBinder");
+saveProjects(projects);
+
 if(users.length < loadUsers().length) {
     users = loadUsers();
 }
 if(currentUser < loadCurrentUser()) {
     currentUser = loadCurrentUser();
 }
-/*if(projects.length < loadProjects().length) {
+if(projects.length < loadProjects().length) {
     projects = loadProjects();
-}*/
+}

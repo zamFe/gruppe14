@@ -5,23 +5,34 @@
         <link rel="stylesheet" href="../Tabs/minside.css" type="text/css">
         <link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css">
         <link rel="stylesheet" href="chatt.css" type="text/css">
-        <!--link rel="stylesheet" href="../MainPage/mainPage.css" type="text/css"-->
+        <link rel="stylesheet" href="../Post-it/postIt.css" type="text/css">
+        <link rel="stylesheet" href="users.css" type="text/css">
     </header>
 
     <body>
 
     <div id="sideBar">
 
-        <h3>[Project name]</h3>
+        <h3></h3>
         <div class="tabDivider"></div>
-        <a class="tabButton" href="#">New sticky note</a>
+        <div class="tabButton" onclick="createNewPostIt();">New sticky note</div>
         <div class="tabDivider"></div>
-        <a class="tabButton" href="#">Profile</a>
+        <div class="tabButton" onclick="openProfileTab();">Profile</div>
         <div class="tabDivider"></div>
-        <a class="tabButton" href="../FrontPage/frontPage.html">Home</a>
+        <a class="tabButton" href="../FrontPage/frontPage.html">Log out</a>
         <div class="tabDivider"></div>
 
-        <div id="sideTab" tabindex="1"></div>
+        <div id="sideTab" tabindex="1">
+            <span style="padding: 0; margin: 0; color: black; text-align: center;">
+                side
+                <br><br><br>
+                ...
+                <br>
+                ...
+                <br><br><br>
+                tab
+            </span>
+        </div>
 
         <textarea id="newsFeed" rows="10" cols="30" disabled>
                News Feed
@@ -55,6 +66,22 @@
 
     </div> <!-- end sideBar !-->
 
+    <div id="masterNoteContainer" style="width: 0; height: 0; position: relative; margin: 0; padding: 0;">
+    <div class="postItMainContainer" id="dummyNote" style="display: none">
+
+        <div class="header headerMover">
+            <span  onclick="closeit(event)" class="closePostItButton">X</span>
+            <h2 class="postItText">Post-it</h2>
+            <input type="text" class="myInput" placeholder="Note..">
+            <span onclick="newElement(event)" class="addBtn">Add</span>
+        </div>
+
+        <ul class="myUL" style="list-style-type: none">
+        </ul>
+
+    </div> <!-- end postItMainContainer -->
+    </div>
+
     <div id="chat">
 
         <button class="open-button" id="open-button" onclick="openForm()">Chat</button>
@@ -63,10 +90,10 @@
             <form action="/action_page.php" class="form-container">
                 <h1>Chat</h1>
 
-                <label for="msg"><b>Message</b></label>
+                <label><b>Message</b></label>
                 <textarea placeholder="Type message.." name="msg" required></textarea>
 
-                <button type="submit" class="btn" id="btn">Send</button>
+                <button type="button" class="btn" id="btn">Send</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
@@ -146,7 +173,14 @@
                 </div>
 
                 <div id="levelContainer">
-                    <h3 class="profileh3">LEVEL 60</h3>
+                    <div id="user_box">
+                        <img id="user_img" src="../minside/images/blankProfilePicture.png" alt="">
+                        <h1 id="profileBoxUsername">Username</h1>
+                        <div id="profileBoxDescription">Log in to see user details</div>
+                        <div id="profileProgressBG">
+                            <div id="profileProgressBar">0/0exp - level 0</div>
+                        </div>
+                    </div>
                 </div>
         </section> <!-- end SECTION profilePage -->
 
@@ -160,6 +194,7 @@
     <script type="text/javascript" src="projectStatusManager.js"></script>
     <script type="text/javascript" src="dragAndDropManager.js"></script>
     <script type="text/javascript" src="chatt.js"></script>
+    <script type="text/javascript" src="../Post-it/postIt.js"></script>
     <script src="../Tabs/updateController.js"></script>
     <script>
         updateTabsUser();

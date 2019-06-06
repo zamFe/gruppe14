@@ -1,6 +1,6 @@
 /*general*/
 
-body{
+html, body{
     margin: 0;
     width: 100%;
     height: 100%;
@@ -8,6 +8,8 @@ body{
     background-repeat: repeat-x;
     background-size: cover;
     background-attachment: fixed;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow: -moz-scrollbars-none;
 }
 
 main {
@@ -247,6 +249,7 @@ button {
 
     width: 0;
 }
+
 /*
 
 ::-webkit-scrollbar-thumb {

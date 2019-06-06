@@ -6,21 +6,24 @@
     <title>Post-it</title>
 </head>
 <body>
-    <div id="mainContainer">
+    <div class="postItMainContainer" id="dummyNote">
 
-        <div id="headerMover" class="header">
-            <span  onclick="closeit()" id="closePostItButton">X</span>
-            <h2 id="postItText">Post-it</h2>
-            <input type="text" id="myInput" placeholder="Note..">
-            <span onclick="newElement()" class="addBtn">Add</span>
+        <div class="header headerMover">
+            <span  onclick="closeit(event)" class="closePostItButton">X</span>
+            <h2 class="postItText">Post-it</h2>
+            <input type="text" class="myInput" placeholder="Note..">
+            <span onclick="newElement(event)" class="addBtn">Add</span>
         </div>
 
-        <ul id="myUL" style="list-style-type: none">
+        <ul class="myUL" style="list-style-type: none">
         </ul>
 
     </div>
+
+
 </body>
 
 <script src="../Post-it/postIt.js"></script>
 
 </html>
+

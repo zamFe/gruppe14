@@ -18,7 +18,7 @@
     border: solid darkorange;
 }
 
-#profileUsername {
+#profileBoxUsername {
     position: relative;
     display: compact;
     overflow: hidden;
@@ -28,7 +28,7 @@
     left: 120px;
 }
 
-#profileDescription {
+#profileBoxDescription {
     position: relative;
     display: block;
     top: -130px;

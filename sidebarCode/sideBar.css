@@ -1,6 +1,6 @@
-
+/*
 body {
-    /*background-color: #F9FAF5;*/
+    background-color: #F9FAF5;
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: 1000px 1600px;
     overflow: scroll;
@@ -18,7 +18,7 @@ html {
 
 /* fonts */
 
-h1, h2, h3 p, div{
+h1, h2, h3, p, div{
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -27,6 +27,7 @@ a {
     text-decoration: none;
 	color: white;
 }
+
 
 /* sidebar */
 
@@ -68,20 +69,33 @@ a {
 #sideTab {
 	z-index: 0;
 	position: absolute;
-	width: 20px;
-	height: 60px;
-	background-color: white;
+	width: 40px;
+	height: 160px;
+	background-color: rgba(255,255,255,0.7);
 	top: 50%;
 	transform: translateY(-50%);
-	left: -25px;
-	border-left: solid white 5px;
-	border-radius: 5%;
-	
+	left: -45px;
+	border-radius: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+#sideTab:hover {
+    background-color: rgb(255,255,255);
+    box-shadow: yellow;
 }
 
 #sideBar:focus-within {
-	right: 0px;
+	right: 0;
 }
+
+#sideBar:hover {
+    right: 0;
+}
+
+#sideBar:focus {
+    right: 0;
+}
+
 #sideTab:focus {
 	outline: none;
 }

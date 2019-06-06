@@ -18,7 +18,8 @@ function createNewUser(name, userName, email, dateOfBirth, password, repeatPassw
     users[userIdCount].password = password;
     users[userIdCount].repeatPassword = repeatPassword;
     users[userIdCount].gender = gender;
-    users[userIdCount].exp = 0;
+    //to give a simulation of how levels would work we add a little exp between 0 and 1000
+    users[userIdCount].exp = Math.floor((Math.random() * 1000) + 1);
     //due to lack of time the following aren't completely implemented
     users[userIdCount].badgeId = "default";
     users[userIdCount].themeId = "default";
@@ -46,7 +47,7 @@ function login(username, password) {
 
 //DOM-methods
 
-//updates user div in HTML (as well as progress bar i users.css))
+//updates user div in HTML (as well as progress bar in users OLD.css))
 function updateUserDiv(user) {
     var profileUsername = document.getElementById("profileUsername");
     var profileDescription = document.getElementById("profileDescription");
@@ -67,9 +68,16 @@ function buildUser() {
     var dateOfBirth = document.getElementById("dateOfBirth").value;
     var password = document.getElementById("password").value;
     var repeatPassword = document.getElementById("repeatPassword").value;
-    var gender = document.getElementById("female").checked = "female";
-    var gender = document.getElementById("male").checked = "male";
-    var gender = document.getElementById("other").checked = "other";
+    var gender;
+    if(document.getElementById("female").checked) {
+        gender = "female";
+    } else if (document.getElementById("male").checked) {
+        gender = "male";
+    } else if (document.getElementById("other").checked) {
+        gender = "other";
+    } else {
+        gender = "not given";
+    }
     if (repeatPassword != password){
         alert("Passwords are not identical.");
         return"";
