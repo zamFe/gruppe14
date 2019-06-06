@@ -61,7 +61,7 @@ h5{
 
 
 .speechBubble{
-position: absolute;
+position: relative;
 background: #9a073c;
  border-radius: .4em;
  height: 45px;
@@ -90,13 +90,13 @@ margin-right: -20px;
 
 #speechBubble1{
 visibility: hidden;
-top: 200px;
+top: 150px;
 background-color: #9a073c;
 }
 
 
 #speechBubble2{
-top: 290px;
+top: 185px;
 visibility: hidden;
 background-color: #9a073c;
 }
