@@ -84,8 +84,13 @@ a {
 }
 
 #sideBar:focus-within {
-	right: 0px;
+	right: 0;
 }
+
+#sideBar:focus {
+    right: 0;
+}
+
 #sideTab:focus {
 	outline: none;
 }
