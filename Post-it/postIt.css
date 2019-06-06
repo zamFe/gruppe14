@@ -23,13 +23,13 @@ body{
 }
 
 /* Remove margins and padding from the list */
-ul {
+#myUL {
     margin: 0;
     padding: 0;
 }
 
 /* Style the list items */
-ul li {
+#myUL li {
     cursor: auto;
     position: relative;
     padding: 10px 6px 12px 33px;
@@ -47,19 +47,19 @@ ul li {
 }
 
 /* Darker background-color on hover */
-ul li:hover {
+#myUL li:hover {
     background: #CCCC00;
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+#myUL li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+#myUL li.checked::before {
     content: '';
     position: absolute;
     border-color: black;
@@ -73,7 +73,7 @@ ul li.checked::before {
 }
 
 /* Style the input */
-input {
+#myInput {
     margin: 0;
     border: none;
     border-radius: 0;
