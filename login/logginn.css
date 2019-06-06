@@ -8,6 +8,7 @@ html {
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: cover;
+    overflow: hidden;
 }
 
 footer{
@@ -46,17 +47,35 @@ h5{
     margin: 20px;
     margin-top: 30px;
     cursor: pointer;
+    position: relative;
 }
 
 #logoContainer{
-    position: absolute;
+    position: relative;
     left: calc(50% - 200px);
-    top: 20px;
+    top: -140px;
+    width: 300px;
 }
 
 #logoPicture {
     width: 400px;
     height: 175px;
+}
+
+#nameContainer {
+position: relative;
+height: 100px;
+width: 300px;
+left: calc(50% - 150px);
+top: -150px;
+}
+
+#passwordContainer {
+position: relative;
+height: 100px;
+width: 300px;
+left: calc(50% - 150px);
+top: -150px;
 }
 
 
@@ -90,14 +109,16 @@ margin-right: -20px;
 
 #speechBubble1{
 visibility: hidden;
-top: 150px;
+top: -50px;
+left: -300px;
 background-color: #9a073c;
 }
 
 
 #speechBubble2{
-top: 185px;
 visibility: hidden;
+top: -80px;
+left: -300px;
 background-color: #9a073c;
 }
 
@@ -173,17 +194,28 @@ input[type=text], input[type=password] {
 
 #loginContainer{
     position: relative;
-    width: 100%;
+    width: 300px;
+    top: -150px;
+    left: calc(50% - 150px);
+}
+
+#cancelContainer{
+    position: relative;
+    width: 300px;
+    top: -0px;
+    left: calc(50% - 150px);
 }
 
 #cancelbutton {
-top: 5px;
+top: -130px;
+
 }
 
 #remember {
     position: absolute;
-    top: 60px;
-    left: 46%;
+    top: 70px;
+    left: 90px;
+    text-align: left;
 }
 
 /* Center the avatar image inside this container */
@@ -216,14 +248,16 @@ span.psw {
 
   .cancelbtn {
       width: 100%;
+
   }
 }
 
 #footerContainer{
-    position: absolute;
+    position: relative;
     text-align: center;
-    left: calc(50% - 150px);
-    top: 100px;
+    left: calc(50% - 200px);
+    top: -60px;
+    width: 400px;
 
 }
 #Policy{
