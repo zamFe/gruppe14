@@ -401,6 +401,7 @@ html {
     resize: none;
     outline: none;
     transition: all 0.5s ease-in-out;
+    cursor: grabbing;
 }
 
 .item::-webkit-scrollbar {
