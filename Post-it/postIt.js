@@ -121,8 +121,8 @@ function newElement(event) {
             // Use pos.x and pos.y
             //drags object when objectClicked is true;
             if (objectClicked == 1) {
-                note.style.left = (mousePos.x) + 'px';
-                note.style.top = (mousePos.y-0) + 'px';
+                note.style.left = (mousePos.x-window.pageXOffset) + 'px';
+                note.style.top = (mousePos.y-window.pageYOffset) + 'px';
             }
         }
     }

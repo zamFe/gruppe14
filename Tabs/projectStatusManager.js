@@ -39,6 +39,7 @@ function addColumnBlock(column) {
     };
 
     //create children elements
+
     var title = document.createElement("input");
     title.type="text";
     title.placeholder = "Title...";
