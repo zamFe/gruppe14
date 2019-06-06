@@ -66,7 +66,7 @@ function buildUser() {
     var email = document.getElementById("email").value;
     var dateOfBirth = document.getElementById("dateOfBirth").value;
     var password = document.getElementById("password").value;
-    var repeatPassword = document.getElementById("repeatPassword").value
+    var repeatPassword = document.getElementById("repeatPassword").value;
     var gender;
     if(document.getElementById("female").checked) {
         gender = "female";
