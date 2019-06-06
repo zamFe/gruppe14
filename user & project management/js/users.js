@@ -66,10 +66,17 @@ function buildUser() {
     var email = document.getElementById("email").value;
     var dateOfBirth = document.getElementById("dateOfBirth").value;
     var password = document.getElementById("password").value;
-    var repeatPassword = document.getElementById("repeatPassword").value;
-    var gender = document.getElementById("female").checked = "female";
-    var gender = document.getElementById("male").checked = "male";
-    var gender = document.getElementById("other").checked = "other";
+    var repeatPassword = document.getElementById("repeatPassword").value
+    var gender;
+    if(document.getElementById("female").checked) {
+        gender = "female";
+    } else if (document.getElementById("male").checked) {
+        gender = "male";
+    } else if (document.getElementById("other").checked) {
+        gender = "other";
+    } else {
+        gender = "not given";
+    }
     if (repeatPassword != password){
         alert("Passwords are not identical.");
         return"";
