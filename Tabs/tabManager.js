@@ -88,7 +88,8 @@ function createNewTab(projectId) {
     }
     section.appendChild(members);
     //insert task columns and all additional content into section
-    section.innerHTML += '<button class="button" id="button1" type="button" onClick = "openTimeLine(event.target);">Open Timetable!</button>\n' +
+    section.innerHTML +=
+        '<button class="button" id="button1" type="button" onClick = "openTimeLine(event.target);">Open Timetable!</button>\n' +
         '\n' +
         '<button class="button" id="button2" type="button" onClick = "closeTimeLine(event.target)">Close Timetable!</button>\n' +
         '\n' +
