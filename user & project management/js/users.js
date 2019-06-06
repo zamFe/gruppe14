@@ -19,6 +19,7 @@ function createNewUser(name, userName, email, age, password, repeatPassword, gen
     users[userIdCount].repeatPassword = repeatPassword;
     users[userIdCount].gender = gender;
     users[userIdCount].exp = 0;
+    //due to lack of time the following aren't completely implemented
     users[userIdCount].badgeId = "default";
     users[userIdCount].themeId = "default";
     users[userIdCount].projects = ["get_started"];
@@ -70,8 +71,10 @@ function buildUser() {
     var gender = document.getElementById("other").checked = "other";
     if (repeatPassword != password){
         alert("Passwords are not identical.");
+        return"";
     } else {
         createNewUser(name, userName, email, dateOfBirth, password, repeatPassword, gender);
+        saveUsers(users);
     }
 }
 
