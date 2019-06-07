@@ -307,7 +307,7 @@ html {
     top: 8px;
     height: 20px;
     width: 20px;
-    z-index: 100;
+    z-index: 0;
 }
 
 .pluss1 {
@@ -340,13 +340,14 @@ html {
     grid-template-rows: 35px;
     grid-column-gap: 120px;
     grid-row-gap: 5px;
-    z-index: 100;
+    z-index: 0;
 }
 
 .uper {
+    z-index: 0;
+    position: relative;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     background-color: rgba(255, 255, 255, .20);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -358,6 +359,7 @@ html {
 }
 
 .wrapper {
+    z-index: 0;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -398,7 +400,6 @@ html {
     border-radius: 4px;
     border: black 0 solid;
     height: 150px;
-    resize: none;
     outline: none;
     transition: all 0.5s ease-in-out;
     cursor: grabbing;
@@ -425,11 +426,10 @@ html {
     background-color: rgba(255, 255, 255, .20);
     backdrop-filter: blur(5px);
     bottom: 0;
-    height: 55%;
+    height: 45%;
     width: 100%;
     font-size: 1.5em;
     color: black;
-    padding: 10px;
     border-radius: 4px;
     border: black 0 solid;
     resize: none;
@@ -449,7 +449,10 @@ html {
     border-bottom: solid rgba(255,255,255,0.8);
     text-align: center;
     font-size: 2em;
-    overflow-x: scroll;
+    line-break: auto;
+
+    white-space: pre-wrap;
+    resize: horizontal;
 }
 
 .itemSearch {
@@ -457,12 +460,34 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
-    height: 15%;
+    height: 13%;
     width: 100%;
     background: none;
     border: none;
     border-top: solid rgba(255,255,255,0.8);
     text-align: center;
+}
+
+.itemMembers {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 12%;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.itemMembers::-webkit-scrollbar {
+    height: 0;
 }
 
 .searchList {
@@ -484,6 +509,28 @@ html {
 
 .memberSearchElement:hover {
     background-color: rgba(255,255,2,0.5);
+}
+
+.memberSquare {
+    width: auto;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10%;
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    border-right: solid rgba(255,255,255,0) 10px;
+}
+
+.memberSquareRemove {
+    width: 10px;
+    height: 20px;
+    position: relative;
+    top: -20px;
+    left: 100%;
+    border-radius: 10px 10%;
+    background-color: rgba(200,200,200,0.8);
 }
 
 .toDoColumn {
