@@ -1,0 +1,506 @@
+* bcd3bff	zamFe	Fri Jun 7 13:37:12 2019 +0200	added level system and logo updats
+*   bde42e5	zamFe	Fri Jun 7 13:34:27 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| * caad0df	eskildt	Fri Jun 7 13:21:48 2019 +0200	Webprosjekt og refleksjon ferdig
+| * 2dc8408	eskildt	Fri Jun 7 12:35:50 2019 +0200	Oppdatert
+* | 22f884e	zamFe	Fri Jun 7 13:34:13 2019 +0200	added level system and logo updats
+|/  
+*   900e04b	zamFe	Fri Jun 7 12:31:46 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| * e0eca08	Kristian	Fri Jun 7 11:45:05 2019 +0200	myprofile text color changeed to white
+* | e128724	zamFe	Fri Jun 7 12:18:31 2019 +0200	added level system and logo updats
+* | 0c82232	zamFe	Fri Jun 7 12:06:40 2019 +0200	task-blocks now allow for adding user-names!
+|/  
+* 1baecdb	Kristian	Fri Jun 7 11:34:39 2019 +0200	font clean up
+* 0c54ab2	Kristian	Fri Jun 7 11:33:23 2019 +0200	font clean up
+* 03d1511	Kristian	Fri Jun 7 11:32:30 2019 +0200	font clean up
+* 35f1e64	Kristian	Fri Jun 7 11:26:01 2019 +0200	font clean up
+*   733c076	Kristian	Fri Jun 7 11:11:13 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| *   027b0e7	zamFe	Fri Jun 7 11:03:59 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| * | 0a6f47a	zamFe	Fri Jun 7 11:03:52 2019 +0200	task-blocks now allow for adding user-names!
+* | | 3c0ec9a	Kristian	Fri Jun 7 11:06:58 2019 +0200	font clean up
+| |/  
+|/|   
+* |   fdf5ef3	Kongen	Fri Jun 7 10:59:45 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \  
+| * | be214d8	Kristian	Fri Jun 7 10:57:11 2019 +0200	font clean up
+| |/  
+| *   e726912	Kristian	Fri Jun 7 10:52:25 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| * | e7ca320	Kristian	Fri Jun 7 10:52:11 2019 +0200	Font set to the same on all pages
+* | | c8afb81	Kongen	Fri Jun 7 10:59:39 2019 +0200	update
+* | |   0a6e442	Kongen	Fri Jun 7 10:43:59 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| | |/  
+| |/|   
+| * | d1d95d8	eskildt	Fri Jun 7 10:41:38 2019 +0200	Se gjennom gutta!
+| * | 270d830	zamFe	Fri Jun 7 10:19:53 2019 +0200	task-blocks now allow for adding user-names!
+| |/  
+| *   0847015	Kristian	Fri Jun 7 09:58:57 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| * | bb1f88c	Kristian	Fri Jun 7 09:58:48 2019 +0200	sidebar re-design
+* | |   e469567	Kongen	Fri Jun 7 09:51:23 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| | |/  
+| |/|   
+| * |   c7a2709	eskildt	Fri Jun 7 09:10:52 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \  
+| | |/  
+| | * 3240e91	zamFe	Fri Jun 7 00:24:12 2019 +0200	task-blocks now allow for adding user-names!
+| | * 7480b28	zamFe	Thu Jun 6 23:08:58 2019 +0200	Fixed z-indexes
+| | *   47dcfc1	zamFe	Thu Jun 6 21:13:24 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | | * 360f67f	Kristian	Thu Jun 6 20:33:40 2019 +0200	css cleanup
+| | * | b583208	zamFe	Thu Jun 6 21:12:57 2019 +0200	fixed profile pic
+| | |/  
+| | *   18ca1bb	Kristian	Thu Jun 6 20:08:30 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | * | 342d7d7	Kristian	Thu Jun 6 20:07:31 2019 +0200	my profile design update
+| * | | ea106cc	eskildt	Fri Jun 7 09:10:48 2019 +0200	Endring
+| | |/  
+| |/|   
+| * |   951c364	eskildt	Thu Jun 6 19:56:51 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \  
+| | |/  
+| | * 89b7938	zamFe	Thu Jun 6 19:34:14 2019 +0200	fixed profile pic
+| * | dfcfef2	eskildt	Thu Jun 6 19:56:44 2019 +0200	Endret oppsett og lagt til mer stoff
+* | |   58ca649	Kongen	Thu Jun 6 19:28:19 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| | |/  
+| |/|   
+| * |   b836739	zamFe	Thu Jun 6 19:26:00 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| | * | ccfb3bd	Kristian	Thu Jun 6 19:16:38 2019 +0200	fixed send button
+| * | | c22facd	zamFe	Thu Jun 6 19:25:44 2019 +0200	added user level box
+| |/ /  
+| * |   a087858	zamFe	Thu Jun 6 18:48:17 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| | * \   0d6e835	Kristian	Thu Jun 6 18:46:25 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \  
+| | * | | 8c448b7	Kristian	Thu Jun 6 18:46:19 2019 +0200	Link to my profile in sidebar
+| * | | | b2e91ee	zamFe	Thu Jun 6 18:48:13 2019 +0200	small fixes
+* | | | | 7e373b7	Kongen	Thu Jun 6 19:28:13 2019 +0200	update
+| |_|/ /  
+|/| | |   
+* | | | 5b0f4bb	Kongen	Thu Jun 6 18:36:46 2019 +0200	update
+|/ / /  
+* | |   dd6eead	Kongen	Thu Jun 6 18:35:12 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| * \ \   9212903	zamFe	Thu Jun 6 18:34:54 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \ \  
+| | |/ /  
+| * | | 439d4d8	zamFe	Thu Jun 6 18:34:45 2019 +0200	small fixes
+* | | | de2b2c3	Kongen	Thu Jun 6 18:34:34 2019 +0200	update
+| |/ /  
+|/| |   
+* | |   d4956de	Kristian	Thu Jun 6 18:22:10 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| |/ /  
+| * |   9f914b0	zamFe	Thu Jun 6 18:21:39 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| * | | ff92c0a	zamFe	Thu Jun 6 18:21:31 2019 +0200	fixed dummyNote display
+* | | | 278f2e5	Kristian	Thu Jun 6 18:22:02 2019 +0200	remember buttun adjustment
+| |/ /  
+|/| |   
+* | |   4efcde6	Kristian	Thu Jun 6 18:16:41 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| |/ /  
+| * |   930e3ac	zamFe	Thu Jun 6 17:26:49 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| * | | 32c086e	zamFe	Thu Jun 6 17:26:41 2019 +0200	fixed dummyNote display
+* | | | 78e32be	Kristian	Thu Jun 6 18:16:35 2019 +0200	folder logo removal
+| |/ /  
+|/| |   
+* | |   8789513	Kongen	Thu Jun 6 17:21:29 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| |/ /  
+| * | e6b6919	zamFe	Thu Jun 6 17:16:22 2019 +0200	fixed dummyNote display
+| * |   130cba8	zamFe	Thu Jun 6 17:15:13 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| * | | ddffc91	zamFe	Thu Jun 6 17:15:01 2019 +0200	post it notes now work and are added to tabs
+* | | | 478f0e0	Kongen	Thu Jun 6 17:21:17 2019 +0200	update
+| |/ /  
+|/| |   
+* | |   0ed359a	Kristian	Thu Jun 6 17:01:35 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| | |/  
+| |/|   
+| * | b4259f5	eskildt	Thu Jun 6 16:24:00 2019 +0200	Update Webprosjekt.docx
+| |/  
+* | 00ccc76	Kristian	Thu Jun 6 16:59:45 2019 +0200	clean up and comments
+|/  
+* aa38feb	Kristian	Thu Jun 6 16:05:24 2019 +0200	post-it id on ul
+* d99fb3a	Kongen	Thu Jun 6 15:55:33 2019 +0200	update
+* 9f83e43	zamFe	Thu Jun 6 15:30:25 2019 +0200	user profile now updates to user information
+*   04ff108	zamFe	Thu Jun 6 15:08:46 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| *   4eac8e5	Kristian	Thu Jun 6 15:08:08 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| * | 5e1db66	Kristian	Thu Jun 6 15:07:58 2019 +0200	post-it close button
+* | | 2a29cb6	zamFe	Thu Jun 6 15:06:48 2019 +0200	added saving and loading via JSON
+| |/  
+|/|   
+* | a85ded7	zamFe	Thu Jun 6 14:52:04 2019 +0200	added saving and loading via JSON
+* |   491afd5	zamFe	Thu Jun 6 14:51:44 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \  
+| |/  
+| * 4012798	Kristian	Thu Jun 6 13:25:54 2019 +0200	sidebar z-index adjustment
+| *   3d07776	Kristian	Thu Jun 6 13:13:31 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| * | 36a1d1c	Kristian	Thu Jun 6 13:13:21 2019 +0200	chat polish
+| * |   db7286f	Kristian	Thu Jun 6 13:07:07 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| * | | c961634	Kristian	Thu Jun 6 13:05:58 2019 +0200	Home page ref
+* | | | 40bb18e	zamFe	Thu Jun 6 14:51:26 2019 +0200	added saving and loading via JSON
+| |_|/  
+|/| |   
+* | | ca65dce	zamFe	Thu Jun 6 13:13:09 2019 +0200	added saving and loading via JSON
+* | |   26e76e7	zamFe	Thu Jun 6 13:12:48 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| | |/  
+| |/|   
+| * |   967c33d	Kongen	Thu Jun 6 13:06:05 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| | |/  
+| | * 3552b0d	Kristian	Thu Jun 6 13:01:51 2019 +0200	edit chat-button
+| * | c7b5d15	Kongen	Thu Jun 6 13:05:58 2019 +0200	update
+| |/  
+| * 2a53f5e	Kongen	Thu Jun 6 12:53:44 2019 +0200	update
+| * 70cf218	Kristian	Thu Jun 6 12:49:43 2019 +0200	chat function implemented in tabs page
+* | c92637f	zamFe	Thu Jun 6 13:11:11 2019 +0200	added saving and loading via JSON
+|/  
+* bb2ca27	zamFe	Wed Jun 5 20:42:50 2019 +0200	added drag & drop functionality
+*   1e58d2a	zamFe	Wed Jun 5 20:31:28 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| *   e83093b	eskildt	Wed Jun 5 20:04:03 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\  
+| | * abe66e0	Kongen	Wed Jun 5 20:03:51 2019 +0200	fix på login
+| | *   8337d86	Kristian	Wed Jun 5 19:49:11 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | * | df9daf8	Kristian	Wed Jun 5 19:49:04 2019 +0200	frontpage clean-up
+| * | | 8bc9324	eskildt	Wed Jun 5 20:03:57 2019 +0200	Update main.js
+| | |/  
+| |/|   
+| * |   1ad1706	eskildt	Wed Jun 5 19:29:18 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \  
+| | |/  
+| | * fa96d44	Kongen	Wed Jun 5 18:58:52 2019 +0200	fix på login
+| * | 90700fb	eskildt	Wed Jun 5 19:29:00 2019 +0200	Oppdatering
+| |/  
+| * a1f52f9	Kristian	Wed Jun 5 18:41:28 2019 +0200	login background size
+| * c53a20a	Kongen	Wed Jun 5 18:39:41 2019 +0200	bubble update
+* | b1b2b1b	zamFe	Wed Jun 5 20:31:01 2019 +0200	added drag & drop functionality
+|/  
+*   fa5c7e1	zamFe	Wed Jun 5 18:32:16 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| *   1c7e25a	mayamariakj	Wed Jun 5 18:08:42 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\  
+| | *   dc26f7e	eskildt	Wed Jun 5 18:06:37 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| | |\  
+| | | *   b416656	Kristian	Wed Jun 5 18:01:35 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | | |\  
+| | | * | 1362a2e	Kristian	Wed Jun 5 18:01:28 2019 +0200	login background fix
+| | * | | cccc554	eskildt	Wed Jun 5 18:06:22 2019 +0200	Update .DS_Store
+| * | | | db7f682	mayamariakj	Wed Jun 5 18:08:36 2019 +0200	Delete ~$bprosjekt.docx
+| * | | | bde4a7f	mayamariakj	Wed Jun 5 18:07:15 2019 +0200	e
+| * | | | 8e59b4a	mayamariakj	Wed Jun 5 18:05:05 2019 +0200	endret alt til engelsk
+| * | | | 82d6bf3	mayamariakj	Wed Jun 5 18:03:08 2019 +0200	endret alt til engelsk.
+* | | | | df694d5	zamFe	Wed Jun 5 18:32:04 2019 +0200	fixed tabmanger
+| |_|_|/  
+|/| | |   
+* | | |   3756747	zamFe	Wed Jun 5 17:57:30 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \ \  
+| | |/ /  
+| |/| |   
+| * | |   106d337	eskildt	Wed Jun 5 17:56:44 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \ \  
+| | | |/  
+| | |/|   
+| | * |   a8c1c33	Kristian	Wed Jun 5 17:40:59 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \  
+| | * | | 1cb83ce	Kristian	Wed Jun 5 17:40:50 2019 +0200	centered frontpage
+| * | | | 9db8b4c	eskildt	Wed Jun 5 17:56:38 2019 +0200	Oppdatering word
+* | | | | 2b81ae7	zamFe	Wed Jun 5 17:57:13 2019 +0200	integrated test into tabs and mainpage.css
+| |_|/ /  
+|/| | |   
+* | | | a429107	zamFe	Wed Jun 5 17:24:28 2019 +0200	fixed mainpage CSS
+* | | | f242494	Kongen	Wed Jun 5 17:17:59 2019 +0200	mange oppdateringer
+| |_|/  
+|/| |   
+* | |   296822f	mayamariakj	Wed Jun 5 17:11:42 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \  
+| * \ \   b10b86a	zamFe	Wed Jun 5 17:08:35 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \ \  
+| | | |/  
+| | |/|   
+| | * |   dfde7c7	Kristian	Wed Jun 5 15:22:13 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \  
+| | * | | 8113d1d	Kristian	Wed Jun 5 15:21:56 2019 +0200	login buttons working
+| * | | | bfddbb8	zamFe	Wed Jun 5 17:08:11 2019 +0200	final fix on tab system
+* | | | | 60cbea6	mayamariakj	Wed Jun 5 17:11:33 2019 +0200	ordnet plasseringer, farger ol.
+| |_|/ /  
+|/| | |   
+* | | | 3d20f1f	mayamariakj	Wed Jun 5 13:51:21 2019 +0200	Create debug.log
+* | | |   04bb1c3	mayamariakj	Wed Jun 5 13:50:52 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \ \  
+| |/ / /  
+| * | | 68867ce	zamFe	Wed Jun 5 12:54:06 2019 +0200	integrating mainPage into tabs...
+| |/ /  
+| * | 4a13bcd	zamFe	Wed Jun 5 12:23:44 2019 +0200	integrating mainPage into tabs...
+| * | 8646237	Kristian	Wed Jun 5 11:51:59 2019 +0200	cancel button working
+| * | 849c1a3	zamFe	Tue Jun 4 17:42:22 2019 +0200	integrating mainPage into tabs...
+| |/  
+| *   b3784f1	zamFe	Tue Jun 4 15:38:52 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| | *   e1572d6	Kristian	Tue Jun 4 15:32:32 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | * | 89e4e37	Kristian	Tue Jun 4 15:32:25 2019 +0200	chat with server
+| | * |   bed44cb	Kristian	Tue Jun 4 14:03:25 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \  
+| | * | | 98b1421	Kristian	Tue Jun 4 14:03:18 2019 +0200	chat with server
+| * | | | 3cd90bc	zamFe	Tue Jun 4 15:38:39 2019 +0200	main page now dynamic
+| | |_|/  
+| |/| |   
+| * | | 747f4b6	zamFe	Tue Jun 4 15:26:40 2019 +0200	main page now dynamic
+* | | |   e1df374	mayamariakj	Wed Jun 5 13:50:28 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \ \  
+| |/ / /  
+| * | |   db744d4	zamFe	Tue Jun 4 14:03:22 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \ \  
+| | | |/  
+| | |/|   
+| | * | 86f039e	Kongen	Tue Jun 4 12:23:58 2019 +0200	komentering av kode
+| * | | 2901df6	zamFe	Tue Jun 4 14:03:10 2019 +0200	main page now dynamic
+| |/ /  
+| * | e870a4b	Kongen	Tue Jun 4 12:14:01 2019 +0200	komentering av kode
+| * | f6e20df	Kongen	Tue Jun 4 12:03:45 2019 +0200	komentering av kode
+| * | e88e0ad	Kongen	Tue Jun 4 11:44:08 2019 +0200	komentering av kode
+| |/  
+| * f463f2d	Kongen	Mon Jun 3 17:05:17 2019 +0200	new doc
+| * fdd815d	zamFe	Mon Jun 3 17:00:53 2019 +0200	Working on main page and project status blocks
+| * db702ee	Kristian	Mon Jun 3 16:40:05 2019 +0200	logo in login
+| *   7203694	zamFe	Mon Jun 3 16:38:00 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| | * 0bf806d	Kongen	Mon Jun 3 16:37:41 2019 +0200	bilde update
+| * |   6159ce3	zamFe	Mon Jun 3 16:37:45 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \  
+| | |/  
+| | * 07279d0	Kongen	Mon Jun 3 16:26:46 2019 +0200	update registration
+| | *   60cde71	Kristian	Mon Jun 3 16:13:58 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| | |\  
+| | * | b362a75	Kristian	Mon Jun 3 16:13:48 2019 +0200	frontpage and login updates
+| * | | 87b4fd8	zamFe	Mon Jun 3 16:37:38 2019 +0200	Working on main page and project status blocks
+* | | | 6ecf973	mayamariakj	Tue Jun 4 15:21:45 2019 +0200	oppdateringer
+| |_|/  
+|/| |   
+* | |   9830faa	mayamariakj	Mon Jun 3 15:19:52 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \  
+| * \ \   039de37	eskildt	Mon Jun 3 15:04:58 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \ \  
+| | |/ /  
+| | * | 2b176f0	zamFe	Mon Jun 3 14:20:50 2019 +0200	created projectStatusManager.js
+| | * | c31f4bc	zamFe	Mon Jun 3 14:18:38 2019 +0200	translated from nor to eng
+| | * | 6c9bd34	zamFe	Mon Jun 3 14:16:43 2019 +0200	updated mainpage grid to columns not rows
+| | * | 642947b	zamFe	Mon Jun 3 13:53:02 2019 +0200	updated tabManager
+| | |/  
+| | * 5676ceb	Kristian	Mon Jun 3 13:38:43 2019 +0200	animation centered, buttons working
+| | * 9ac3de5	zamFe	Mon Jun 3 13:36:02 2019 +0200	updated frontpage
+| | * da76b8a	zamFe	Mon Jun 3 13:32:39 2019 +0200	updated frontpage
+| | * 1961e8e	Sindrel96	Mon Jun 3 13:29:46 2019 +0200	Delete frontpage.css
+| | * a5db0c2	Sindrel96	Mon Jun 3 13:29:36 2019 +0200	Delete frontPage.html
+| | * 7277cf4	Kristian	Mon Jun 3 13:27:05 2019 +0200	animation centered, buttons working
+| | *   054682c	Kristian	Mon Jun 3 13:24:00 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | | * 7386b36	Kongen	Mon Jun 3 13:23:22 2019 +0200	halla
+| | | * 2dccef5	zamFe	Mon Jun 3 13:18:38 2019 +0200	updated frontpage
+| | | * 0d672d6	Kongen	Mon Jun 3 13:07:52 2019 +0200	update frontpage
+| | | *   c97f275	Kongen	Mon Jun 3 13:05:53 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | | |\  
+| | | * | 676ba3e	Kongen	Mon Jun 3 13:05:46 2019 +0200	update frontpage
+| | | * | 29fa22f	Kongen	Mon Jun 3 13:01:10 2019 +0200	update frontpage
+| | * | | c3de27d	Kristian	Mon Jun 3 13:23:41 2019 +0200	animation centered, buttons working
+| | * | | e32de37	Kristian	Mon Jun 3 13:20:13 2019 +0200	animation centered, buttons working
+| | * | | 1a5e8d1	Kristian	Mon Jun 3 13:15:56 2019 +0200	animation centered, buttons working
+| | * | |   220ca4e	Kristian	Mon Jun 3 13:07:43 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \ \  
+| | | | |/  
+| | | |/|   
+| | | * | 3e4966f	zamFe	Mon Jun 3 13:02:01 2019 +0200	added minside.html into tabs.html as a section
+| | | * | c84c2d5	zamFe	Mon Jun 3 12:56:58 2019 +0200	added minside.html into tabs.html as a section
+| | | * | 2aaaa22	zamFe	Mon Jun 3 12:51:08 2019 +0200	added minside.html into tabs.html as a section
+| | | * |   1746e29	zamFe	Mon Jun 3 12:46:58 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | | |\ \  
+| | | * | | ca76f5a	zamFe	Mon Jun 3 12:46:43 2019 +0200	added minside.html into tabs.html as a section
+| | * | | | 6ba2cb5	Kristian	Mon Jun 3 13:07:33 2019 +0200	animation centered, buttons working
+| * | | | | 4a697e7	eskildt	Mon Jun 3 15:04:49 2019 +0200	Kreativt webprosjekt word
+| | |_|/ /  
+| |/| | |   
+| * | | | 80dc0f9	eskildt	Mon Jun 3 12:40:10 2019 +0200	Update frontpage.css
+| * | | |   8444a41	eskildt	Mon Jun 3 12:39:49 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \ \ \  
+| | |/ / /  
+| | * | |   f2761db	Kristian	Mon Jun 3 11:11:29 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \ \  
+| | | |/ /  
+| | | * |   6f7d1b3	zamFe	Mon Jun 3 11:00:26 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | | |\ \  
+| | | | |/  
+| | | * | ca32005	zamFe	Mon Jun 3 10:58:07 2019 +0200	fixed tabs.html
+| | * | | e7fe448	Kristian	Mon Jun 3 11:11:17 2019 +0200	css structured
+| | | |/  
+| | |/|   
+| | * | afcf4f2	Kongen	Mon Jun 3 10:20:57 2019 +0200	update frontpage
+| | |/  
+| | *   8aca2d0	Kongen	Mon Jun 3 10:17:31 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | * | ad7065a	Kongen	Mon Jun 3 10:17:10 2019 +0200	update frontpage
+| | * |   5bfb9ab	Kongen	Mon Jun 3 09:40:28 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \  
+| | * | | bfa099e	Kongen	Fri May 31 11:39:44 2019 +0200	Merge branch 'master' of /Users/Kongen/Documents/Skole/real webprosjekt/gruppe14 with conflicts.
+| | * | |   0f1e3e6	Kongen	Fri May 31 11:36:51 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\ \ \  
+| | * | | | b4a1a2d	Kongen	Fri May 31 11:36:33 2019 +0200	update frontpage
+| * | | | | 0fdc84e	eskildt	Mon Jun 3 12:39:44 2019 +0200	kode standarden
+* | | | | | 39d484a	mayamariakj	Mon Jun 3 15:19:42 2019 +0200	lakt til snakkebobler vedsiden av registrerings biten
+| |_|_|_|/  
+|/| | | |   
+* | | | | 2f9d241	mayamariakj	Mon Jun 3 10:14:11 2019 +0200	chatt layout
+|/ / / /  
+* | | |   2d3ebc9	eskildt	Mon Jun 3 10:13:05 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \ \  
+| | |_|/  
+| |/| |   
+| * | | abfafb6	zamFe	Fri May 31 15:38:51 2019 +0200	TABS NOW WORK!!!!
+* | | | 3f2b869	eskildt	Mon Jun 3 10:13:00 2019 +0200	Maya kjør da
+|/ / /  
+* | | 502464a	eskildt	Fri May 31 15:13:07 2019 +0200	Lagt opp js på registered
+* | | 50287c2	zamFe	Fri May 31 14:25:17 2019 +0200	fixed login and tab images
+* | |   e7791ea	eskildt	Fri May 31 14:18:09 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \  
+| * \ \   15b2eab	zamFe	Fri May 31 14:05:24 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \ \  
+| * | | | 993d613	zamFe	Fri May 31 14:05:08 2019 +0200	added tab images again
+* | | | | 16654ca	eskildt	Fri May 31 14:17:44 2019 +0200	Log in connected til js
+| |/ / /  
+|/| | |   
+* | | |   a68d1cd	eskildt	Fri May 31 13:59:07 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\ \ \ \  
+| |/ / /  
+| * | | 7811a65	zamFe	Fri May 31 13:56:42 2019 +0200	tabs updating
+| | |/  
+| |/|   
+* | | b2f5da1	eskildt	Fri May 31 13:59:04 2019 +0200	Knyttet registration knappen til tilhørende js funksjon i users
+|/ /  
+* | 2608d7c	eskildt	Fri May 31 11:23:00 2019 +0200	Fjernet min versjon av tabs
+|/  
+* e4c5e0f	zamFe	Thu May 30 16:38:15 2019 +0200	updated project system
+* 3107997	zamFe	Thu May 30 14:49:24 2019 +0200	brand mew popupManager! Manages popup for creating projects, and soon also loading projects and viewing profile!
+* f2b14d9	mayamariakj	Thu May 30 14:30:31 2019 +0200	Perfektito!
+* caf8552	zamFe	Wed May 29 19:41:01 2019 +0200	updated tab design
+*   e856168	mayamariakj	Wed May 29 16:23:52 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+|\  
+| * c94f816	zamFe	Wed May 29 15:44:59 2019 +0200	renaming and sorting
+| * 362e119	Kongen	Wed May 29 15:33:47 2019 +0200	update frontpage
+| * 23816f9	Sindrel96	Wed May 29 15:29:07 2019 +0200	Add files via upload
+| *   8d2169c	Kongen	Wed May 29 14:22:26 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| | * 9433cfd	Kristian	Wed May 29 14:02:34 2019 +0200	Post-it, movable.
+| | *   ebfb5db	Kristian	Wed May 29 13:30:09 2019 +0200	Merge remote-tracking branch 'origin/master'
+| | |\  
+| | * \   1b4e63f	Kristian	Wed May 29 13:30:03 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| | |\ \  
+| | * | | acdb51f	Kristian	Wed May 29 12:40:41 2019 +0200	post it, testing
+| * | | | 38d321c	Kongen	Wed May 29 14:21:51 2019 +0200	update mainpage
+| | |_|/  
+| |/| |   
+| * | | 14b88c0	Kongen	Wed May 29 12:57:48 2019 +0200	update mainpage
+| * | |   63ff5c3	Kongen	Wed May 29 12:57:32 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\ \ \  
+| | | |/  
+| | |/|   
+| | * | 3961cbe	zamFe	Wed May 29 12:39:39 2019 +0200	postIt notes now draggable
+| | |/  
+| | * 6d4d918	Kristian	Wed May 29 10:47:53 2019 +0200	Min side. Mangler bilde, navn og levelsystem.
+| | *   6bc8c65	Kristian	Wed May 29 10:31:32 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| | |\  
+| | | * d692f7e	zamFe	Tue May 28 18:04:07 2019 +0200	working on tabs functionality
+| | | * 11e86e7	zamFe	Tue May 28 18:03:39 2019 +0200	sidebar updated for project theme
+| | * | ec8a4cf	Kristian	Wed May 29 10:29:41 2019 +0200	Min side. Mangler bilde, navn og levelsystem.
+| * | | 938da59	Kongen	Wed May 29 12:56:24 2019 +0200	update mainpage
+| | |/  
+| |/|   
+| * | a7ad712	Kongen	Tue May 28 15:18:18 2019 +0200	rework
+| * | 268b71e	Kongen	Tue May 28 15:17:48 2019 +0200	halla
+| * | 3a09aa5	Kongen	Tue May 28 15:07:55 2019 +0200	added main page
+| * | f224fb0	zamFe	Tue May 28 14:51:10 2019 +0200	removed non-related code
+| * | 9a1604f	zamFe	Tue May 28 14:40:04 2019 +0200	removed non-related code
+| * | 10b3206	zamFe	Tue May 28 14:38:08 2019 +0200	added code for sidebar
+| * | bc6bfc0	zamFe	Tue May 28 14:22:22 2019 +0200	updated tab system
+| * | af52dd1	zamFe	Tue May 28 12:35:04 2019 +0200	updated tab system
+| * | e713669	zamFe	Tue May 28 11:08:42 2019 +0200	added a tab manager file for managing tabs
+| * | 019aac3	Sindrel96	Tue May 28 11:05:23 2019 +0200	updated
+| |/  
+| * 3370bb1	Kristian	Tue May 28 09:53:22 2019 +0200	Post it. Non draggable.
+| *   3300990	Kristian	Tue May 28 09:09:55 2019 +0200	Merge remote-tracking branch 'origin/master'
+| |\  
+| | * 985c770	Sindrel96	Mon May 27 16:20:46 2019 +0200	Login site
+| | * 35efe84	Sindrel96	Mon May 27 16:20:22 2019 +0200	tutorial site
+| | * 9bfcc7a	Sindrel96	Mon May 27 16:19:57 2019 +0200	only animation code
+| | * 0d038f7	Sindrel96	Mon May 27 16:19:12 2019 +0200	update
+| | * c3cc1a1	Sindrel96	Mon May 27 16:18:16 2019 +0200	Delete frontPage.html
+| | * 7063729	Sindrel96	Mon May 27 16:18:07 2019 +0200	Delete frontPage.css
+| | * df09e1b	Sindrel96	Mon May 27 16:16:36 2019 +0200	Delete animasjon.css
+| | * 9d04cb5	Sindrel96	Mon May 27 16:16:25 2019 +0200	Delete animasjon.html
+| * | 5c1daa8	Kristian	Mon May 27 16:33:59 2019 +0200	Post it note, updated.
+* | | fe4bc0c	mayamariakj	Wed May 29 16:23:44 2019 +0200	register site
+| |/  
+|/|   
+* | a9d8a8a	mayamariakj	Mon May 27 16:05:05 2019 +0200	Registreringsside
+* | 3967bc5	mayamariakj	Mon May 27 15:36:11 2019 +0200	Tidenes registreringsside
+|/  
+*   6b8a693	Kristian	Mon May 27 12:53:18 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| * 9c46b30	Sindrel96	Mon May 27 11:53:08 2019 +0200	animasjon
+* | 600c146	Kristian	Mon May 27 12:53:11 2019 +0200	Post it note
+|/  
+*   0c1dd74	Kristian	Mon May 27 11:22:42 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\  
+| *   e1a6d99	eskildt	Mon May 27 10:56:39 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\  
+| | *   ae53af7	mayamariakj	Mon May 27 10:55:30 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| | |\  
+| | * | f359461	mayamariakj	Mon May 27 10:55:24 2019 +0200	Update index.css
+| * | |   2fc3f6b	eskildt	Mon May 27 10:55:18 2019 +0200	Merge branch 'master' of https://github.com/zamFe/gruppe14
+| |\ \ \  
+| | | |/  
+| | |/|   
+| * | | 0030337	eskildt	Mon May 27 10:55:13 2019 +0200	Color gradient
+* | | | 8938cec	Kristian	Mon May 27 11:22:01 2019 +0200	Front page, logos and buttons (non-clickable), with gradient background
+| |/ /  
+|/| |   
+* | |   cc8c6bb	Kristian	Mon May 27 10:21:53 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \ \  
+| | |/  
+| |/|   
+| * | 9f3b1b7	mayamariakj	Mon May 27 10:18:06 2019 +0200	Ny Bruker-side
+| |/  
+| * 201d7a7	zamFe	Mon May 27 10:12:01 2019 +0200	fixed tab corners
+| * 4ab9b72	eskildt	Mon May 27 10:02:08 2019 +0200	Tabs
+* | 609d34a	Kristian	Mon May 27 10:13:52 2019 +0200	Front page, logos and buttons (non-clickable)
+* | 0616d51	Kristian	Mon May 27 10:04:28 2019 +0200	Front page, logos and buttons (non-clickable)
+* | bd75434	Kristian	Fri May 24 16:51:25 2019 +0200	Front page, with right colors and logo.
+* |   ed6631a	Kristian	Fri May 24 16:38:38 2019 +0200	Merge remote-tracking branch 'origin/master'
+|\ \  
+| |/  
+| * c409d27	zamFe	Fri May 24 15:41:35 2019 +0200	added folder for screenshots
+| * 635085b	zamFe	Fri May 24 15:25:55 2019 +0200	added folder for global images
+| * 8691fe7	zamFe	Fri May 24 15:21:08 2019 +0200	updated user-management files
+| * 9131760	zamFe	Fri May 24 14:15:26 2019 +0200	updated user-management files
+| * f077252	zamFe	Fri May 24 14:14:07 2019 +0200	updated user-management files
+* | a7ffc03	Kristian	Fri May 24 16:38:20 2019 +0200	Front page, with right colors and logo.
+* | 5706e16	Kristian	Fri May 24 13:09:57 2019 +0200	Added front page css and html
+|/  
+* 664c2c2	zamFe	Fri May 24 11:32:11 2019 +0200	added user management folder with a js file with user data and methods plus temporary html and css for testing
+* 65084ba	zamFe	Fri May 24 11:29:42 2019 +0200	first commit
