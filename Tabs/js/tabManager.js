@@ -37,7 +37,7 @@ function createNewTab(projectId) {
 
     };
     //add content
-    tabImg.src = "../Tabs/Images/TabWhite.png";
+    tabImg.src = "Images/tabWhite.png";
     tabTitle.innerHTML = projects[projectId].projectName;
     tabClose.innerHTML = "X";
     tabClose.onclick = function handleOnclick(event) {
@@ -218,7 +218,7 @@ function openProfileTab() {
 
     };
     //add content
-    tabImg.src = "../Tabs/Images/TabRed.png";
+    tabImg.src = "Images/tabRed.png";
     tabTitle.innerHTML = "Profile";
     tabClose.innerHTML = "X";
     tabClose.onclick = function handleOnclick(event) {

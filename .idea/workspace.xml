@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de07607-42ef-4bac-8f88-028e149ef7ca" name="Default Changelist" comment="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix">
+    <list default="true" id="2de07607-42ef-4bac-8f88-028e149ef7ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tabs/js/tabManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tabs/js/tabManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tabs/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tabs/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/logginn.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/logginn.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
@@ -40,17 +40,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="102" column="42" lean-forward="true" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
+            <state relative-caret-position="64">
+              <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tabs/js/tabManager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="39" />
+              <caret line="220" column="18" lean-forward="true" selection-start-line="220" selection-start-column="18" selection-end-line="220" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#button#0;n#!!top" expanded="true" />
               </folding>
@@ -175,7 +175,6 @@
         <option value="$PROJECT_DIR$/Registration/debug.log" />
         <option value="$PROJECT_DIR$/Tabs/tabManager.js" />
         <option value="$PROJECT_DIR$/Tabs/projectStatusManager.js" />
-        <option value="$PROJECT_DIR$/Tabs/js/tabManager.js" />
         <option value="$PROJECT_DIR$/Registration/registration.css" />
         <option value="$PROJECT_DIR$/gruppe14/chat-example/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -183,6 +182,7 @@
         <option value="$PROJECT_DIR$/Registration/registration.html" />
         <option value="$PROJECT_DIR$/login/logginn.html" />
         <option value="$PROJECT_DIR$/Tabs/tabs.html" />
+        <option value="$PROJECT_DIR$/Tabs/js/tabManager.js" />
       </list>
     </option>
   </component>
@@ -270,6 +270,12 @@
               <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
               <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
               <item name="Tabs" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="Tabs" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,7 +293,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559915113660" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559915256089" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -384,14 +390,7 @@
       <workItem from="1559894519881" duration="7211000" />
       <workItem from="1559903855607" duration="9840000" />
       <workItem from="1559914025226" duration="42000" />
-      <workItem from="1559914086990" duration="1015000" />
-    </task>
-    <task id="LOCAL-00041" summary="integrating mainPage into tabs...">
-      <created>1559730224491</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1559730224491</updated>
+      <workItem from="1559914086990" duration="1157000" />
     </task>
     <task id="LOCAL-00042" summary="integrating mainPage into tabs...">
       <created>1559732046118</created>
@@ -729,11 +728,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559914793841</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix">
+      <created>1559915120813</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1559915120813</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196972000" />
+    <option name="totallyTimeSpent" value="197114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -944,6 +950,20 @@
     <entry file="file://$PROJECT_DIR$/minside/minside.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontpage/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="961">
@@ -951,27 +971,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="102" column="42" lean-forward="true" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tabs/js/tabManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="39" />
+          <caret line="220" column="18" lean-forward="true" selection-start-line="220" selection-start-column="18" selection-end-line="220" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#span#0;n#button#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
