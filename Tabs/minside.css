@@ -9,7 +9,6 @@ h1 h2 h3 h4 h5 h6 p a textarea span link input div{
     top: 30px;
     color: #F9FAF5;
     font-weight: bold;
-    font-family: sans-serif;
     font-size: xx-large;
 }
 
@@ -47,7 +46,6 @@ h1 h2 h3 h4 h5 h6 p a textarea span link input div{
     top: 30px;
     color: black;
     font-weight: bold;
-    font-family: sans-serif;
 }
 
 .profileSubtext {
