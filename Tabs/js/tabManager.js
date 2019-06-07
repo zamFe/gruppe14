@@ -218,7 +218,7 @@ function openProfileTab() {
 
     };
     //add content
-    tabImg.src = "Images/tabRed.png";
+    tabImg.src = "Images/TabRed.png";
     tabTitle.innerHTML = "Profile";
     tabClose.innerHTML = "X";
     tabClose.onclick = function handleOnclick(event) {
