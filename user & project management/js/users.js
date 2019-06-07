@@ -47,16 +47,17 @@ function login(username, password) {
 
 //DOM-methods
 
-//updates user div in HTML (as well as progress bar in users OLD.css))
+//updates user div in HTML (as well as progress bar))
 function updateUserDiv(user) {
-    var profileUsername = document.getElementById("profileUsername");
-    var profileDescription = document.getElementById("profileDescription");
+    var profileUsername = document.getElementById("profileBoxUsername");
+    var profileDescription = document.getElementById("profileBoxDescription");
     var profileProgressBar = document.getElementById("profileProgressBar");
     profileUsername.innerHTML = user.firstName + " " + user.lastName;
     profileDescription.innerHTML = "username: " + user.userName + " | age: " + user.age
         + "yrs. <br> email: " + user.email;
-    profileProgressBar.innerHTML = user.exp + "/" + 1000 + " - level " + 1;
-    profileProgressBar.style.width = (user.exp * 100) / 1000 + "%";
+    profileProgressBar.innerHTML = user.exp - Math.floor(user.exp/1000) * 1000 + "/" + 1000 + " - level " + Math.floor(user.exp/1000);
+    profileProgressBar.style.width = (user.exp - Math.floor(user.exp/1000) * 1000 ) / 10 + "%";
+    saveUsers(users);
 }
 
 //events

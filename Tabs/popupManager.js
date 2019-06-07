@@ -65,6 +65,9 @@ function popupNewProject() {
             [], [],[],[]);
         closePopup();
         createNewTab(projects.length-1);
+        //exp reward for creating new project
+        users[currentUser].exp += 200;
+        updateUserDiv(users[currentUser]);
     };
     popup.appendChild(createProjectButton);
 

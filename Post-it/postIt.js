@@ -144,4 +144,7 @@ function createNewPostIt() {
         '        </ul>\n' +
         '\n' +
         '    </div>';
+    //exp reward for creating new post-it note
+    users[currentUser].exp += 50;
+    updateUserDiv(users[currentUser]);
 }

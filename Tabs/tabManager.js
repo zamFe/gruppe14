@@ -219,10 +219,12 @@ function openProfileTab() {
     add.style.order++;
 
     //update z-index and active tab
-    /*let previousTab = activeTab;
-    setActiveTab(tab);*/
 
     setActiveTab(tab);
+
+    //exp reward for opening profile tab
+    users[currentUser].exp += 50;
+    updateUserDiv(users[currentUser]);
 }
 
 //set tab to active, works as an onclick event or from js
