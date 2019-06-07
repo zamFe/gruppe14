@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-/*Wrapper
-.wrapper {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-}*/
-
 /*Button styling*/
+
 #buttonholder{
     left: calc(50% - 250px);
     position: relative;
@@ -55,6 +47,7 @@
 }
 
 /*Body styling*/
+
 html, body{
     margin: 0;
     padding: 0;
@@ -118,6 +111,7 @@ h5{
 }
 
 /*Input styling*/
+
 #name{
     top:200px;
     left:300px;
@@ -234,6 +228,7 @@ h5{
 }
 
 /*Radiobuttons styling*/
+
 #genderContainer{
     position: relative;
     top: 190px; 
@@ -291,6 +286,7 @@ h5{
 }
 
 /*Colorblind speech bubbles*/
+
 .speechBubble{
     position: relative;
     background: #9a073c;
