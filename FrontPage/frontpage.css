@@ -4,6 +4,10 @@ html {
     overflow-x: hidden;
 }
 
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: 'Arial Black',Helvetica, sans-serif;
+}
+
 body{
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: cover;
@@ -21,7 +25,6 @@ h6{
     color: #0b245b;
     z-index: 10;
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h5{
@@ -29,7 +32,6 @@ h5{
     color: rgb(99, 123, 175);
     z-index: 10;
     font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 

@@ -12,6 +12,10 @@ html, body{
     overflow: -moz-scrollbars-none;
 }
 
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: 'Arial Black',Helvetica, sans-serif;
+}
+
 main {
     position: relative;
     height: calc(100% - 55px);

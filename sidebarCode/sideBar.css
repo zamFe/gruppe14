@@ -18,12 +18,11 @@ html {
 
 /* fonts */
 
-h1, h2, h3, p, div{
-	font-family: 'Montserrat', sans-serif;
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: 'Arial Black',Helvetica, sans-serif;
 }
 
-a {
-	font-family: 'PT Sans', sans-serif;
+a{
     text-decoration: none;
 	color: white;
 }
@@ -106,7 +105,6 @@ a {
     left: 5px;
     width: 190px;
     font-size: 15px;
-    font-family: times;
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -123,7 +121,6 @@ a {
     left: 5px;
     width: 190px;
     font-size: 15px;
-    font-family: times;
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;

@@ -1,3 +1,7 @@
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: 'Arial Black',Helvetica, sans-serif;
+}
+
 #user_box {
     display: block;
     height: 11em;
