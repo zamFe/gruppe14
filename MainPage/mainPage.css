@@ -349,7 +349,6 @@
 .wrapper {
     z-index: 0;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     display: grid;
     position: absolute;
@@ -438,7 +437,7 @@
     text-align: center;
     font-size: 2em;
     line-break: auto;
-
+    cursor: grab;
     white-space: pre-wrap;
     resize: horizontal;
 }
