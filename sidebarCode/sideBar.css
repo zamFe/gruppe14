@@ -70,7 +70,7 @@ a {
 	z-index: 0;
 	position: absolute;
 	width: 40px;
-	height: 160px;
+	height: 100px;
 	background-color: rgba(255,255,255,0.7);
 	top: 50%;
 	transform: translateY(-50%);
