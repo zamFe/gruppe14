@@ -1,17 +1,5 @@
-/*
-body {
-    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
-    background-size: 1000px 1600px;
-    overflow: scroll;
-    height: 1600px;
-}
 
-
-html {
-    height: 100%;
-    margin: 0;
-}
-*/
+/* logo Container */
 
 #logoContainer {
     position: absolute;
@@ -19,13 +7,15 @@ html {
     left: 250px;
     top: 20px;
     margin: 30px;
-    /*background-color: #F9FAF5;*/
     text-align: center;
 }
 
 #logoPicture {
     width: 500px;
 }
+
+
+/* Buttons, timetable and workspace */
 
 .button {
     position: absolute;
@@ -62,8 +52,6 @@ html {
     position: absolute;
     top: 250px;
     left: 2%;
-    /*  border: solid;
-      border-color: red;*/
     display: grid;
     overflow: hidden;
     white-space: nowrap;
@@ -553,6 +541,8 @@ html {
     top: 50px;
 }
 
+/* sidebar elements */
+
 #newsFeed {
     position: absolute;
     top: 250px;
@@ -587,6 +577,7 @@ html {
     resize: none;
 }
 
+
 ::-webkit-scrollbar-track {
     background: none;
 }
@@ -603,3 +594,4 @@ html {
     color: black;
     opacity: 0.6;
 }
+
