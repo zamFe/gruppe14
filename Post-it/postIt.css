@@ -25,6 +25,10 @@ body{
     box-sizing: content-box;
 }*/
 
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Remove margins and padding from the list */
 #myUL {
     margin: 0;

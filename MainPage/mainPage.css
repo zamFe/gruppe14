@@ -1,3 +1,6 @@
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* logo Container */
 
@@ -63,7 +66,6 @@
 }
 
 .names {
-    font-family: 'Roboto Slab', serif;
     padding-left: 20px;
     padding-right: 40px;
     color: white;
@@ -73,7 +75,6 @@
     top: 0px;
     left: 0px;
     position: relative;
-    font-family: 'Roboto Slab', serif;
     padding-top: 7px;
     padding-left: 20px;
     padding-right: 40px;
@@ -81,7 +82,6 @@
 }
 
 .dag {
-    font-family: 'Roboto Slab', serif;
     padding-bottom: 7px;
     padding-left: 20px;
     padding-right: 40px;
@@ -549,7 +549,6 @@
     left: 5px;
     width: 190px;
     font-size: 15px;
-    font-family: times;
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -566,7 +565,6 @@
     left: 5px;
     width: 190px;
     font-size: 15px;
-    font-family: times;
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 8px;
