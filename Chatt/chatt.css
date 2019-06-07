@@ -10,8 +10,13 @@ body {font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     z-index: 10;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: 'Arial Black',Helvetica, sans-serif;
+}
 
 .open-button {
   background-color: #555;
