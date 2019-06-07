@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de07607-42ef-4bac-8f88-028e149ef7ca" name="Default Changelist" comment="">
+    <list default="true" id="2de07607-42ef-4bac-8f88-028e149ef7ca" name="Default Changelist" comment="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tabs/Images/tabRed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tabs/Images/TabRed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tabs/Images/tabWhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tabs/Images/TabWhite.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tabs/js/tabManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tabs/js/tabManager.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,13 +48,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tabs/js/tabManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="225" column="6" lean-forward="true" selection-start-line="225" selection-start-column="6" selection-end-line="225" selection-end-column="6" />
+            <state relative-caret-position="88">
+              <caret line="219" column="17" lean-forward="true" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#button#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tabs/Images/TabRed.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -126,6 +129,7 @@
       <find>console.</find>
       <find>cons</find>
       <find>con</find>
+      <find>tabred</find>
     </findStrings>
     <replaceStrings>
       <replace>userIdCount</replace>
@@ -199,11 +203,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="97" />
+    <option name="y" value="61" />
+    <option name="width" value="1168" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -294,7 +298,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559915688907" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559916651420" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -391,14 +395,7 @@
       <workItem from="1559894519881" duration="7211000" />
       <workItem from="1559903855607" duration="9840000" />
       <workItem from="1559914025226" duration="42000" />
-      <workItem from="1559914086990" duration="1589000" />
-    </task>
-    <task id="LOCAL-00045" summary="integrated test into tabs and mainpage.css">
-      <created>1559750233448</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1559750233448</updated>
+      <workItem from="1559914086990" duration="2324000" />
     </task>
     <task id="LOCAL-00046" summary="fixed tabmanger">
       <created>1559752324601</created>
@@ -736,33 +733,41 @@
       <option name="project" value="LOCAL" />
       <updated>1559915508241</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix">
+      <created>1559915696180</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1559915696180</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197546000" />
+    <option name="totallyTimeSpent" value="198281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29116467" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.29116467" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS Styles" order="0" weight="0.32894737" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.22660819" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.5502008" weight="0.375731" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49933067" visible="true" weight="0.38157895" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49933067" weight="0.38157895" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.4497992" side_tool="true" weight="0.375731" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.53815264" weight="0.04385965" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Find" order="10" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -881,7 +886,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test.css" />
     <entry file="file://$PROJECT_DIR$/Chatt/chatt.css" />
     <entry file="file://$PROJECT_DIR$/Registration/registration.js" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
@@ -957,13 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontpage/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="961">
@@ -971,10 +968,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tabs/Images/TabRed.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tabs/js/tabManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="225" column="6" lean-forward="true" selection-start-line="225" selection-start-column="6" selection-end-line="225" selection-end-column="6" />
+        <state relative-caret-position="88">
+          <caret line="219" column="17" lean-forward="true" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#span#0;n#button#0;n#!!top" expanded="true" />
           </folding>
