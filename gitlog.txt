@@ -1,3 +1,5 @@
+* 0a86f32	zamFe	Fri Jun 7 14:28:34 2019 +0200	CLEANUP
+* 2242fd4	zamFe	Fri Jun 7 13:50:49 2019 +0200	added level system and logo updats
 * bcd3bff	zamFe	Fri Jun 7 13:37:12 2019 +0200	added level system and logo updats
 *   bde42e5	zamFe	Fri Jun 7 13:34:27 2019 +0200	Merge remote-tracking branch 'origin/master'
 |\  
