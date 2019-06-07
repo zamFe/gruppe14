@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2de07607-42ef-4bac-8f88-028e149ef7ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontpage/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="161">
+              <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontpage/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -126,9 +135,9 @@
         <option value="$PROJECT_DIR$/Tabs/tabs.html" />
         <option value="$PROJECT_DIR$/Tabs/js/tabManager.js" />
         <option value="$PROJECT_DIR$/Registration/registration.css" />
-        <option value="$PROJECT_DIR$/frontpage/index.html" />
         <option value="$PROJECT_DIR$/gruppe14/chat-example/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/frontpage/index.html" />
       </list>
     </option>
   </component>
@@ -167,6 +176,11 @@
               <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
               <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="frontpage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -177,7 +191,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559914371826" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559914517492" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -274,14 +288,7 @@
       <workItem from="1559894519881" duration="7211000" />
       <workItem from="1559903855607" duration="9840000" />
       <workItem from="1559914025226" duration="42000" />
-      <workItem from="1559914086990" duration="273000" />
-    </task>
-    <task id="LOCAL-00038" summary="main page now dynamic">
-      <created>1559654800368</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1559654800368</updated>
+      <workItem from="1559914086990" duration="419000" />
     </task>
     <task id="LOCAL-00039" summary="main page now dynamic">
       <created>1559655519942</created>
@@ -619,11 +626,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559914276792</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix">
+      <created>1559914381672</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1559914381672</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196230000" />
+    <option name="totallyTimeSpent" value="196376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -819,12 +833,18 @@
     <entry file="file://$PROJECT_DIR$/Tabs/js/tabManager.js" />
     <entry file="file://$PROJECT_DIR$/Registration/registration.css" />
     <entry file="file://$PROJECT_DIR$/gitlog.txt" />
-    <entry file="file://$PROJECT_DIR$/frontpage/index.html" />
     <entry file="file://$PROJECT_DIR$/chat-example/index.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="161">
+          <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
         </state>
       </provider>
     </entry>
