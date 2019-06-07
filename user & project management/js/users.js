@@ -52,11 +52,23 @@ function updateUserDiv(user) {
     var profileUsername = document.getElementById("profileBoxUsername");
     var profileDescription = document.getElementById("profileBoxDescription");
     var profileProgressBar = document.getElementById("profileProgressBar");
-    profileUsername.innerHTML = user.firstName + " " + user.lastName;
-    profileDescription.innerHTML = "username: " + user.userName + " | age: " + user.age
-        + "yrs. <br> email: " + user.email;
-    profileProgressBar.innerHTML = user.exp - Math.floor(user.exp/1000) * 1000 + "/" + 1000 + " - level " + Math.floor(user.exp/1000);
-    profileProgressBar.style.width = (user.exp - Math.floor(user.exp/1000) * 1000 ) / 10 + "%";
+    var user_img = document.getElementById("user_img");
+    profileUsername.innerHTML = user.name;
+    profileDescription.innerHTML = "username: " + user.userName + "<br> email: " + user.email;
+    var level = Math.floor(user.exp/1000);
+    profileProgressBar.innerHTML = user.exp - level * 1000 + "/" + 1000 + " - level " + level;
+    profileProgressBar.style.width = (user.exp - level * 1000 ) / 10 + "%";
+    if (level == 1 || level == 0) {
+        user_img.src = "Images/ranks/rank1_novice.png";
+    }
+    else if (level == 2) {
+        user_img.src = "Images/ranks/rank2_squire.png";
+    }
+    else if (level == 3) {
+        user_img.src = "Images/ranks/rank3_knight.png";
+    } else if (level >= 4) {
+        user_img.src = "Images/ranks/rank4_king.png";
+    }
     saveUsers(users);
 }
 
