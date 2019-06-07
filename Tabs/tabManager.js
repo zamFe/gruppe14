@@ -89,6 +89,33 @@ function createNewTab(projectId) {
     section.appendChild(members);
     //insert task columns and all additional content into section
     section.innerHTML +=
+        '<button class="popup" onclick="toggleInfoButton(event);">info!\n' +
+        '        <span class="popuptext" style="transition: all 0.5s ease-in-out;">\n' +
+        '            This is some tips for the new users of this application:\n' +
+        '            <br>\n' +
+        '            When you are developing tasks to do, always bear in mind which tasks are critical to finish.\n' +
+        '            <br>\n' +
+        '            Also, you should be mindful of those tasks that requires a previous task to finish before they can start.\n' +
+        '            <br>\n' +
+        '            This is an example of the development method called critical path.\n' +
+        '            <br>\n' +
+        '            When you use critical path, your main focus is to get a product with functionality.\n' +
+        '            <br>\n' +
+        '            Everything else increase the value of the product,\n' +
+        '            <br>\n' +
+        '            but should be focused upon when the critical tasks have enough manpower.\n' +
+        '            <br>\n' +
+        '            Another tip is to create tasks of appropriate size.\n' +
+        '            <br>\n' +
+        '            Try to divide the tasks to as small as possible,\n' +
+        '            <br>\n' +
+        '            but not to make them so small that they are impractical.\n' +
+        '            <br>\n' +
+        '            pro tip: check out the menu tab on the right. Here you can add post-it notes and log out!\n' +
+        '            <br>\n' +
+        '            When you create new projects and post-it notes, you gain some experience-points!\n ' +
+        '        </span>\n' +
+        '      </button>\n' +
         '<button class="button" id="button1" type="button" onClick = "openTimeLine(event.target);">Open Timetable!</button>\n' +
         '\n' +
         '<button class="button" id="button2" type="button" onClick = "closeTimeLine(event.target)">Close Timetable!</button>\n' +

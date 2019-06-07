@@ -1,0 +1,91 @@
+/*
+body {
+    background-color: #F9FAF5;
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-size: 1000px 1600px;
+    overflow: scroll;
+    height: 1600px;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+
+}
+*/
+.popuptext {
+   visibility: hidden;
+    width: 500px;
+    height: 300px;
+    color: #fff;
+    text-align: left;
+    font-size: 15px;
+    line-height: 20px;
+    overflow-y: scroll;
+
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50px;
+    margin-left: -80px;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+    top: 100px;
+  }
+
+  .popup{
+    height: 20px;
+    background-color: #0B245B;
+    color: #F9FAF5;
+    border: solid #0b245b;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    /*cursor: pointer;*/
+    user-select: none;
+      outline: none;
+      transition: all 0.5s ease-in-out;
+      left: 290px;
+      top: 33px;
+}
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-color: #555 transparent transparent transparent;
+      outline: none;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    top: 55px;
+    background-color: rgba(20, 20, 20, .70);
+    backdrop-filter: blur(5px);
+      outline: none;
+      transition: all 0.5s ease-in-out;
+  }
+/*
+  #myPopup{
+      top:200px;
+      left:200px;
+  }
+  */
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
