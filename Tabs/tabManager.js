@@ -3,7 +3,6 @@
 
 var activeTab = 0; //0 = main tab
 var sectionCounter = 0; //counts created sections (projects)
-var colorArr = ["White" + "Blue" + "Burgunder"];
 
 //methods
 
@@ -38,7 +37,7 @@ function createNewTab(projectId) {
 
     };
     //add content
-    tabImg.src = "./Images/TabWhite.png";
+    tabImg.src = "../Tabs/Images/TabWhite.png";
     tabTitle.innerHTML = projects[projectId].projectName;
     tabClose.innerHTML = "X";
     tabClose.onclick = function handleOnclick(event) {
@@ -220,7 +219,7 @@ function openProfileTab() {
 
     };
     //add content
-    tabImg.src = "./Images/TabRed.png";
+    tabImg.src = "../Tabs/Images/TabRed.png";
     tabTitle.innerHTML = "Profile";
     tabClose.innerHTML = "X";
     tabClose.onclick = function handleOnclick(event) {
