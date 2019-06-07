@@ -31,7 +31,6 @@ h1 ,h2, h3, h4, h5, h6, p, a, textarea, span, link, input, div{
     color: #F9FAF5;
     display: block;
     left: 200px;
-
     margin: .4rem 0;
 }
 
@@ -42,12 +41,12 @@ h1 ,h2, h3, h4, h5, h6, p, a, textarea, span, link, input, div{
     text-align: left;
     left: 13%;
     top: 30px;
-    color: black;
+    color: #F9FAF5;
     font-weight: bold;
 }
 
 .profileSubtext {
-    color: black;
+    color: #F9FAF5;
     font-size: 20px;
 }
 
