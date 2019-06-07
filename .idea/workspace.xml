@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2de07607-42ef-4bac-8f88-028e149ef7ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontpage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Registration/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tabs/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tabs/tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/logginn.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/logginn.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +39,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontpage/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
               <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/logginn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minside/minside.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Registration/registration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Standard/main.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -130,14 +169,14 @@
         <option value="$PROJECT_DIR$/Registration/debug.log" />
         <option value="$PROJECT_DIR$/Tabs/tabManager.js" />
         <option value="$PROJECT_DIR$/Tabs/projectStatusManager.js" />
-        <option value="$PROJECT_DIR$/Registration/registration.html" />
-        <option value="$PROJECT_DIR$/login/logginn.html" />
-        <option value="$PROJECT_DIR$/Tabs/tabs.html" />
         <option value="$PROJECT_DIR$/Tabs/js/tabManager.js" />
         <option value="$PROJECT_DIR$/Registration/registration.css" />
         <option value="$PROJECT_DIR$/gruppe14/chat-example/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/frontpage/index.html" />
+        <option value="$PROJECT_DIR$/login/logginn.html" />
+        <option value="$PROJECT_DIR$/Registration/registration.html" />
+        <option value="$PROJECT_DIR$/Tabs/tabs.html" />
       </list>
     </option>
   </component>
@@ -154,10 +193,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="361" />
-    <option name="y" value="225" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -181,6 +220,51 @@
               <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
               <item name="frontpage" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="minside" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="Post-it" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="Registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebarCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="Standard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="Tabs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gruppe14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gruppe14" type="462c0819:PsiDirectoryNode" />
+              <item name="user &amp; project management" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -191,7 +275,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559914517492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559914785950" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -288,14 +372,7 @@
       <workItem from="1559894519881" duration="7211000" />
       <workItem from="1559903855607" duration="9840000" />
       <workItem from="1559914025226" duration="42000" />
-      <workItem from="1559914086990" duration="419000" />
-    </task>
-    <task id="LOCAL-00039" summary="main page now dynamic">
-      <created>1559655519942</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1559655519942</updated>
+      <workItem from="1559914086990" duration="687000" />
     </task>
     <task id="LOCAL-00040" summary="integrating mainPage into tabs...">
       <created>1559662942228</created>
@@ -633,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559914381672</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix">
+      <created>1559914526039</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1559914526039</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196376000" />
+    <option name="totallyTimeSpent" value="196644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -779,8 +863,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="github pages didn't recognize index.html from our project, so we simply HAD to add this file just to fix that. Nothing else was changed in the project!&#10;Sincerely&#10;- Felix" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test.js" />
-    <entry file="file://$PROJECT_DIR$/test/test.html" />
     <entry file="file://$PROJECT_DIR$/test/test.css" />
     <entry file="file://$PROJECT_DIR$/Chatt/chatt.css" />
     <entry file="file://$PROJECT_DIR$/Registration/registration.js" />
@@ -827,13 +909,37 @@
     <entry file="file://$PROJECT_DIR$/Tabs/js/dragAndDropManager.js" />
     <entry file="file://$PROJECT_DIR$/Tabs/js/chatt.js" />
     <entry file="file://$PROJECT_DIR$/Post-it/postIt.js" />
-    <entry file="file://$PROJECT_DIR$/login/logginn.html" />
-    <entry file="file://$PROJECT_DIR$/Tabs/tabs.html" />
-    <entry file="file://$PROJECT_DIR$/Registration/registration.html" />
     <entry file="file://$PROJECT_DIR$/Tabs/js/tabManager.js" />
     <entry file="file://$PROJECT_DIR$/Registration/registration.css" />
     <entry file="file://$PROJECT_DIR$/gitlog.txt" />
     <entry file="file://$PROJECT_DIR$/chat-example/index.html" />
+    <entry file="file://$PROJECT_DIR$/frontpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/logginn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minside/minside.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Registration/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Standard/main.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -841,10 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontpage/index.html">
+    <entry file="file://$PROJECT_DIR$/Tabs/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+        <state relative-caret-position="69">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
         </state>
       </provider>
     </entry>
