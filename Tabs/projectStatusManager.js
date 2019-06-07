@@ -53,6 +53,10 @@ function addColumnBlock(column) {
     textArea.cols = "10";
     columnBlock.appendChild(textArea);
 
+    var membersField = document.createElement("div");
+    membersField.classList.add("itemMembers");
+    columnBlock.appendChild(membersField);
+
     var search = document.createElement("input");
     search.type = "search";
     search.placeholder = "add members here";
@@ -61,7 +65,7 @@ function addColumnBlock(column) {
         renderMemberSearch(e);
     };
     search.onblur = function handleSearchBlur(e) {
-        removeMemberSearch(e);
+        //removeMemberSearch(e);
     };
     search.onkeyup = function handleSearchHiding(e) {
         hideMemberSearch(e);
@@ -98,6 +102,18 @@ function renderMemberSearch(event) {
         var listElement = document.createElement("li");
         listElement.classList.add("memberSearchElement");
         listElement.innerHTML = testArr[i];
+        listElement.id = testArr[i];
+        //creates onclick to add users to columnBlock
+        listElement.onclick = function addToBox(event) {
+                addMemberToSearchBar(event);
+                var ul = event.target.parentElement;
+                ul.previousElementSibling.style.zIndex = "0";
+                ul.previousElementSibling.value = "";
+                while (ul.hasChildNodes()) {
+                    ul.removeChild(ul.lastChild);
+                }
+            searchList.style.visibility = "hidden";
+        };
         searchList.appendChild(listElement);
     }
 }
@@ -135,4 +151,23 @@ function removeMemberSearch(event) {
     searchList.style.visibility = "hidden";
 }
 
+//add member when list element clicked
+function addMemberToSearchBar(event) {
+    var memberBar = event.target.parentElement.previousElementSibling.previousElementSibling;
+    console.log(memberBar);
+    var member = document.createElement("div");
+    member.innerHTML = event.target.innerHTML;
+    member.classList.add("memberSquare");
+    var memberRemoveButton = document.createElement("div");
+    memberRemoveButton.classList.add("memberSquareRemove");
+    memberRemoveButton.innerHTML = "x";
+    memberRemoveButton.onclick = function removeMemberFromBlock(event) {
+        var member = event.target.parentNode;
+        member.removeChild(member.lastChild);
+        member.parentNode.removeChild(member);
+    }
+    member.append(memberRemoveButton);
+    memberBar.appendChild(member);
+    console.log("beep");
+}
 //linear code
