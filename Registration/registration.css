@@ -1,0 +1,416 @@
+/*Button styling*/
+
+#buttonholder{
+    left: calc(50% - 250px);
+    position: relative;
+    padding: 0;
+    top: -50px;
+    display: block;
+    width: 500px;
+}
+
+.button{
+    width: 200px;
+    margin: 1rem;
+    padding: 20px 32px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: #0B245B;
+    color: #F9FAF5;
+    transition-duration: .4s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+    
+.button:hover{
+    color: #0B245B;
+    background-color: #F9FAF5;;
+    border: solid #0B245B;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+    
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 100px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+/*Body styling*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
+    background-size: 1500px 1500px;
+}
+
+h1 ,h2, h3, h4, h5, h6, p, a, textarea, span, link, input, div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(99, 123, 175);
+    z-index: 10;
+    font-size: 70px;
+}
+
+img{
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+
+h6{
+    color: rgb(166, 189, 240);
+    z-index: 10;
+    font-size: 15px;
+}
+
+#policy{
+    position: relative;
+    top: 552px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h5{
+    color: rgb(99, 123, 175);
+    z-index: 10;
+    font-size: 17px;
+}
+
+#policy2{
+    position: relative;
+    top: 558px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Input styling*/
+
+#name{
+    top:200px;
+    left:300px;
+}
+
+.information{
+    margin: 1px;
+    height: auto;
+    width: 300px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#welcome {
+    width: 100%;
+    height: 100%;
+    top: -312px;
+    position: relative;
+}
+
+#welcome1 {
+    position: relative;
+    left: calc(50% - 250px);
+    margin: 0;
+    padding: 0;
+}
+
+#registration{
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: 0;
+    margin:0 auto;
+}
+
+#name{
+    position: relative;
+    top: 30px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#userName{
+    position: relative;
+    top: 70px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#email{
+    position: relative;
+    top: 120px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#dateOfBirth{
+    position: relative;
+    top: 160px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#password{
+    position: relative;
+    top: 200px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+#repeatPassword{
+    position: relative;
+    top: 240px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px rgb(11,36,91);
+    border-radius: 6px;
+    width: 200px;
+    height:20px;
+}
+
+/*Radiobuttons styling*/
+
+#genderContainer{
+    position: relative;
+    top: 190px; 
+    left:50px;
+    right:50px;
+    width: 400px;
+    height: 400px;
+}
+
+#female{
+    height: 25px;
+    width: 25px;
+    top: 1px;
+    position: relative;
+}
+
+#other{
+    height: 25px;
+    width: 25px;
+    top: -188px;
+    position: relative;
+}
+
+#male{
+    height: 25px;
+    width: 25px;
+    top: -93px;
+    position: relative;
+}
+#femaleText{
+    right: -52px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -60px;
+    color:rgb(11,36,91);
+}
+
+#maleText{
+    right: -52px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -153px;
+    color:rgb(11,36,91);
+}
+
+#otherText{
+    right: -51px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -246px;
+    color:rgb(11,36,91);
+}
+
+/*Colorblind speech bubbles*/
+
+.speechBubble{
+    position: relative;
+    background: #9a073c;
+    border-radius: .4em;
+    height: 45px;
+    width: 190px;
+    border: 5px solid transparent;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+#speechBubble{
+    left: calc(50% - 600px);
+    position: relative;
+    top: 35px;
+    display: block;
+    width: 150px;
+}
+
+.speechBubble:after { 
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left-color:#9a073c;
+    border-right:0;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+#speechBubble1{
+    visibility: hidden;
+    top: 196px;
+    background-color: #9a073c;
+    left: calc(50% - 350px);
+}
+
+#speechBubble2{
+    top: 193px;
+    visibility: hidden;
+    background-color: #9a073c;
+    left: calc(50% - 350px);
+}
+
+#speechBubble3{
+    top: 216px;
+    visibility: hidden;
+    background-color: #9a073c;
+    left: calc(50% - 350px);
+}
+
+#speechBubble4{
+    top: 222px;
+    visibility: hidden;
+    background-color: #9a073c;
+    left: calc(50% - 350px);
+}
+
+#speechBubble5{
+    top: 230px;
+    visibility: hidden;
+    background-color: #9a073c;
+    left: calc(50% - 350px);
+}
+
+#speechBubble6{
+    top: 232px;
+    visibility: hidden;
+    background-color: #9a073c;
+    left: calc(50% - 350px);
+}
+
+#speechBubbleText1{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -49px;
+    font-size: 20px;
+}
+
+
+#speechBubbleText2{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -31px;
+    font-size: 20px;
+}
+
+#speechBubbleText3{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -49px;
+    font-size: 20px;
+}
+
+#speechBubbleText4{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -50px;
+    font-size: 20px;
+}
+
+#speechBubbleText5{
+    text-align: center;
+    color: rgb(248, 246, 246);
+    position: relative;
+    top: -43px;
+    font-size: 20px;
+}
+
+#speechBubbleText6{
+    text-align: center;
+    color: rgb(248, 248, 248);
+    position: relative;
+    top: -41px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
