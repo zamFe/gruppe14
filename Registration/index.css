@@ -54,18 +54,19 @@ html, body{
     height: 100%;
     width: 100%;
     border-radius: auto;
-    
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     background-image: linear-gradient(to bottom, #0b245b, #005d81, #559397, #adc5b8, #f9faf5);
     background-size: 1500px 1500px;
 }
 
+h1 h2 h3 h4 h5 h6 p a textarea span link input div{
+    font-family: 'Arial Black',Helvetica, sans-serif;
+}
 
 h1{
     color: rgb(99, 123, 175);
     z-index: 10;
     font-size: 70px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 img{
@@ -82,7 +83,6 @@ h6{
     color: rgb(166, 189, 240);
     z-index: 10;
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 #policy{
@@ -98,7 +98,6 @@ h5{
     color: rgb(99, 123, 175);
     z-index: 10;
     font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 #policy2{
